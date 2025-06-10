@@ -1,0 +1,157 @@
+@charset "UTF-8";
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.w100 {
+  width: 100%;
+}
+
+.h100 {
+  height: 100vh;
+}
+
+.slide-item {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  transition: 0.1s;
+  visibility: visible;
+}
+.slide-item:not([class*=active]):not([class*=slide-item-leave]):not([class*=slide-item-enter]) {
+  visibility: hidden;
+}
+.slide-item.active {
+  z-index: 1;
+}
+.slide-item.slide-item-enter {
+  z-index: 2;
+  animation: slideInRight 0.6s ease-in-out;
+}
+.slide-item.slide-item-leave {
+  z-index: 1;
+  animation: slideOutLeft 0.6s ease-in-out;
+}
+
+.viewBox {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+/* #region flex class*/
+.d-flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.d-flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.d-inline-block {
+  display: inline-block;
+}
+
+.jc-center {
+  justify-content: center;
+}
+
+.jc-space-between {
+  justify-content: space-between;
+}
+
+.jc-space-around {
+  justify-content: space-around;
+}
+
+.jc-start {
+  justify-content: start;
+}
+
+.jc-end {
+  justify-content: end;
+}
+
+.ai-center {
+  align-items: center;
+}
+
+.ai-start {
+  align-items: start;
+}
+
+.ai-end {
+  align-items: end;
+}
+
+/* #endregion */
+.bg_light {
+  background-color: var(--secondary);
+}
+
+/* #region flex class*/
+/* 捲軸寬度及高度 */
+::-webkit-scrollbar {
+  width: 8px; /*右側捲軸寬度*/
+  height: 8px; /*下方捲軸高度*/
+}
+
+/* 軌道背景底色 */
+::-webkit-scrollbar-track {
+  background: var(--secondary);
+}
+
+/* 滑桿顏色 */
+::-webkit-scrollbar-thumb {
+  background: var(--white);
+  border-radius: 60px;
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
+}
+
+/* 滑桿滑鼠滑入時的顏色 */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--warning);
+}
+
+/* 捲軸兩側頂端的按鈕 */
+::-webkit-scrollbar-button {
+  display: none;
+}
+
+/* 捲軸兩側頂端的按鈕滑鼠滑入時的顏色 */
+::-webkit-scrollbar-button:hover {
+  background-color: var(--primary);
+}
+
+/* #endregion*/
+.textContent {
+  font-size: 20px;
+  line-height: 100%;
+}
+
+.dash_bar {
+  border-bottom-style: solid;
+  border-bottom-width: 3px;
+  width: 50px;
+  margin: 5px 0;
+}
+
+.hover_scaleY {
+  transition: 0.3s;
+}
+.hover_scaleY:hover {
+  transform: scaleY(1.03);
+}
+
+.hover-point:hover {
+  cursor: pointer;
+}/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,3108 @@
+@keyframes circleLightUp {
+  0% {
+    transform: rotate(var(--rotate)) translate(var(--translateX), var(--translateY));
+    stroke: var(--primary);
+    stroke-width: var(--strokeWidth);
+  }
+  50% {
+    transform: rotate(var(--rotate)) translate(calc(var(--translateX, 0) + 10px), calc(var(--translateY, 0) - 10px));
+    stroke: var(--secondary);
+    stroke-width: calc(var(--strokeWidth) + 2px);
+  }
+  100% {
+    transform: rotate(var(--rotate)) translate(var(--translateX), var(--translateY));
+    stroke: var(--primary);
+    stroke-width: var(--strokeWidth);
+  }
+}
+.animateCircel ellipse {
+  transition: 0.5s;
+  opacity: 0.8;
+}
+.animateCircel.playOn ellipse {
+  transition: 0.5s;
+  animation: circleLightUp 2s ease-in-out forwards;
+}
+.animateCircel.playOn ellipse:nth-child(1) {
+  animation-delay: 0.5s;
+}
+.animateCircel.playOn ellipse:nth-child(2) {
+  animation-delay: 1s;
+}
+.animateCircel.playOn ellipse:nth-child(3) {
+  animation-delay: 1.5s;
+}
+.animateCircel.playOn ellipse:nth-child(4) {
+  animation-delay: 2s;
+}
+.animateCircel.playOn ellipse:nth-child(5) {
+  animation-delay: 2.5s;
+}
+.animateCircel.playOn ellipse:nth-child(6) {
+  animation-delay: 3s;
+}
+.animateCircel.playOn ellipse:nth-child(7) {
+  animation-delay: 3.5s;
+}
+.animateCircel.playOn ellipse:nth-child(8) {
+  animation-delay: 4s;
+}
+.animateCircel.playOn ellipse:nth-child(9) {
+  animation-delay: 4.5s;
+}
+.animateCircel.playOn ellipse:nth-child(10) {
+  animation-delay: 5s;
+}
+.animateCircel.playOn ellipse:nth-child(11) {
+  animation-delay: 5.5s;
+}
+.animateCircel.playOn ellipse:nth-child(12) {
+  animation-delay: 6s;
+}
+.animateCircel.playOn ellipse:nth-child(13) {
+  animation-delay: 6.5s;
+}
+.animateCircel.playOn ellipse:nth-child(14) {
+  animation-delay: 7s;
+}
+.animateCircel.playOn ellipse:nth-child(15) {
+  animation-delay: 7.5s;
+}
+.animateCircel.playOn ellipse:nth-child(16) {
+  animation-delay: 8s;
+}
+.animateCircel.playOn ellipse:nth-child(17) {
+  animation-delay: 8.5s;
+}
+.animateCircel.playOn ellipse:nth-child(18) {
+  animation-delay: 9s;
+}
+.animateCircel.playOn ellipse:nth-child(19) {
+  animation-delay: 9.5s;
+}
+.animateCircel.playOn ellipse:nth-child(20) {
+  animation-delay: 10s;
+}
+.animateCircel.playOn ellipse:nth-child(21) {
+  animation-delay: 10.5s;
+}
+.animateCircel.playOn ellipse:nth-child(22) {
+  animation-delay: 11s;
+}
+.animateCircel.playOn ellipse:nth-child(23) {
+  animation-delay: 11.5s;
+}
+.animateCircel.playOn ellipse:nth-child(24) {
+  animation-delay: 12s;
+}
+.animateCircel.playOn ellipse:nth-child(25) {
+  animation-delay: 12.5s;
+}
+.animateCircel.playOn ellipse:nth-child(26) {
+  animation-delay: 13s;
+}
+.animateCircel.playOn ellipse:nth-child(27) {
+  animation-delay: 13.5s;
+}
+.animateCircel.playOn ellipse:nth-child(28) {
+  animation-delay: 14s;
+}
+.animateCircel.playOn ellipse:nth-child(29) {
+  animation-delay: 14.5s;
+}
+.animateCircel.playOn ellipse:nth-child(30) {
+  animation-delay: 15s;
+}
+.animateCircel.playOn ellipse:nth-child(31) {
+  animation-delay: 15.5s;
+}
+.animateCircel.playOn ellipse:nth-child(32) {
+  animation-delay: 16s;
+}
+.animateCircel.playOn ellipse:nth-child(33) {
+  animation-delay: 16.5s;
+}
+.animateCircel.playOn ellipse:nth-child(34) {
+  animation-delay: 17s;
+}
+.animateCircel.playOn ellipse:nth-child(35) {
+  animation-delay: 17.5s;
+}
+.animateCircel.playOn ellipse:nth-child(36) {
+  animation-delay: 18s;
+}
+.animateCircel.playOn ellipse:nth-child(37) {
+  animation-delay: 18.5s;
+}
+.animateCircel.playOn ellipse:nth-child(38) {
+  animation-delay: 19s;
+}
+.animateCircel.playOn ellipse:nth-child(39) {
+  animation-delay: 19.5s;
+}
+.animateCircel.playOn ellipse:nth-child(40) {
+  animation-delay: 20s;
+}
+.animateCircel.playOn ellipse:nth-child(41) {
+  animation-delay: 20.5s;
+}
+.animateCircel.playOn ellipse:nth-child(42) {
+  animation-delay: 21s;
+}
+.animateCircel.playOn ellipse:nth-child(43) {
+  animation-delay: 21.5s;
+}
+.animateCircel.playOn ellipse:nth-child(44) {
+  animation-delay: 22s;
+}
+.animateCircel.playOn ellipse:nth-child(45) {
+  animation-delay: 22.5s;
+}
+.animateCircel.playOn ellipse:nth-child(46) {
+  animation-delay: 23s;
+}
+.animateCircel.playOn ellipse:nth-child(47) {
+  animation-delay: 23.5s;
+}
+.animateCircel.playOn ellipse:nth-child(48) {
+  animation-delay: 24s;
+}
+.animateCircel.playOn ellipse:nth-child(49) {
+  animation-delay: 24.5s;
+}
+.animateCircel.playOn ellipse:nth-child(50) {
+  animation-delay: 25s;
+}
+.animateCircel.playOn ellipse:nth-child(51) {
+  animation-delay: 25.5s;
+}
+.animateCircel.playOn ellipse:nth-child(52) {
+  animation-delay: 26s;
+}
+.animateCircel.playOn ellipse:nth-child(53) {
+  animation-delay: 26.5s;
+}
+.animateCircel.playOn ellipse:nth-child(54) {
+  animation-delay: 27s;
+}
+.animateCircel.playOn ellipse:nth-child(55) {
+  animation-delay: 27.5s;
+}
+.animateCircel.playOn ellipse:nth-child(56) {
+  animation-delay: 28s;
+}
+.animateCircel.playOn ellipse:nth-child(57) {
+  animation-delay: 28.5s;
+}
+.animateCircel.playOn ellipse:nth-child(58) {
+  animation-delay: 29s;
+}
+.animateCircel.playOn ellipse:nth-child(59) {
+  animation-delay: 29.5s;
+}
+.animateCircel.playOn ellipse:nth-child(60) {
+  animation-delay: 30s;
+}
+.animateCircel.playOn ellipse:nth-child(61) {
+  animation-delay: 30.5s;
+}
+.animateCircel.playOn ellipse:nth-child(62) {
+  animation-delay: 31s;
+}
+.animateCircel.playOn ellipse:nth-child(63) {
+  animation-delay: 31.5s;
+}
+.animateCircel.playOn ellipse:nth-child(64) {
+  animation-delay: 32s;
+}
+.animateCircel.playOn ellipse:nth-child(65) {
+  animation-delay: 32.5s;
+}
+.animateCircel.playOn ellipse:nth-child(66) {
+  animation-delay: 33s;
+}
+.animateCircel.playOn ellipse:nth-child(67) {
+  animation-delay: 33.5s;
+}
+.animateCircel.playOn ellipse:nth-child(68) {
+  animation-delay: 34s;
+}
+.animateCircel.playOn ellipse:nth-child(69) {
+  animation-delay: 34.5s;
+}
+.animateCircel.playOn ellipse:nth-child(70) {
+  animation-delay: 35s;
+}
+.animateCircel.playOn ellipse:nth-child(71) {
+  animation-delay: 35.5s;
+}
+.animateCircel.playOn ellipse:nth-child(72) {
+  animation-delay: 36s;
+}
+.animateCircel.playOn ellipse:nth-child(73) {
+  animation-delay: 36.5s;
+}
+.animateCircel.playOn ellipse:nth-child(74) {
+  animation-delay: 37s;
+}
+.animateCircel.playOn ellipse:nth-child(75) {
+  animation-delay: 37.5s;
+}
+.animateCircel.playOn ellipse:nth-child(76) {
+  animation-delay: 38s;
+}
+.animateCircel.playOn ellipse:nth-child(77) {
+  animation-delay: 38.5s;
+}
+.animateCircel.playOn ellipse:nth-child(78) {
+  animation-delay: 39s;
+}
+.animateCircel.playOn ellipse:nth-child(79) {
+  animation-delay: 39.5s;
+}
+.animateCircel.playOn ellipse:nth-child(80) {
+  animation-delay: 40s;
+}
+.animateCircel.playOn ellipse:nth-child(81) {
+  animation-delay: 40.5s;
+}
+.animateCircel.playOn ellipse:nth-child(82) {
+  animation-delay: 41s;
+}
+.animateCircel.playOn ellipse:nth-child(83) {
+  animation-delay: 41.5s;
+}
+.animateCircel.playOn ellipse:nth-child(84) {
+  animation-delay: 42s;
+}
+.animateCircel.playOn ellipse:nth-child(85) {
+  animation-delay: 42.5s;
+}
+.animateCircel.playOn ellipse:nth-child(86) {
+  animation-delay: 43s;
+}
+.animateCircel.playOn ellipse:nth-child(87) {
+  animation-delay: 43.5s;
+}
+.animateCircel.playOn ellipse:nth-child(88) {
+  animation-delay: 44s;
+}
+.animateCircel.playOn ellipse:nth-child(89) {
+  animation-delay: 44.5s;
+}
+.animateCircel.playOn ellipse:nth-child(90) {
+  animation-delay: 45s;
+}
+.animateCircel.playOn ellipse:nth-child(91) {
+  animation-delay: 45.5s;
+}
+.animateCircel.playOn ellipse:nth-child(92) {
+  animation-delay: 46s;
+}
+.animateCircel.playOn ellipse:nth-child(93) {
+  animation-delay: 46.5s;
+}
+.animateCircel.playOn ellipse:nth-child(94) {
+  animation-delay: 47s;
+}
+.animateCircel.playOn ellipse:nth-child(95) {
+  animation-delay: 47.5s;
+}
+.animateCircel.playOn ellipse:nth-child(96) {
+  animation-delay: 48s;
+}
+.animateCircel.playOn ellipse:nth-child(97) {
+  animation-delay: 48.5s;
+}
+.animateCircel.playOn ellipse:nth-child(98) {
+  animation-delay: 49s;
+}
+.animateCircel.playOn ellipse:nth-child(99) {
+  animation-delay: 49.5s;
+}
+.animateCircel.playOn ellipse:nth-child(100) {
+  animation-delay: 50s;
+}
+.animateCircel.playOn ellipse:nth-child(101) {
+  animation-delay: 50.5s;
+}
+.animateCircel.playOn ellipse:nth-child(102) {
+  animation-delay: 51s;
+}
+.animateCircel.playOn ellipse:nth-child(103) {
+  animation-delay: 51.5s;
+}
+.animateCircel.playOn ellipse:nth-child(104) {
+  animation-delay: 52s;
+}
+.animateCircel.playOn ellipse:nth-child(105) {
+  animation-delay: 52.5s;
+}
+.animateCircel.playOn ellipse:nth-child(106) {
+  animation-delay: 53s;
+}
+.animateCircel.playOn ellipse:nth-child(107) {
+  animation-delay: 53.5s;
+}
+.animateCircel.playOn ellipse:nth-child(108) {
+  animation-delay: 54s;
+}
+.animateCircel.playOn ellipse:nth-child(109) {
+  animation-delay: 54.5s;
+}
+.animateCircel.playOn ellipse:nth-child(110) {
+  animation-delay: 55s;
+}
+.animateCircel.playOn ellipse:nth-child(111) {
+  animation-delay: 55.5s;
+}
+.animateCircel.playOn ellipse:nth-child(112) {
+  animation-delay: 56s;
+}
+.animateCircel.playOn ellipse:nth-child(113) {
+  animation-delay: 56.5s;
+}
+.animateCircel.playOn ellipse:nth-child(114) {
+  animation-delay: 57s;
+}
+.animateCircel.playOn ellipse:nth-child(115) {
+  animation-delay: 57.5s;
+}
+.animateCircel.playOn ellipse:nth-child(116) {
+  animation-delay: 58s;
+}
+.animateCircel.playOn ellipse:nth-child(117) {
+  animation-delay: 58.5s;
+}
+.animateCircel.playOn ellipse:nth-child(118) {
+  animation-delay: 59s;
+}
+.animateCircel.playOn ellipse:nth-child(119) {
+  animation-delay: 59.5s;
+}
+.animateCircel.playOn ellipse:nth-child(120) {
+  animation-delay: 60s;
+}
+.animateCircel.playOn ellipse:nth-child(121) {
+  animation-delay: 60.5s;
+}
+.animateCircel.playOn ellipse:nth-child(122) {
+  animation-delay: 61s;
+}
+.animateCircel.playOn ellipse:nth-child(123) {
+  animation-delay: 61.5s;
+}
+.animateCircel.playOn ellipse:nth-child(124) {
+  animation-delay: 62s;
+}
+.animateCircel.playOn ellipse:nth-child(125) {
+  animation-delay: 62.5s;
+}
+.animateCircel.playOn ellipse:nth-child(126) {
+  animation-delay: 63s;
+}
+.animateCircel.playOn ellipse:nth-child(127) {
+  animation-delay: 63.5s;
+}
+.animateCircel.playOn ellipse:nth-child(128) {
+  animation-delay: 64s;
+}
+.animateCircel.playOn ellipse:nth-child(129) {
+  animation-delay: 64.5s;
+}
+.animateCircel.playOn ellipse:nth-child(130) {
+  animation-delay: 65s;
+}
+.animateCircel.playOn ellipse:nth-child(131) {
+  animation-delay: 65.5s;
+}
+.animateCircel.playOn ellipse:nth-child(132) {
+  animation-delay: 66s;
+}
+.animateCircel.playOn ellipse:nth-child(133) {
+  animation-delay: 66.5s;
+}
+.animateCircel.playOn ellipse:nth-child(134) {
+  animation-delay: 67s;
+}
+.animateCircel.playOn ellipse:nth-child(135) {
+  animation-delay: 67.5s;
+}
+.animateCircel.playOn ellipse:nth-child(136) {
+  animation-delay: 68s;
+}
+.animateCircel.playOn ellipse:nth-child(137) {
+  animation-delay: 68.5s;
+}
+.animateCircel.playOn ellipse:nth-child(138) {
+  animation-delay: 69s;
+}
+.animateCircel.playOn ellipse:nth-child(139) {
+  animation-delay: 69.5s;
+}
+.animateCircel.playOn ellipse:nth-child(140) {
+  animation-delay: 70s;
+}
+.animateCircel.playOn ellipse:nth-child(141) {
+  animation-delay: 70.5s;
+}
+.animateCircel.playOn ellipse:nth-child(142) {
+  animation-delay: 71s;
+}
+.animateCircel.playOn ellipse:nth-child(143) {
+  animation-delay: 71.5s;
+}
+.animateCircel.playOn ellipse:nth-child(144) {
+  animation-delay: 72s;
+}
+.animateCircel.playOn ellipse:nth-child(145) {
+  animation-delay: 72.5s;
+}
+.animateCircel.playOn ellipse:nth-child(146) {
+  animation-delay: 73s;
+}
+.animateCircel.playOn ellipse:nth-child(147) {
+  animation-delay: 73.5s;
+}
+.animateCircel.playOn ellipse:nth-child(148) {
+  animation-delay: 74s;
+}
+.animateCircel.playOn ellipse:nth-child(149) {
+  animation-delay: 74.5s;
+}
+.animateCircel.playOn ellipse:nth-child(150) {
+  animation-delay: 75s;
+}
+.animateCircel.playOn ellipse:nth-child(151) {
+  animation-delay: 75.5s;
+}
+.animateCircel.playOn ellipse:nth-child(152) {
+  animation-delay: 76s;
+}
+.animateCircel.playOn ellipse:nth-child(153) {
+  animation-delay: 76.5s;
+}
+.animateCircel.playOn ellipse:nth-child(154) {
+  animation-delay: 77s;
+}
+.animateCircel.playOn ellipse:nth-child(155) {
+  animation-delay: 77.5s;
+}
+.animateCircel.playOn ellipse:nth-child(156) {
+  animation-delay: 78s;
+}
+.animateCircel.playOn ellipse:nth-child(157) {
+  animation-delay: 78.5s;
+}
+.animateCircel.playOn ellipse:nth-child(158) {
+  animation-delay: 79s;
+}
+.animateCircel.playOn ellipse:nth-child(159) {
+  animation-delay: 79.5s;
+}
+.animateCircel.playOn ellipse:nth-child(160) {
+  animation-delay: 80s;
+}
+.animateCircel.playOn ellipse:nth-child(161) {
+  animation-delay: 80.5s;
+}
+.animateCircel.playOn ellipse:nth-child(162) {
+  animation-delay: 81s;
+}
+.animateCircel.playOn ellipse:nth-child(163) {
+  animation-delay: 81.5s;
+}
+.animateCircel.playOn ellipse:nth-child(164) {
+  animation-delay: 82s;
+}
+.animateCircel.playOn ellipse:nth-child(165) {
+  animation-delay: 82.5s;
+}
+.animateCircel.playOn ellipse:nth-child(166) {
+  animation-delay: 83s;
+}
+.animateCircel.playOn ellipse:nth-child(167) {
+  animation-delay: 83.5s;
+}
+.animateCircel.playOn ellipse:nth-child(168) {
+  animation-delay: 84s;
+}
+.animateCircel.playOn ellipse:nth-child(169) {
+  animation-delay: 84.5s;
+}
+.animateCircel.playOn ellipse:nth-child(170) {
+  animation-delay: 85s;
+}
+.animateCircel.playOn ellipse:nth-child(171) {
+  animation-delay: 85.5s;
+}
+.animateCircel.playOn ellipse:nth-child(172) {
+  animation-delay: 86s;
+}
+.animateCircel.playOn ellipse:nth-child(173) {
+  animation-delay: 86.5s;
+}
+.animateCircel.playOn ellipse:nth-child(174) {
+  animation-delay: 87s;
+}
+.animateCircel.playOn ellipse:nth-child(175) {
+  animation-delay: 87.5s;
+}
+.animateCircel.playOn ellipse:nth-child(176) {
+  animation-delay: 88s;
+}
+.animateCircel.playOn ellipse:nth-child(177) {
+  animation-delay: 88.5s;
+}
+.animateCircel.playOn ellipse:nth-child(178) {
+  animation-delay: 89s;
+}
+.animateCircel.playOn ellipse:nth-child(179) {
+  animation-delay: 89.5s;
+}
+.animateCircel.playOn ellipse:nth-child(180) {
+  animation-delay: 90s;
+}
+.animateCircel.playOn ellipse:nth-child(181) {
+  animation-delay: 90.5s;
+}
+.animateCircel.playOn ellipse:nth-child(182) {
+  animation-delay: 91s;
+}
+.animateCircel.playOn ellipse:nth-child(183) {
+  animation-delay: 91.5s;
+}
+.animateCircel.playOn ellipse:nth-child(184) {
+  animation-delay: 92s;
+}
+.animateCircel.playOn ellipse:nth-child(185) {
+  animation-delay: 92.5s;
+}
+.animateCircel.playOn ellipse:nth-child(186) {
+  animation-delay: 93s;
+}
+.animateCircel.playOn ellipse:nth-child(187) {
+  animation-delay: 93.5s;
+}
+.animateCircel.playOn ellipse:nth-child(188) {
+  animation-delay: 94s;
+}
+.animateCircel.playOn ellipse:nth-child(189) {
+  animation-delay: 94.5s;
+}
+.animateCircel.playOn ellipse:nth-child(190) {
+  animation-delay: 95s;
+}
+.animateCircel.playOn ellipse:nth-child(191) {
+  animation-delay: 95.5s;
+}
+.animateCircel.playOn ellipse:nth-child(192) {
+  animation-delay: 96s;
+}
+.animateCircel.playOn ellipse:nth-child(193) {
+  animation-delay: 96.5s;
+}
+.animateCircel.playOn ellipse:nth-child(194) {
+  animation-delay: 97s;
+}
+.animateCircel.playOn ellipse:nth-child(195) {
+  animation-delay: 97.5s;
+}
+.animateCircel.playOn ellipse:nth-child(196) {
+  animation-delay: 98s;
+}
+.animateCircel.playOn ellipse:nth-child(197) {
+  animation-delay: 98.5s;
+}
+.animateCircel.playOn ellipse:nth-child(198) {
+  animation-delay: 99s;
+}
+.animateCircel.playOn ellipse:nth-child(199) {
+  animation-delay: 99.5s;
+}
+.animateCircel.playOn ellipse:nth-child(200) {
+  animation-delay: 100s;
+}
+.animateCircel.playOn ellipse:nth-child(201) {
+  animation-delay: 100.5s;
+}
+.animateCircel.playOn ellipse:nth-child(202) {
+  animation-delay: 101s;
+}
+.animateCircel.playOn ellipse:nth-child(203) {
+  animation-delay: 101.5s;
+}
+.animateCircel.playOn ellipse:nth-child(204) {
+  animation-delay: 102s;
+}
+.animateCircel.playOn ellipse:nth-child(205) {
+  animation-delay: 102.5s;
+}
+.animateCircel.playOn ellipse:nth-child(206) {
+  animation-delay: 103s;
+}
+.animateCircel.playOn ellipse:nth-child(207) {
+  animation-delay: 103.5s;
+}
+.animateCircel.playOn ellipse:nth-child(208) {
+  animation-delay: 104s;
+}
+.animateCircel.playOn ellipse:nth-child(209) {
+  animation-delay: 104.5s;
+}
+.animateCircel.playOn ellipse:nth-child(210) {
+  animation-delay: 105s;
+}
+.animateCircel.playOn ellipse:nth-child(211) {
+  animation-delay: 105.5s;
+}
+.animateCircel.playOn ellipse:nth-child(212) {
+  animation-delay: 106s;
+}
+.animateCircel.playOn ellipse:nth-child(213) {
+  animation-delay: 106.5s;
+}
+.animateCircel.playOn ellipse:nth-child(214) {
+  animation-delay: 107s;
+}
+.animateCircel.playOn ellipse:nth-child(215) {
+  animation-delay: 107.5s;
+}
+.animateCircel.playOn ellipse:nth-child(216) {
+  animation-delay: 108s;
+}
+.animateCircel.playOn ellipse:nth-child(217) {
+  animation-delay: 108.5s;
+}
+.animateCircel.playOn ellipse:nth-child(218) {
+  animation-delay: 109s;
+}
+.animateCircel.playOn ellipse:nth-child(219) {
+  animation-delay: 109.5s;
+}
+.animateCircel.playOn ellipse:nth-child(220) {
+  animation-delay: 110s;
+}
+.animateCircel.playOn ellipse:nth-child(221) {
+  animation-delay: 110.5s;
+}
+.animateCircel.playOn ellipse:nth-child(222) {
+  animation-delay: 111s;
+}
+.animateCircel.playOn ellipse:nth-child(223) {
+  animation-delay: 111.5s;
+}
+.animateCircel.playOn ellipse:nth-child(224) {
+  animation-delay: 112s;
+}
+.animateCircel.playOn ellipse:nth-child(225) {
+  animation-delay: 112.5s;
+}
+.animateCircel.playOn ellipse:nth-child(226) {
+  animation-delay: 113s;
+}
+.animateCircel.playOn ellipse:nth-child(227) {
+  animation-delay: 113.5s;
+}
+.animateCircel.playOn ellipse:nth-child(228) {
+  animation-delay: 114s;
+}
+.animateCircel.playOn ellipse:nth-child(229) {
+  animation-delay: 114.5s;
+}
+.animateCircel.playOn ellipse:nth-child(230) {
+  animation-delay: 115s;
+}
+.animateCircel.playOn ellipse:nth-child(231) {
+  animation-delay: 115.5s;
+}
+.animateCircel.playOn ellipse:nth-child(232) {
+  animation-delay: 116s;
+}
+.animateCircel.playOn ellipse:nth-child(233) {
+  animation-delay: 116.5s;
+}
+.animateCircel.playOn ellipse:nth-child(234) {
+  animation-delay: 117s;
+}
+.animateCircel.playOn ellipse:nth-child(235) {
+  animation-delay: 117.5s;
+}
+.animateCircel.playOn ellipse:nth-child(236) {
+  animation-delay: 118s;
+}
+.animateCircel.playOn ellipse:nth-child(237) {
+  animation-delay: 118.5s;
+}
+.animateCircel.playOn ellipse:nth-child(238) {
+  animation-delay: 119s;
+}
+.animateCircel.playOn ellipse:nth-child(239) {
+  animation-delay: 119.5s;
+}
+.animateCircel.playOn ellipse:nth-child(240) {
+  animation-delay: 120s;
+}
+.animateCircel.playOn ellipse:nth-child(241) {
+  animation-delay: 120.5s;
+}
+.animateCircel.playOn ellipse:nth-child(242) {
+  animation-delay: 121s;
+}
+.animateCircel.playOn ellipse:nth-child(243) {
+  animation-delay: 121.5s;
+}
+.animateCircel.playOn ellipse:nth-child(244) {
+  animation-delay: 122s;
+}
+.animateCircel.playOn ellipse:nth-child(245) {
+  animation-delay: 122.5s;
+}
+.animateCircel.playOn ellipse:nth-child(246) {
+  animation-delay: 123s;
+}
+.animateCircel.playOn ellipse:nth-child(247) {
+  animation-delay: 123.5s;
+}
+.animateCircel.playOn ellipse:nth-child(248) {
+  animation-delay: 124s;
+}
+.animateCircel.playOn ellipse:nth-child(249) {
+  animation-delay: 124.5s;
+}
+.animateCircel.playOn ellipse:nth-child(250) {
+  animation-delay: 125s;
+}
+.animateCircel.playOn ellipse:nth-child(251) {
+  animation-delay: 125.5s;
+}
+.animateCircel.playOn ellipse:nth-child(252) {
+  animation-delay: 126s;
+}
+.animateCircel.playOn ellipse:nth-child(253) {
+  animation-delay: 126.5s;
+}
+.animateCircel.playOn ellipse:nth-child(254) {
+  animation-delay: 127s;
+}
+.animateCircel.playOn ellipse:nth-child(255) {
+  animation-delay: 127.5s;
+}
+.animateCircel.playOn ellipse:nth-child(256) {
+  animation-delay: 128s;
+}
+.animateCircel.playOn ellipse:nth-child(257) {
+  animation-delay: 128.5s;
+}
+.animateCircel.playOn ellipse:nth-child(258) {
+  animation-delay: 129s;
+}
+.animateCircel.playOn ellipse:nth-child(259) {
+  animation-delay: 129.5s;
+}
+.animateCircel.playOn ellipse:nth-child(260) {
+  animation-delay: 130s;
+}
+.animateCircel.playOn ellipse:nth-child(261) {
+  animation-delay: 130.5s;
+}
+.animateCircel.playOn ellipse:nth-child(262) {
+  animation-delay: 131s;
+}
+.animateCircel.playOn ellipse:nth-child(263) {
+  animation-delay: 131.5s;
+}
+.animateCircel.playOn ellipse:nth-child(264) {
+  animation-delay: 132s;
+}
+.animateCircel.playOn ellipse:nth-child(265) {
+  animation-delay: 132.5s;
+}
+.animateCircel.playOn ellipse:nth-child(266) {
+  animation-delay: 133s;
+}
+.animateCircel.playOn ellipse:nth-child(267) {
+  animation-delay: 133.5s;
+}
+.animateCircel.playOn ellipse:nth-child(268) {
+  animation-delay: 134s;
+}
+.animateCircel.playOn ellipse:nth-child(269) {
+  animation-delay: 134.5s;
+}
+.animateCircel.playOn ellipse:nth-child(270) {
+  animation-delay: 135s;
+}
+.animateCircel.playOn ellipse:nth-child(271) {
+  animation-delay: 135.5s;
+}
+.animateCircel.playOn ellipse:nth-child(272) {
+  animation-delay: 136s;
+}
+.animateCircel.playOn ellipse:nth-child(273) {
+  animation-delay: 136.5s;
+}
+.animateCircel.playOn ellipse:nth-child(274) {
+  animation-delay: 137s;
+}
+.animateCircel.playOn ellipse:nth-child(275) {
+  animation-delay: 137.5s;
+}
+.animateCircel.playOn ellipse:nth-child(276) {
+  animation-delay: 138s;
+}
+.animateCircel.playOn ellipse:nth-child(277) {
+  animation-delay: 138.5s;
+}
+.animateCircel.playOn ellipse:nth-child(278) {
+  animation-delay: 139s;
+}
+.animateCircel.playOn ellipse:nth-child(279) {
+  animation-delay: 139.5s;
+}
+.animateCircel.playOn ellipse:nth-child(280) {
+  animation-delay: 140s;
+}
+.animateCircel.playOn ellipse:nth-child(281) {
+  animation-delay: 140.5s;
+}
+.animateCircel.playOn ellipse:nth-child(282) {
+  animation-delay: 141s;
+}
+.animateCircel.playOn ellipse:nth-child(283) {
+  animation-delay: 141.5s;
+}
+.animateCircel.playOn ellipse:nth-child(284) {
+  animation-delay: 142s;
+}
+.animateCircel.playOn ellipse:nth-child(285) {
+  animation-delay: 142.5s;
+}
+.animateCircel.playOn ellipse:nth-child(286) {
+  animation-delay: 143s;
+}
+.animateCircel.playOn ellipse:nth-child(287) {
+  animation-delay: 143.5s;
+}
+.animateCircel.playOn ellipse:nth-child(288) {
+  animation-delay: 144s;
+}
+.animateCircel.playOn ellipse:nth-child(289) {
+  animation-delay: 144.5s;
+}
+.animateCircel.playOn ellipse:nth-child(290) {
+  animation-delay: 145s;
+}
+.animateCircel.playOn ellipse:nth-child(291) {
+  animation-delay: 145.5s;
+}
+.animateCircel.playOn ellipse:nth-child(292) {
+  animation-delay: 146s;
+}
+.animateCircel.playOn ellipse:nth-child(293) {
+  animation-delay: 146.5s;
+}
+.animateCircel.playOn ellipse:nth-child(294) {
+  animation-delay: 147s;
+}
+.animateCircel.playOn ellipse:nth-child(295) {
+  animation-delay: 147.5s;
+}
+.animateCircel.playOn ellipse:nth-child(296) {
+  animation-delay: 148s;
+}
+.animateCircel.playOn ellipse:nth-child(297) {
+  animation-delay: 148.5s;
+}
+.animateCircel.playOn ellipse:nth-child(298) {
+  animation-delay: 149s;
+}
+.animateCircel.playOn ellipse:nth-child(299) {
+  animation-delay: 149.5s;
+}
+.animateCircel.playOn ellipse:nth-child(300) {
+  animation-delay: 150s;
+}
+.animateCircel.playOn ellipse:nth-child(301) {
+  animation-delay: 150.5s;
+}
+.animateCircel.playOn ellipse:nth-child(302) {
+  animation-delay: 151s;
+}
+.animateCircel.playOn ellipse:nth-child(303) {
+  animation-delay: 151.5s;
+}
+.animateCircel.playOn ellipse:nth-child(304) {
+  animation-delay: 152s;
+}
+.animateCircel.playOn ellipse:nth-child(305) {
+  animation-delay: 152.5s;
+}
+.animateCircel.playOn ellipse:nth-child(306) {
+  animation-delay: 153s;
+}
+.animateCircel.playOn ellipse:nth-child(307) {
+  animation-delay: 153.5s;
+}
+.animateCircel.playOn ellipse:nth-child(308) {
+  animation-delay: 154s;
+}
+.animateCircel.playOn ellipse:nth-child(309) {
+  animation-delay: 154.5s;
+}
+.animateCircel.playOn ellipse:nth-child(310) {
+  animation-delay: 155s;
+}
+.animateCircel.playOn ellipse:nth-child(311) {
+  animation-delay: 155.5s;
+}
+.animateCircel.playOn ellipse:nth-child(312) {
+  animation-delay: 156s;
+}
+.animateCircel.playOn ellipse:nth-child(313) {
+  animation-delay: 156.5s;
+}
+.animateCircel.playOn ellipse:nth-child(314) {
+  animation-delay: 157s;
+}
+.animateCircel.playOn ellipse:nth-child(315) {
+  animation-delay: 157.5s;
+}
+.animateCircel.playOn ellipse:nth-child(316) {
+  animation-delay: 158s;
+}
+.animateCircel.playOn ellipse:nth-child(317) {
+  animation-delay: 158.5s;
+}
+.animateCircel.playOn ellipse:nth-child(318) {
+  animation-delay: 159s;
+}
+.animateCircel.playOn ellipse:nth-child(319) {
+  animation-delay: 159.5s;
+}
+.animateCircel.playOn ellipse:nth-child(320) {
+  animation-delay: 160s;
+}
+.animateCircel.playOn ellipse:nth-child(321) {
+  animation-delay: 160.5s;
+}
+.animateCircel.playOn ellipse:nth-child(322) {
+  animation-delay: 161s;
+}
+.animateCircel.playOn ellipse:nth-child(323) {
+  animation-delay: 161.5s;
+}
+.animateCircel.playOn ellipse:nth-child(324) {
+  animation-delay: 162s;
+}
+.animateCircel.playOn ellipse:nth-child(325) {
+  animation-delay: 162.5s;
+}
+.animateCircel.playOn ellipse:nth-child(326) {
+  animation-delay: 163s;
+}
+.animateCircel.playOn ellipse:nth-child(327) {
+  animation-delay: 163.5s;
+}
+.animateCircel.playOn ellipse:nth-child(328) {
+  animation-delay: 164s;
+}
+.animateCircel.playOn ellipse:nth-child(329) {
+  animation-delay: 164.5s;
+}
+.animateCircel.playOn ellipse:nth-child(330) {
+  animation-delay: 165s;
+}
+.animateCircel.playOn ellipse:nth-child(331) {
+  animation-delay: 165.5s;
+}
+.animateCircel.playOn ellipse:nth-child(332) {
+  animation-delay: 166s;
+}
+.animateCircel.playOn ellipse:nth-child(333) {
+  animation-delay: 166.5s;
+}
+.animateCircel.playOn ellipse:nth-child(334) {
+  animation-delay: 167s;
+}
+.animateCircel.playOn ellipse:nth-child(335) {
+  animation-delay: 167.5s;
+}
+.animateCircel.playOn ellipse:nth-child(336) {
+  animation-delay: 168s;
+}
+.animateCircel.playOn ellipse:nth-child(337) {
+  animation-delay: 168.5s;
+}
+.animateCircel.playOn ellipse:nth-child(338) {
+  animation-delay: 169s;
+}
+.animateCircel.playOn ellipse:nth-child(339) {
+  animation-delay: 169.5s;
+}
+.animateCircel.playOn ellipse:nth-child(340) {
+  animation-delay: 170s;
+}
+.animateCircel.playOn ellipse:nth-child(341) {
+  animation-delay: 170.5s;
+}
+.animateCircel.playOn ellipse:nth-child(342) {
+  animation-delay: 171s;
+}
+.animateCircel.playOn ellipse:nth-child(343) {
+  animation-delay: 171.5s;
+}
+.animateCircel.playOn ellipse:nth-child(344) {
+  animation-delay: 172s;
+}
+.animateCircel.playOn ellipse:nth-child(345) {
+  animation-delay: 172.5s;
+}
+.animateCircel.playOn ellipse:nth-child(346) {
+  animation-delay: 173s;
+}
+.animateCircel.playOn ellipse:nth-child(347) {
+  animation-delay: 173.5s;
+}
+.animateCircel.playOn ellipse:nth-child(348) {
+  animation-delay: 174s;
+}
+.animateCircel.playOn ellipse:nth-child(349) {
+  animation-delay: 174.5s;
+}
+.animateCircel.playOn ellipse:nth-child(350) {
+  animation-delay: 175s;
+}
+.animateCircel.playOn ellipse:nth-child(351) {
+  animation-delay: 175.5s;
+}
+.animateCircel.playOn ellipse:nth-child(352) {
+  animation-delay: 176s;
+}
+.animateCircel.playOn ellipse:nth-child(353) {
+  animation-delay: 176.5s;
+}
+.animateCircel.playOn ellipse:nth-child(354) {
+  animation-delay: 177s;
+}
+.animateCircel.playOn ellipse:nth-child(355) {
+  animation-delay: 177.5s;
+}
+.animateCircel.playOn ellipse:nth-child(356) {
+  animation-delay: 178s;
+}
+.animateCircel.playOn ellipse:nth-child(357) {
+  animation-delay: 178.5s;
+}
+.animateCircel.playOn ellipse:nth-child(358) {
+  animation-delay: 179s;
+}
+.animateCircel.playOn ellipse:nth-child(359) {
+  animation-delay: 179.5s;
+}
+.animateCircel.playOn ellipse:nth-child(360) {
+  animation-delay: 180s;
+}
+.animateCircel.playOn ellipse:nth-child(361) {
+  animation-delay: 180.5s;
+}
+.animateCircel.playOn ellipse:nth-child(362) {
+  animation-delay: 181s;
+}
+.animateCircel.playOn ellipse:nth-child(363) {
+  animation-delay: 181.5s;
+}
+.animateCircel.playOn ellipse:nth-child(364) {
+  animation-delay: 182s;
+}
+.animateCircel.playOn ellipse:nth-child(365) {
+  animation-delay: 182.5s;
+}
+.animateCircel.playOn ellipse:nth-child(366) {
+  animation-delay: 183s;
+}
+.animateCircel.playOn ellipse:nth-child(367) {
+  animation-delay: 183.5s;
+}
+.animateCircel.playOn ellipse:nth-child(368) {
+  animation-delay: 184s;
+}
+.animateCircel.playOn ellipse:nth-child(369) {
+  animation-delay: 184.5s;
+}
+.animateCircel.playOn ellipse:nth-child(370) {
+  animation-delay: 185s;
+}
+.animateCircel.playOn ellipse:nth-child(371) {
+  animation-delay: 185.5s;
+}
+.animateCircel.playOn ellipse:nth-child(372) {
+  animation-delay: 186s;
+}
+.animateCircel.playOn ellipse:nth-child(373) {
+  animation-delay: 186.5s;
+}
+.animateCircel.playOn ellipse:nth-child(374) {
+  animation-delay: 187s;
+}
+.animateCircel.playOn ellipse:nth-child(375) {
+  animation-delay: 187.5s;
+}
+.animateCircel.playOn ellipse:nth-child(376) {
+  animation-delay: 188s;
+}
+.animateCircel.playOn ellipse:nth-child(377) {
+  animation-delay: 188.5s;
+}
+.animateCircel.playOn ellipse:nth-child(378) {
+  animation-delay: 189s;
+}
+.animateCircel.playOn ellipse:nth-child(379) {
+  animation-delay: 189.5s;
+}
+.animateCircel.playOn ellipse:nth-child(380) {
+  animation-delay: 190s;
+}
+.animateCircel.playOn ellipse:nth-child(381) {
+  animation-delay: 190.5s;
+}
+.animateCircel.playOn ellipse:nth-child(382) {
+  animation-delay: 191s;
+}
+.animateCircel.playOn ellipse:nth-child(383) {
+  animation-delay: 191.5s;
+}
+.animateCircel.playOn ellipse:nth-child(384) {
+  animation-delay: 192s;
+}
+.animateCircel.playOn ellipse:nth-child(385) {
+  animation-delay: 192.5s;
+}
+.animateCircel.playOn ellipse:nth-child(386) {
+  animation-delay: 193s;
+}
+.animateCircel.playOn ellipse:nth-child(387) {
+  animation-delay: 193.5s;
+}
+.animateCircel.playOn ellipse:nth-child(388) {
+  animation-delay: 194s;
+}
+.animateCircel.playOn ellipse:nth-child(389) {
+  animation-delay: 194.5s;
+}
+.animateCircel.playOn ellipse:nth-child(390) {
+  animation-delay: 195s;
+}
+.animateCircel.playOn ellipse:nth-child(391) {
+  animation-delay: 195.5s;
+}
+.animateCircel.playOn ellipse:nth-child(392) {
+  animation-delay: 196s;
+}
+.animateCircel.playOn ellipse:nth-child(393) {
+  animation-delay: 196.5s;
+}
+.animateCircel.playOn ellipse:nth-child(394) {
+  animation-delay: 197s;
+}
+.animateCircel.playOn ellipse:nth-child(395) {
+  animation-delay: 197.5s;
+}
+.animateCircel.playOn ellipse:nth-child(396) {
+  animation-delay: 198s;
+}
+.animateCircel.playOn ellipse:nth-child(397) {
+  animation-delay: 198.5s;
+}
+.animateCircel.playOn ellipse:nth-child(398) {
+  animation-delay: 199s;
+}
+.animateCircel.playOn ellipse:nth-child(399) {
+  animation-delay: 199.5s;
+}
+.animateCircel.playOn ellipse:nth-child(400) {
+  animation-delay: 200s;
+}
+.animateCircel.playOn ellipse:nth-child(401) {
+  animation-delay: 200.5s;
+}
+.animateCircel.playOn ellipse:nth-child(402) {
+  animation-delay: 201s;
+}
+.animateCircel.playOn ellipse:nth-child(403) {
+  animation-delay: 201.5s;
+}
+.animateCircel.playOn ellipse:nth-child(404) {
+  animation-delay: 202s;
+}
+.animateCircel.playOn ellipse:nth-child(405) {
+  animation-delay: 202.5s;
+}
+.animateCircel.playOn ellipse:nth-child(406) {
+  animation-delay: 203s;
+}
+.animateCircel.playOn ellipse:nth-child(407) {
+  animation-delay: 203.5s;
+}
+.animateCircel.playOn ellipse:nth-child(408) {
+  animation-delay: 204s;
+}
+.animateCircel.playOn ellipse:nth-child(409) {
+  animation-delay: 204.5s;
+}
+.animateCircel.playOn ellipse:nth-child(410) {
+  animation-delay: 205s;
+}
+.animateCircel.playOn ellipse:nth-child(411) {
+  animation-delay: 205.5s;
+}
+.animateCircel.playOn ellipse:nth-child(412) {
+  animation-delay: 206s;
+}
+.animateCircel.playOn ellipse:nth-child(413) {
+  animation-delay: 206.5s;
+}
+.animateCircel.playOn ellipse:nth-child(414) {
+  animation-delay: 207s;
+}
+.animateCircel.playOn ellipse:nth-child(415) {
+  animation-delay: 207.5s;
+}
+.animateCircel.playOn ellipse:nth-child(416) {
+  animation-delay: 208s;
+}
+.animateCircel.playOn ellipse:nth-child(417) {
+  animation-delay: 208.5s;
+}
+.animateCircel.playOn ellipse:nth-child(418) {
+  animation-delay: 209s;
+}
+.animateCircel.playOn ellipse:nth-child(419) {
+  animation-delay: 209.5s;
+}
+.animateCircel.playOn ellipse:nth-child(420) {
+  animation-delay: 210s;
+}
+.animateCircel.playOn ellipse:nth-child(421) {
+  animation-delay: 210.5s;
+}
+.animateCircel.playOn ellipse:nth-child(422) {
+  animation-delay: 211s;
+}
+.animateCircel.playOn ellipse:nth-child(423) {
+  animation-delay: 211.5s;
+}
+.animateCircel.playOn ellipse:nth-child(424) {
+  animation-delay: 212s;
+}
+.animateCircel.playOn ellipse:nth-child(425) {
+  animation-delay: 212.5s;
+}
+.animateCircel.playOn ellipse:nth-child(426) {
+  animation-delay: 213s;
+}
+.animateCircel.playOn ellipse:nth-child(427) {
+  animation-delay: 213.5s;
+}
+.animateCircel.playOn ellipse:nth-child(428) {
+  animation-delay: 214s;
+}
+.animateCircel.playOn ellipse:nth-child(429) {
+  animation-delay: 214.5s;
+}
+.animateCircel.playOn ellipse:nth-child(430) {
+  animation-delay: 215s;
+}
+.animateCircel.playOn ellipse:nth-child(431) {
+  animation-delay: 215.5s;
+}
+.animateCircel.playOn ellipse:nth-child(432) {
+  animation-delay: 216s;
+}
+.animateCircel.playOn ellipse:nth-child(433) {
+  animation-delay: 216.5s;
+}
+.animateCircel.playOn ellipse:nth-child(434) {
+  animation-delay: 217s;
+}
+.animateCircel.playOn ellipse:nth-child(435) {
+  animation-delay: 217.5s;
+}
+.animateCircel.playOn ellipse:nth-child(436) {
+  animation-delay: 218s;
+}
+.animateCircel.playOn ellipse:nth-child(437) {
+  animation-delay: 218.5s;
+}
+.animateCircel.playOn ellipse:nth-child(438) {
+  animation-delay: 219s;
+}
+.animateCircel.playOn ellipse:nth-child(439) {
+  animation-delay: 219.5s;
+}
+.animateCircel.playOn ellipse:nth-child(440) {
+  animation-delay: 220s;
+}
+.animateCircel.playOn ellipse:nth-child(441) {
+  animation-delay: 220.5s;
+}
+.animateCircel.playOn ellipse:nth-child(442) {
+  animation-delay: 221s;
+}
+.animateCircel.playOn ellipse:nth-child(443) {
+  animation-delay: 221.5s;
+}
+.animateCircel.playOn ellipse:nth-child(444) {
+  animation-delay: 222s;
+}
+.animateCircel.playOn ellipse:nth-child(445) {
+  animation-delay: 222.5s;
+}
+.animateCircel.playOn ellipse:nth-child(446) {
+  animation-delay: 223s;
+}
+.animateCircel.playOn ellipse:nth-child(447) {
+  animation-delay: 223.5s;
+}
+.animateCircel.playOn ellipse:nth-child(448) {
+  animation-delay: 224s;
+}
+.animateCircel.playOn ellipse:nth-child(449) {
+  animation-delay: 224.5s;
+}
+.animateCircel.playOn ellipse:nth-child(450) {
+  animation-delay: 225s;
+}
+.animateCircel.playOn ellipse:nth-child(451) {
+  animation-delay: 225.5s;
+}
+.animateCircel.playOn ellipse:nth-child(452) {
+  animation-delay: 226s;
+}
+.animateCircel.playOn ellipse:nth-child(453) {
+  animation-delay: 226.5s;
+}
+.animateCircel.playOn ellipse:nth-child(454) {
+  animation-delay: 227s;
+}
+.animateCircel.playOn ellipse:nth-child(455) {
+  animation-delay: 227.5s;
+}
+.animateCircel.playOn ellipse:nth-child(456) {
+  animation-delay: 228s;
+}
+.animateCircel.playOn ellipse:nth-child(457) {
+  animation-delay: 228.5s;
+}
+.animateCircel.playOn ellipse:nth-child(458) {
+  animation-delay: 229s;
+}
+.animateCircel.playOn ellipse:nth-child(459) {
+  animation-delay: 229.5s;
+}
+.animateCircel.playOn ellipse:nth-child(460) {
+  animation-delay: 230s;
+}
+.animateCircel.playOn ellipse:nth-child(461) {
+  animation-delay: 230.5s;
+}
+.animateCircel.playOn ellipse:nth-child(462) {
+  animation-delay: 231s;
+}
+.animateCircel.playOn ellipse:nth-child(463) {
+  animation-delay: 231.5s;
+}
+.animateCircel.playOn ellipse:nth-child(464) {
+  animation-delay: 232s;
+}
+.animateCircel.playOn ellipse:nth-child(465) {
+  animation-delay: 232.5s;
+}
+.animateCircel.playOn ellipse:nth-child(466) {
+  animation-delay: 233s;
+}
+.animateCircel.playOn ellipse:nth-child(467) {
+  animation-delay: 233.5s;
+}
+.animateCircel.playOn ellipse:nth-child(468) {
+  animation-delay: 234s;
+}
+.animateCircel.playOn ellipse:nth-child(469) {
+  animation-delay: 234.5s;
+}
+.animateCircel.playOn ellipse:nth-child(470) {
+  animation-delay: 235s;
+}
+.animateCircel.playOn ellipse:nth-child(471) {
+  animation-delay: 235.5s;
+}
+.animateCircel.playOn ellipse:nth-child(472) {
+  animation-delay: 236s;
+}
+.animateCircel.playOn ellipse:nth-child(473) {
+  animation-delay: 236.5s;
+}
+.animateCircel.playOn ellipse:nth-child(474) {
+  animation-delay: 237s;
+}
+.animateCircel.playOn ellipse:nth-child(475) {
+  animation-delay: 237.5s;
+}
+.animateCircel.playOn ellipse:nth-child(476) {
+  animation-delay: 238s;
+}
+.animateCircel.playOn ellipse:nth-child(477) {
+  animation-delay: 238.5s;
+}
+.animateCircel.playOn ellipse:nth-child(478) {
+  animation-delay: 239s;
+}
+.animateCircel.playOn ellipse:nth-child(479) {
+  animation-delay: 239.5s;
+}
+.animateCircel.playOn ellipse:nth-child(480) {
+  animation-delay: 240s;
+}
+.animateCircel.playOn ellipse:nth-child(481) {
+  animation-delay: 240.5s;
+}
+.animateCircel.playOn ellipse:nth-child(482) {
+  animation-delay: 241s;
+}
+.animateCircel.playOn ellipse:nth-child(483) {
+  animation-delay: 241.5s;
+}
+.animateCircel.playOn ellipse:nth-child(484) {
+  animation-delay: 242s;
+}
+.animateCircel.playOn ellipse:nth-child(485) {
+  animation-delay: 242.5s;
+}
+.animateCircel.playOn ellipse:nth-child(486) {
+  animation-delay: 243s;
+}
+.animateCircel.playOn ellipse:nth-child(487) {
+  animation-delay: 243.5s;
+}
+.animateCircel.playOn ellipse:nth-child(488) {
+  animation-delay: 244s;
+}
+.animateCircel.playOn ellipse:nth-child(489) {
+  animation-delay: 244.5s;
+}
+.animateCircel.playOn ellipse:nth-child(490) {
+  animation-delay: 245s;
+}
+.animateCircel.playOn ellipse:nth-child(491) {
+  animation-delay: 245.5s;
+}
+.animateCircel.playOn ellipse:nth-child(492) {
+  animation-delay: 246s;
+}
+.animateCircel.playOn ellipse:nth-child(493) {
+  animation-delay: 246.5s;
+}
+.animateCircel.playOn ellipse:nth-child(494) {
+  animation-delay: 247s;
+}
+.animateCircel.playOn ellipse:nth-child(495) {
+  animation-delay: 247.5s;
+}
+.animateCircel.playOn ellipse:nth-child(496) {
+  animation-delay: 248s;
+}
+.animateCircel.playOn ellipse:nth-child(497) {
+  animation-delay: 248.5s;
+}
+.animateCircel.playOn ellipse:nth-child(498) {
+  animation-delay: 249s;
+}
+.animateCircel.playOn ellipse:nth-child(499) {
+  animation-delay: 249.5s;
+}
+.animateCircel.playOn ellipse:nth-child(500) {
+  animation-delay: 250s;
+}
+.animateCircel.playOn ellipse:nth-child(501) {
+  animation-delay: 250.5s;
+}
+.animateCircel.playOn ellipse:nth-child(502) {
+  animation-delay: 251s;
+}
+.animateCircel.playOn ellipse:nth-child(503) {
+  animation-delay: 251.5s;
+}
+.animateCircel.playOn ellipse:nth-child(504) {
+  animation-delay: 252s;
+}
+.animateCircel.playOn ellipse:nth-child(505) {
+  animation-delay: 252.5s;
+}
+.animateCircel.playOn ellipse:nth-child(506) {
+  animation-delay: 253s;
+}
+.animateCircel.playOn ellipse:nth-child(507) {
+  animation-delay: 253.5s;
+}
+.animateCircel.playOn ellipse:nth-child(508) {
+  animation-delay: 254s;
+}
+.animateCircel.playOn ellipse:nth-child(509) {
+  animation-delay: 254.5s;
+}
+.animateCircel.playOn ellipse:nth-child(510) {
+  animation-delay: 255s;
+}
+.animateCircel.playOn ellipse:nth-child(511) {
+  animation-delay: 255.5s;
+}
+.animateCircel.playOn ellipse:nth-child(512) {
+  animation-delay: 256s;
+}
+.animateCircel.playOn ellipse:nth-child(513) {
+  animation-delay: 256.5s;
+}
+.animateCircel.playOn ellipse:nth-child(514) {
+  animation-delay: 257s;
+}
+.animateCircel.playOn ellipse:nth-child(515) {
+  animation-delay: 257.5s;
+}
+.animateCircel.playOn ellipse:nth-child(516) {
+  animation-delay: 258s;
+}
+.animateCircel.playOn ellipse:nth-child(517) {
+  animation-delay: 258.5s;
+}
+.animateCircel.playOn ellipse:nth-child(518) {
+  animation-delay: 259s;
+}
+.animateCircel.playOn ellipse:nth-child(519) {
+  animation-delay: 259.5s;
+}
+.animateCircel.playOn ellipse:nth-child(520) {
+  animation-delay: 260s;
+}
+.animateCircel.playOn ellipse:nth-child(521) {
+  animation-delay: 260.5s;
+}
+.animateCircel.playOn ellipse:nth-child(522) {
+  animation-delay: 261s;
+}
+.animateCircel.playOn ellipse:nth-child(523) {
+  animation-delay: 261.5s;
+}
+.animateCircel.playOn ellipse:nth-child(524) {
+  animation-delay: 262s;
+}
+.animateCircel.playOn ellipse:nth-child(525) {
+  animation-delay: 262.5s;
+}
+.animateCircel.playOn ellipse:nth-child(526) {
+  animation-delay: 263s;
+}
+.animateCircel.playOn ellipse:nth-child(527) {
+  animation-delay: 263.5s;
+}
+.animateCircel.playOn ellipse:nth-child(528) {
+  animation-delay: 264s;
+}
+.animateCircel.playOn ellipse:nth-child(529) {
+  animation-delay: 264.5s;
+}
+.animateCircel.playOn ellipse:nth-child(530) {
+  animation-delay: 265s;
+}
+.animateCircel.playOn ellipse:nth-child(531) {
+  animation-delay: 265.5s;
+}
+.animateCircel.playOn ellipse:nth-child(532) {
+  animation-delay: 266s;
+}
+.animateCircel.playOn ellipse:nth-child(533) {
+  animation-delay: 266.5s;
+}
+.animateCircel.playOn ellipse:nth-child(534) {
+  animation-delay: 267s;
+}
+.animateCircel.playOn ellipse:nth-child(535) {
+  animation-delay: 267.5s;
+}
+.animateCircel.playOn ellipse:nth-child(536) {
+  animation-delay: 268s;
+}
+.animateCircel.playOn ellipse:nth-child(537) {
+  animation-delay: 268.5s;
+}
+.animateCircel.playOn ellipse:nth-child(538) {
+  animation-delay: 269s;
+}
+.animateCircel.playOn ellipse:nth-child(539) {
+  animation-delay: 269.5s;
+}
+.animateCircel.playOn ellipse:nth-child(540) {
+  animation-delay: 270s;
+}
+.animateCircel.playOn ellipse:nth-child(541) {
+  animation-delay: 270.5s;
+}
+.animateCircel.playOn ellipse:nth-child(542) {
+  animation-delay: 271s;
+}
+.animateCircel.playOn ellipse:nth-child(543) {
+  animation-delay: 271.5s;
+}
+.animateCircel.playOn ellipse:nth-child(544) {
+  animation-delay: 272s;
+}
+.animateCircel.playOn ellipse:nth-child(545) {
+  animation-delay: 272.5s;
+}
+.animateCircel.playOn ellipse:nth-child(546) {
+  animation-delay: 273s;
+}
+.animateCircel.playOn ellipse:nth-child(547) {
+  animation-delay: 273.5s;
+}
+.animateCircel.playOn ellipse:nth-child(548) {
+  animation-delay: 274s;
+}
+.animateCircel.playOn ellipse:nth-child(549) {
+  animation-delay: 274.5s;
+}
+.animateCircel.playOn ellipse:nth-child(550) {
+  animation-delay: 275s;
+}
+.animateCircel.playOn ellipse:nth-child(551) {
+  animation-delay: 275.5s;
+}
+.animateCircel.playOn ellipse:nth-child(552) {
+  animation-delay: 276s;
+}
+.animateCircel.playOn ellipse:nth-child(553) {
+  animation-delay: 276.5s;
+}
+.animateCircel.playOn ellipse:nth-child(554) {
+  animation-delay: 277s;
+}
+.animateCircel.playOn ellipse:nth-child(555) {
+  animation-delay: 277.5s;
+}
+.animateCircel.playOn ellipse:nth-child(556) {
+  animation-delay: 278s;
+}
+.animateCircel.playOn ellipse:nth-child(557) {
+  animation-delay: 278.5s;
+}
+.animateCircel.playOn ellipse:nth-child(558) {
+  animation-delay: 279s;
+}
+.animateCircel.playOn ellipse:nth-child(559) {
+  animation-delay: 279.5s;
+}
+.animateCircel.playOn ellipse:nth-child(560) {
+  animation-delay: 280s;
+}
+.animateCircel.playOn ellipse:nth-child(561) {
+  animation-delay: 280.5s;
+}
+.animateCircel.playOn ellipse:nth-child(562) {
+  animation-delay: 281s;
+}
+.animateCircel.playOn ellipse:nth-child(563) {
+  animation-delay: 281.5s;
+}
+.animateCircel.playOn ellipse:nth-child(564) {
+  animation-delay: 282s;
+}
+.animateCircel.playOn ellipse:nth-child(565) {
+  animation-delay: 282.5s;
+}
+.animateCircel.playOn ellipse:nth-child(566) {
+  animation-delay: 283s;
+}
+.animateCircel.playOn ellipse:nth-child(567) {
+  animation-delay: 283.5s;
+}
+.animateCircel.playOn ellipse:nth-child(568) {
+  animation-delay: 284s;
+}
+.animateCircel.playOn ellipse:nth-child(569) {
+  animation-delay: 284.5s;
+}
+.animateCircel.playOn ellipse:nth-child(570) {
+  animation-delay: 285s;
+}
+.animateCircel.playOn ellipse:nth-child(571) {
+  animation-delay: 285.5s;
+}
+.animateCircel.playOn ellipse:nth-child(572) {
+  animation-delay: 286s;
+}
+.animateCircel.playOn ellipse:nth-child(573) {
+  animation-delay: 286.5s;
+}
+.animateCircel.playOn ellipse:nth-child(574) {
+  animation-delay: 287s;
+}
+.animateCircel.playOn ellipse:nth-child(575) {
+  animation-delay: 287.5s;
+}
+.animateCircel.playOn ellipse:nth-child(576) {
+  animation-delay: 288s;
+}
+.animateCircel.playOn ellipse:nth-child(577) {
+  animation-delay: 288.5s;
+}
+.animateCircel.playOn ellipse:nth-child(578) {
+  animation-delay: 289s;
+}
+.animateCircel.playOn ellipse:nth-child(579) {
+  animation-delay: 289.5s;
+}
+.animateCircel.playOn ellipse:nth-child(580) {
+  animation-delay: 290s;
+}
+.animateCircel.playOn ellipse:nth-child(581) {
+  animation-delay: 290.5s;
+}
+.animateCircel.playOn ellipse:nth-child(582) {
+  animation-delay: 291s;
+}
+.animateCircel.playOn ellipse:nth-child(583) {
+  animation-delay: 291.5s;
+}
+.animateCircel.playOn ellipse:nth-child(584) {
+  animation-delay: 292s;
+}
+.animateCircel.playOn ellipse:nth-child(585) {
+  animation-delay: 292.5s;
+}
+.animateCircel.playOn ellipse:nth-child(586) {
+  animation-delay: 293s;
+}
+.animateCircel.playOn ellipse:nth-child(587) {
+  animation-delay: 293.5s;
+}
+.animateCircel.playOn ellipse:nth-child(588) {
+  animation-delay: 294s;
+}
+.animateCircel.playOn ellipse:nth-child(589) {
+  animation-delay: 294.5s;
+}
+.animateCircel.playOn ellipse:nth-child(590) {
+  animation-delay: 295s;
+}
+.animateCircel.playOn ellipse:nth-child(591) {
+  animation-delay: 295.5s;
+}
+.animateCircel.playOn ellipse:nth-child(592) {
+  animation-delay: 296s;
+}
+.animateCircel.playOn ellipse:nth-child(593) {
+  animation-delay: 296.5s;
+}
+.animateCircel.playOn ellipse:nth-child(594) {
+  animation-delay: 297s;
+}
+.animateCircel.playOn ellipse:nth-child(595) {
+  animation-delay: 297.5s;
+}
+.animateCircel.playOn ellipse:nth-child(596) {
+  animation-delay: 298s;
+}
+.animateCircel.playOn ellipse:nth-child(597) {
+  animation-delay: 298.5s;
+}
+.animateCircel.playOn ellipse:nth-child(598) {
+  animation-delay: 299s;
+}
+.animateCircel.playOn ellipse:nth-child(599) {
+  animation-delay: 299.5s;
+}
+.animateCircel.playOn ellipse:nth-child(600) {
+  animation-delay: 300s;
+}
+.animateCircel.playOn ellipse:nth-child(601) {
+  animation-delay: 300.5s;
+}
+.animateCircel.playOn ellipse:nth-child(602) {
+  animation-delay: 301s;
+}
+.animateCircel.playOn ellipse:nth-child(603) {
+  animation-delay: 301.5s;
+}
+.animateCircel.playOn ellipse:nth-child(604) {
+  animation-delay: 302s;
+}
+.animateCircel.playOn ellipse:nth-child(605) {
+  animation-delay: 302.5s;
+}
+.animateCircel.playOn ellipse:nth-child(606) {
+  animation-delay: 303s;
+}
+.animateCircel.playOn ellipse:nth-child(607) {
+  animation-delay: 303.5s;
+}
+.animateCircel.playOn ellipse:nth-child(608) {
+  animation-delay: 304s;
+}
+.animateCircel.playOn ellipse:nth-child(609) {
+  animation-delay: 304.5s;
+}
+.animateCircel.playOn ellipse:nth-child(610) {
+  animation-delay: 305s;
+}
+.animateCircel.playOn ellipse:nth-child(611) {
+  animation-delay: 305.5s;
+}
+.animateCircel.playOn ellipse:nth-child(612) {
+  animation-delay: 306s;
+}
+.animateCircel.playOn ellipse:nth-child(613) {
+  animation-delay: 306.5s;
+}
+.animateCircel.playOn ellipse:nth-child(614) {
+  animation-delay: 307s;
+}
+.animateCircel.playOn ellipse:nth-child(615) {
+  animation-delay: 307.5s;
+}
+.animateCircel.playOn ellipse:nth-child(616) {
+  animation-delay: 308s;
+}
+.animateCircel.playOn ellipse:nth-child(617) {
+  animation-delay: 308.5s;
+}
+.animateCircel.playOn ellipse:nth-child(618) {
+  animation-delay: 309s;
+}
+.animateCircel.playOn ellipse:nth-child(619) {
+  animation-delay: 309.5s;
+}
+.animateCircel.playOn ellipse:nth-child(620) {
+  animation-delay: 310s;
+}
+.animateCircel.playOn ellipse:nth-child(621) {
+  animation-delay: 310.5s;
+}
+.animateCircel.playOn ellipse:nth-child(622) {
+  animation-delay: 311s;
+}
+.animateCircel.playOn ellipse:nth-child(623) {
+  animation-delay: 311.5s;
+}
+.animateCircel.playOn ellipse:nth-child(624) {
+  animation-delay: 312s;
+}
+.animateCircel.playOn ellipse:nth-child(625) {
+  animation-delay: 312.5s;
+}
+.animateCircel.playOn ellipse:nth-child(626) {
+  animation-delay: 313s;
+}
+.animateCircel.playOn ellipse:nth-child(627) {
+  animation-delay: 313.5s;
+}
+.animateCircel.playOn ellipse:nth-child(628) {
+  animation-delay: 314s;
+}
+.animateCircel.playOn ellipse:nth-child(629) {
+  animation-delay: 314.5s;
+}
+.animateCircel.playOn ellipse:nth-child(630) {
+  animation-delay: 315s;
+}
+.animateCircel.playOn ellipse:nth-child(631) {
+  animation-delay: 315.5s;
+}
+.animateCircel.playOn ellipse:nth-child(632) {
+  animation-delay: 316s;
+}
+.animateCircel.playOn ellipse:nth-child(633) {
+  animation-delay: 316.5s;
+}
+.animateCircel.playOn ellipse:nth-child(634) {
+  animation-delay: 317s;
+}
+.animateCircel.playOn ellipse:nth-child(635) {
+  animation-delay: 317.5s;
+}
+.animateCircel.playOn ellipse:nth-child(636) {
+  animation-delay: 318s;
+}
+.animateCircel.playOn ellipse:nth-child(637) {
+  animation-delay: 318.5s;
+}
+.animateCircel.playOn ellipse:nth-child(638) {
+  animation-delay: 319s;
+}
+.animateCircel.playOn ellipse:nth-child(639) {
+  animation-delay: 319.5s;
+}
+.animateCircel.playOn ellipse:nth-child(640) {
+  animation-delay: 320s;
+}
+.animateCircel.playOn ellipse:nth-child(641) {
+  animation-delay: 320.5s;
+}
+.animateCircel.playOn ellipse:nth-child(642) {
+  animation-delay: 321s;
+}
+.animateCircel.playOn ellipse:nth-child(643) {
+  animation-delay: 321.5s;
+}
+.animateCircel.playOn ellipse:nth-child(644) {
+  animation-delay: 322s;
+}
+.animateCircel.playOn ellipse:nth-child(645) {
+  animation-delay: 322.5s;
+}
+.animateCircel.playOn ellipse:nth-child(646) {
+  animation-delay: 323s;
+}
+.animateCircel.playOn ellipse:nth-child(647) {
+  animation-delay: 323.5s;
+}
+.animateCircel.playOn ellipse:nth-child(648) {
+  animation-delay: 324s;
+}
+.animateCircel.playOn ellipse:nth-child(649) {
+  animation-delay: 324.5s;
+}
+.animateCircel.playOn ellipse:nth-child(650) {
+  animation-delay: 325s;
+}
+.animateCircel.playOn ellipse:nth-child(651) {
+  animation-delay: 325.5s;
+}
+.animateCircel.playOn ellipse:nth-child(652) {
+  animation-delay: 326s;
+}
+.animateCircel.playOn ellipse:nth-child(653) {
+  animation-delay: 326.5s;
+}
+.animateCircel.playOn ellipse:nth-child(654) {
+  animation-delay: 327s;
+}
+.animateCircel.playOn ellipse:nth-child(655) {
+  animation-delay: 327.5s;
+}
+.animateCircel.playOn ellipse:nth-child(656) {
+  animation-delay: 328s;
+}
+.animateCircel.playOn ellipse:nth-child(657) {
+  animation-delay: 328.5s;
+}
+.animateCircel.playOn ellipse:nth-child(658) {
+  animation-delay: 329s;
+}
+.animateCircel.playOn ellipse:nth-child(659) {
+  animation-delay: 329.5s;
+}
+.animateCircel.playOn ellipse:nth-child(660) {
+  animation-delay: 330s;
+}
+.animateCircel.playOn ellipse:nth-child(661) {
+  animation-delay: 330.5s;
+}
+.animateCircel.playOn ellipse:nth-child(662) {
+  animation-delay: 331s;
+}
+.animateCircel.playOn ellipse:nth-child(663) {
+  animation-delay: 331.5s;
+}
+.animateCircel.playOn ellipse:nth-child(664) {
+  animation-delay: 332s;
+}
+.animateCircel.playOn ellipse:nth-child(665) {
+  animation-delay: 332.5s;
+}
+.animateCircel.playOn ellipse:nth-child(666) {
+  animation-delay: 333s;
+}
+.animateCircel.playOn ellipse:nth-child(667) {
+  animation-delay: 333.5s;
+}
+.animateCircel.playOn ellipse:nth-child(668) {
+  animation-delay: 334s;
+}
+.animateCircel.playOn ellipse:nth-child(669) {
+  animation-delay: 334.5s;
+}
+.animateCircel.playOn ellipse:nth-child(670) {
+  animation-delay: 335s;
+}
+.animateCircel.playOn ellipse:nth-child(671) {
+  animation-delay: 335.5s;
+}
+.animateCircel.playOn ellipse:nth-child(672) {
+  animation-delay: 336s;
+}
+.animateCircel.playOn ellipse:nth-child(673) {
+  animation-delay: 336.5s;
+}
+.animateCircel.playOn ellipse:nth-child(674) {
+  animation-delay: 337s;
+}
+.animateCircel.playOn ellipse:nth-child(675) {
+  animation-delay: 337.5s;
+}
+.animateCircel.playOn ellipse:nth-child(676) {
+  animation-delay: 338s;
+}
+.animateCircel.playOn ellipse:nth-child(677) {
+  animation-delay: 338.5s;
+}
+.animateCircel.playOn ellipse:nth-child(678) {
+  animation-delay: 339s;
+}
+.animateCircel.playOn ellipse:nth-child(679) {
+  animation-delay: 339.5s;
+}
+.animateCircel.playOn ellipse:nth-child(680) {
+  animation-delay: 340s;
+}
+.animateCircel.playOn ellipse:nth-child(681) {
+  animation-delay: 340.5s;
+}
+.animateCircel.playOn ellipse:nth-child(682) {
+  animation-delay: 341s;
+}
+.animateCircel.playOn ellipse:nth-child(683) {
+  animation-delay: 341.5s;
+}
+.animateCircel.playOn ellipse:nth-child(684) {
+  animation-delay: 342s;
+}
+.animateCircel.playOn ellipse:nth-child(685) {
+  animation-delay: 342.5s;
+}
+.animateCircel.playOn ellipse:nth-child(686) {
+  animation-delay: 343s;
+}
+.animateCircel.playOn ellipse:nth-child(687) {
+  animation-delay: 343.5s;
+}
+.animateCircel.playOn ellipse:nth-child(688) {
+  animation-delay: 344s;
+}
+.animateCircel.playOn ellipse:nth-child(689) {
+  animation-delay: 344.5s;
+}
+.animateCircel.playOn ellipse:nth-child(690) {
+  animation-delay: 345s;
+}
+.animateCircel.playOn ellipse:nth-child(691) {
+  animation-delay: 345.5s;
+}
+.animateCircel.playOn ellipse:nth-child(692) {
+  animation-delay: 346s;
+}
+.animateCircel.playOn ellipse:nth-child(693) {
+  animation-delay: 346.5s;
+}
+.animateCircel.playOn ellipse:nth-child(694) {
+  animation-delay: 347s;
+}
+.animateCircel.playOn ellipse:nth-child(695) {
+  animation-delay: 347.5s;
+}
+.animateCircel.playOn ellipse:nth-child(696) {
+  animation-delay: 348s;
+}
+.animateCircel.playOn ellipse:nth-child(697) {
+  animation-delay: 348.5s;
+}
+.animateCircel.playOn ellipse:nth-child(698) {
+  animation-delay: 349s;
+}
+.animateCircel.playOn ellipse:nth-child(699) {
+  animation-delay: 349.5s;
+}
+.animateCircel.playOn ellipse:nth-child(700) {
+  animation-delay: 350s;
+}
+.animateCircel.playOn ellipse:nth-child(701) {
+  animation-delay: 350.5s;
+}
+.animateCircel.playOn ellipse:nth-child(702) {
+  animation-delay: 351s;
+}
+.animateCircel.playOn ellipse:nth-child(703) {
+  animation-delay: 351.5s;
+}
+.animateCircel.playOn ellipse:nth-child(704) {
+  animation-delay: 352s;
+}
+.animateCircel.playOn ellipse:nth-child(705) {
+  animation-delay: 352.5s;
+}
+.animateCircel.playOn ellipse:nth-child(706) {
+  animation-delay: 353s;
+}
+.animateCircel.playOn ellipse:nth-child(707) {
+  animation-delay: 353.5s;
+}
+.animateCircel.playOn ellipse:nth-child(708) {
+  animation-delay: 354s;
+}
+.animateCircel.playOn ellipse:nth-child(709) {
+  animation-delay: 354.5s;
+}
+.animateCircel.playOn ellipse:nth-child(710) {
+  animation-delay: 355s;
+}
+.animateCircel.playOn ellipse:nth-child(711) {
+  animation-delay: 355.5s;
+}
+.animateCircel.playOn ellipse:nth-child(712) {
+  animation-delay: 356s;
+}
+.animateCircel.playOn ellipse:nth-child(713) {
+  animation-delay: 356.5s;
+}
+.animateCircel.playOn ellipse:nth-child(714) {
+  animation-delay: 357s;
+}
+.animateCircel.playOn ellipse:nth-child(715) {
+  animation-delay: 357.5s;
+}
+.animateCircel.playOn ellipse:nth-child(716) {
+  animation-delay: 358s;
+}
+.animateCircel.playOn ellipse:nth-child(717) {
+  animation-delay: 358.5s;
+}
+.animateCircel.playOn ellipse:nth-child(718) {
+  animation-delay: 359s;
+}
+.animateCircel.playOn ellipse:nth-child(719) {
+  animation-delay: 359.5s;
+}
+.animateCircel.playOn ellipse:nth-child(720) {
+  animation-delay: 360s;
+}
+.animateCircel.playOn ellipse:nth-child(721) {
+  animation-delay: 360.5s;
+}
+.animateCircel.playOn ellipse:nth-child(722) {
+  animation-delay: 361s;
+}
+.animateCircel.playOn ellipse:nth-child(723) {
+  animation-delay: 361.5s;
+}
+.animateCircel.playOn ellipse:nth-child(724) {
+  animation-delay: 362s;
+}
+.animateCircel.playOn ellipse:nth-child(725) {
+  animation-delay: 362.5s;
+}
+.animateCircel.playOn ellipse:nth-child(726) {
+  animation-delay: 363s;
+}
+.animateCircel.playOn ellipse:nth-child(727) {
+  animation-delay: 363.5s;
+}
+.animateCircel.playOn ellipse:nth-child(728) {
+  animation-delay: 364s;
+}
+.animateCircel.playOn ellipse:nth-child(729) {
+  animation-delay: 364.5s;
+}
+.animateCircel.playOn ellipse:nth-child(730) {
+  animation-delay: 365s;
+}
+.animateCircel.playOn ellipse:nth-child(731) {
+  animation-delay: 365.5s;
+}
+.animateCircel.playOn ellipse:nth-child(732) {
+  animation-delay: 366s;
+}
+.animateCircel.playOn ellipse:nth-child(733) {
+  animation-delay: 366.5s;
+}
+.animateCircel.playOn ellipse:nth-child(734) {
+  animation-delay: 367s;
+}
+.animateCircel.playOn ellipse:nth-child(735) {
+  animation-delay: 367.5s;
+}
+.animateCircel.playOn ellipse:nth-child(736) {
+  animation-delay: 368s;
+}
+.animateCircel.playOn ellipse:nth-child(737) {
+  animation-delay: 368.5s;
+}
+.animateCircel.playOn ellipse:nth-child(738) {
+  animation-delay: 369s;
+}
+.animateCircel.playOn ellipse:nth-child(739) {
+  animation-delay: 369.5s;
+}
+.animateCircel.playOn ellipse:nth-child(740) {
+  animation-delay: 370s;
+}
+.animateCircel.playOn ellipse:nth-child(741) {
+  animation-delay: 370.5s;
+}
+.animateCircel.playOn ellipse:nth-child(742) {
+  animation-delay: 371s;
+}
+.animateCircel.playOn ellipse:nth-child(743) {
+  animation-delay: 371.5s;
+}
+.animateCircel.playOn ellipse:nth-child(744) {
+  animation-delay: 372s;
+}
+.animateCircel.playOn ellipse:nth-child(745) {
+  animation-delay: 372.5s;
+}
+.animateCircel.playOn ellipse:nth-child(746) {
+  animation-delay: 373s;
+}
+.animateCircel.playOn ellipse:nth-child(747) {
+  animation-delay: 373.5s;
+}
+.animateCircel.playOn ellipse:nth-child(748) {
+  animation-delay: 374s;
+}
+.animateCircel.playOn ellipse:nth-child(749) {
+  animation-delay: 374.5s;
+}
+.animateCircel.playOn ellipse:nth-child(750) {
+  animation-delay: 375s;
+}
+.animateCircel.playOn ellipse:nth-child(751) {
+  animation-delay: 375.5s;
+}
+.animateCircel.playOn ellipse:nth-child(752) {
+  animation-delay: 376s;
+}
+.animateCircel.playOn ellipse:nth-child(753) {
+  animation-delay: 376.5s;
+}
+.animateCircel.playOn ellipse:nth-child(754) {
+  animation-delay: 377s;
+}
+.animateCircel.playOn ellipse:nth-child(755) {
+  animation-delay: 377.5s;
+}
+.animateCircel.playOn ellipse:nth-child(756) {
+  animation-delay: 378s;
+}
+.animateCircel.playOn ellipse:nth-child(757) {
+  animation-delay: 378.5s;
+}
+.animateCircel.playOn ellipse:nth-child(758) {
+  animation-delay: 379s;
+}
+.animateCircel.playOn ellipse:nth-child(759) {
+  animation-delay: 379.5s;
+}
+.animateCircel.playOn ellipse:nth-child(760) {
+  animation-delay: 380s;
+}
+.animateCircel.playOn ellipse:nth-child(761) {
+  animation-delay: 380.5s;
+}
+.animateCircel.playOn ellipse:nth-child(762) {
+  animation-delay: 381s;
+}
+.animateCircel.playOn ellipse:nth-child(763) {
+  animation-delay: 381.5s;
+}
+.animateCircel.playOn ellipse:nth-child(764) {
+  animation-delay: 382s;
+}
+.animateCircel.playOn ellipse:nth-child(765) {
+  animation-delay: 382.5s;
+}
+.animateCircel.playOn ellipse:nth-child(766) {
+  animation-delay: 383s;
+}
+.animateCircel.playOn ellipse:nth-child(767) {
+  animation-delay: 383.5s;
+}
+.animateCircel.playOn ellipse:nth-child(768) {
+  animation-delay: 384s;
+}
+.animateCircel.playOn ellipse:nth-child(769) {
+  animation-delay: 384.5s;
+}
+.animateCircel.playOn ellipse:nth-child(770) {
+  animation-delay: 385s;
+}
+.animateCircel.playOn ellipse:nth-child(771) {
+  animation-delay: 385.5s;
+}
+.animateCircel.playOn ellipse:nth-child(772) {
+  animation-delay: 386s;
+}
+.animateCircel.playOn ellipse:nth-child(773) {
+  animation-delay: 386.5s;
+}
+.animateCircel.playOn ellipse:nth-child(774) {
+  animation-delay: 387s;
+}
+.animateCircel.playOn ellipse:nth-child(775) {
+  animation-delay: 387.5s;
+}
+.animateCircel.playOn ellipse:nth-child(776) {
+  animation-delay: 388s;
+}
+.animateCircel.playOn ellipse:nth-child(777) {
+  animation-delay: 388.5s;
+}
+.animateCircel.playOn ellipse:nth-child(778) {
+  animation-delay: 389s;
+}
+.animateCircel.playOn ellipse:nth-child(779) {
+  animation-delay: 389.5s;
+}
+.animateCircel.playOn ellipse:nth-child(780) {
+  animation-delay: 390s;
+}
+.animateCircel.playOn ellipse:nth-child(781) {
+  animation-delay: 390.5s;
+}
+.animateCircel.playOn ellipse:nth-child(782) {
+  animation-delay: 391s;
+}
+.animateCircel.playOn ellipse:nth-child(783) {
+  animation-delay: 391.5s;
+}
+.animateCircel.playOn ellipse:nth-child(784) {
+  animation-delay: 392s;
+}
+.animateCircel.playOn ellipse:nth-child(785) {
+  animation-delay: 392.5s;
+}
+.animateCircel.playOn ellipse:nth-child(786) {
+  animation-delay: 393s;
+}
+.animateCircel.playOn ellipse:nth-child(787) {
+  animation-delay: 393.5s;
+}
+.animateCircel.playOn ellipse:nth-child(788) {
+  animation-delay: 394s;
+}
+.animateCircel.playOn ellipse:nth-child(789) {
+  animation-delay: 394.5s;
+}
+.animateCircel.playOn ellipse:nth-child(790) {
+  animation-delay: 395s;
+}
+.animateCircel.playOn ellipse:nth-child(791) {
+  animation-delay: 395.5s;
+}
+.animateCircel.playOn ellipse:nth-child(792) {
+  animation-delay: 396s;
+}
+.animateCircel.playOn ellipse:nth-child(793) {
+  animation-delay: 396.5s;
+}
+.animateCircel.playOn ellipse:nth-child(794) {
+  animation-delay: 397s;
+}
+.animateCircel.playOn ellipse:nth-child(795) {
+  animation-delay: 397.5s;
+}
+.animateCircel.playOn ellipse:nth-child(796) {
+  animation-delay: 398s;
+}
+.animateCircel.playOn ellipse:nth-child(797) {
+  animation-delay: 398.5s;
+}
+.animateCircel.playOn ellipse:nth-child(798) {
+  animation-delay: 399s;
+}
+.animateCircel.playOn ellipse:nth-child(799) {
+  animation-delay: 399.5s;
+}
+.animateCircel.playOn ellipse:nth-child(800) {
+  animation-delay: 400s;
+}
+.animateCircel.playOn ellipse:nth-child(801) {
+  animation-delay: 400.5s;
+}
+.animateCircel.playOn ellipse:nth-child(802) {
+  animation-delay: 401s;
+}
+.animateCircel.playOn ellipse:nth-child(803) {
+  animation-delay: 401.5s;
+}
+.animateCircel.playOn ellipse:nth-child(804) {
+  animation-delay: 402s;
+}
+.animateCircel.playOn ellipse:nth-child(805) {
+  animation-delay: 402.5s;
+}
+.animateCircel.playOn ellipse:nth-child(806) {
+  animation-delay: 403s;
+}
+.animateCircel.playOn ellipse:nth-child(807) {
+  animation-delay: 403.5s;
+}
+.animateCircel.playOn ellipse:nth-child(808) {
+  animation-delay: 404s;
+}
+.animateCircel.playOn ellipse:nth-child(809) {
+  animation-delay: 404.5s;
+}
+.animateCircel.playOn ellipse:nth-child(810) {
+  animation-delay: 405s;
+}
+.animateCircel.playOn ellipse:nth-child(811) {
+  animation-delay: 405.5s;
+}
+.animateCircel.playOn ellipse:nth-child(812) {
+  animation-delay: 406s;
+}
+.animateCircel.playOn ellipse:nth-child(813) {
+  animation-delay: 406.5s;
+}
+.animateCircel.playOn ellipse:nth-child(814) {
+  animation-delay: 407s;
+}
+.animateCircel.playOn ellipse:nth-child(815) {
+  animation-delay: 407.5s;
+}
+.animateCircel.playOn ellipse:nth-child(816) {
+  animation-delay: 408s;
+}
+.animateCircel.playOn ellipse:nth-child(817) {
+  animation-delay: 408.5s;
+}
+.animateCircel.playOn ellipse:nth-child(818) {
+  animation-delay: 409s;
+}
+.animateCircel.playOn ellipse:nth-child(819) {
+  animation-delay: 409.5s;
+}
+.animateCircel.playOn ellipse:nth-child(820) {
+  animation-delay: 410s;
+}
+.animateCircel.playOn ellipse:nth-child(821) {
+  animation-delay: 410.5s;
+}
+.animateCircel.playOn ellipse:nth-child(822) {
+  animation-delay: 411s;
+}
+.animateCircel.playOn ellipse:nth-child(823) {
+  animation-delay: 411.5s;
+}
+.animateCircel.playOn ellipse:nth-child(824) {
+  animation-delay: 412s;
+}
+.animateCircel.playOn ellipse:nth-child(825) {
+  animation-delay: 412.5s;
+}
+.animateCircel.playOn ellipse:nth-child(826) {
+  animation-delay: 413s;
+}
+.animateCircel.playOn ellipse:nth-child(827) {
+  animation-delay: 413.5s;
+}
+.animateCircel.playOn ellipse:nth-child(828) {
+  animation-delay: 414s;
+}
+.animateCircel.playOn ellipse:nth-child(829) {
+  animation-delay: 414.5s;
+}
+.animateCircel.playOn ellipse:nth-child(830) {
+  animation-delay: 415s;
+}
+.animateCircel.playOn ellipse:nth-child(831) {
+  animation-delay: 415.5s;
+}
+.animateCircel.playOn ellipse:nth-child(832) {
+  animation-delay: 416s;
+}
+.animateCircel.playOn ellipse:nth-child(833) {
+  animation-delay: 416.5s;
+}
+.animateCircel.playOn ellipse:nth-child(834) {
+  animation-delay: 417s;
+}
+.animateCircel.playOn ellipse:nth-child(835) {
+  animation-delay: 417.5s;
+}
+.animateCircel.playOn ellipse:nth-child(836) {
+  animation-delay: 418s;
+}
+.animateCircel.playOn ellipse:nth-child(837) {
+  animation-delay: 418.5s;
+}
+.animateCircel.playOn ellipse:nth-child(838) {
+  animation-delay: 419s;
+}
+.animateCircel.playOn ellipse:nth-child(839) {
+  animation-delay: 419.5s;
+}
+.animateCircel.playOn ellipse:nth-child(840) {
+  animation-delay: 420s;
+}
+.animateCircel.playOn ellipse:nth-child(841) {
+  animation-delay: 420.5s;
+}
+.animateCircel.playOn ellipse:nth-child(842) {
+  animation-delay: 421s;
+}
+.animateCircel.playOn ellipse:nth-child(843) {
+  animation-delay: 421.5s;
+}
+.animateCircel.playOn ellipse:nth-child(844) {
+  animation-delay: 422s;
+}
+.animateCircel.playOn ellipse:nth-child(845) {
+  animation-delay: 422.5s;
+}
+.animateCircel.playOn ellipse:nth-child(846) {
+  animation-delay: 423s;
+}
+.animateCircel.playOn ellipse:nth-child(847) {
+  animation-delay: 423.5s;
+}
+.animateCircel.playOn ellipse:nth-child(848) {
+  animation-delay: 424s;
+}
+.animateCircel.playOn ellipse:nth-child(849) {
+  animation-delay: 424.5s;
+}
+.animateCircel.playOn ellipse:nth-child(850) {
+  animation-delay: 425s;
+}
+.animateCircel.playOn ellipse:nth-child(851) {
+  animation-delay: 425.5s;
+}
+.animateCircel.playOn ellipse:nth-child(852) {
+  animation-delay: 426s;
+}
+.animateCircel.playOn ellipse:nth-child(853) {
+  animation-delay: 426.5s;
+}
+.animateCircel.playOn ellipse:nth-child(854) {
+  animation-delay: 427s;
+}
+.animateCircel.playOn ellipse:nth-child(855) {
+  animation-delay: 427.5s;
+}
+.animateCircel.playOn ellipse:nth-child(856) {
+  animation-delay: 428s;
+}
+.animateCircel.playOn ellipse:nth-child(857) {
+  animation-delay: 428.5s;
+}
+.animateCircel.playOn ellipse:nth-child(858) {
+  animation-delay: 429s;
+}
+.animateCircel.playOn ellipse:nth-child(859) {
+  animation-delay: 429.5s;
+}
+.animateCircel.playOn ellipse:nth-child(860) {
+  animation-delay: 430s;
+}
+.animateCircel.playOn ellipse:nth-child(861) {
+  animation-delay: 430.5s;
+}
+.animateCircel.playOn ellipse:nth-child(862) {
+  animation-delay: 431s;
+}
+.animateCircel.playOn ellipse:nth-child(863) {
+  animation-delay: 431.5s;
+}
+.animateCircel.playOn ellipse:nth-child(864) {
+  animation-delay: 432s;
+}
+.animateCircel.playOn ellipse:nth-child(865) {
+  animation-delay: 432.5s;
+}
+.animateCircel.playOn ellipse:nth-child(866) {
+  animation-delay: 433s;
+}
+.animateCircel.playOn ellipse:nth-child(867) {
+  animation-delay: 433.5s;
+}
+.animateCircel.playOn ellipse:nth-child(868) {
+  animation-delay: 434s;
+}
+.animateCircel.playOn ellipse:nth-child(869) {
+  animation-delay: 434.5s;
+}
+.animateCircel.playOn ellipse:nth-child(870) {
+  animation-delay: 435s;
+}
+.animateCircel.playOn ellipse:nth-child(871) {
+  animation-delay: 435.5s;
+}
+.animateCircel.playOn ellipse:nth-child(872) {
+  animation-delay: 436s;
+}
+.animateCircel.playOn ellipse:nth-child(873) {
+  animation-delay: 436.5s;
+}
+.animateCircel.playOn ellipse:nth-child(874) {
+  animation-delay: 437s;
+}
+.animateCircel.playOn ellipse:nth-child(875) {
+  animation-delay: 437.5s;
+}
+.animateCircel.playOn ellipse:nth-child(876) {
+  animation-delay: 438s;
+}
+.animateCircel.playOn ellipse:nth-child(877) {
+  animation-delay: 438.5s;
+}
+.animateCircel.playOn ellipse:nth-child(878) {
+  animation-delay: 439s;
+}
+.animateCircel.playOn ellipse:nth-child(879) {
+  animation-delay: 439.5s;
+}
+.animateCircel.playOn ellipse:nth-child(880) {
+  animation-delay: 440s;
+}
+.animateCircel.playOn ellipse:nth-child(881) {
+  animation-delay: 440.5s;
+}
+.animateCircel.playOn ellipse:nth-child(882) {
+  animation-delay: 441s;
+}
+.animateCircel.playOn ellipse:nth-child(883) {
+  animation-delay: 441.5s;
+}
+.animateCircel.playOn ellipse:nth-child(884) {
+  animation-delay: 442s;
+}
+.animateCircel.playOn ellipse:nth-child(885) {
+  animation-delay: 442.5s;
+}
+.animateCircel.playOn ellipse:nth-child(886) {
+  animation-delay: 443s;
+}
+.animateCircel.playOn ellipse:nth-child(887) {
+  animation-delay: 443.5s;
+}
+.animateCircel.playOn ellipse:nth-child(888) {
+  animation-delay: 444s;
+}
+.animateCircel.playOn ellipse:nth-child(889) {
+  animation-delay: 444.5s;
+}
+.animateCircel.playOn ellipse:nth-child(890) {
+  animation-delay: 445s;
+}
+.animateCircel.playOn ellipse:nth-child(891) {
+  animation-delay: 445.5s;
+}
+.animateCircel.playOn ellipse:nth-child(892) {
+  animation-delay: 446s;
+}
+.animateCircel.playOn ellipse:nth-child(893) {
+  animation-delay: 446.5s;
+}
+.animateCircel.playOn ellipse:nth-child(894) {
+  animation-delay: 447s;
+}
+.animateCircel.playOn ellipse:nth-child(895) {
+  animation-delay: 447.5s;
+}
+.animateCircel.playOn ellipse:nth-child(896) {
+  animation-delay: 448s;
+}
+.animateCircel.playOn ellipse:nth-child(897) {
+  animation-delay: 448.5s;
+}
+.animateCircel.playOn ellipse:nth-child(898) {
+  animation-delay: 449s;
+}
+.animateCircel.playOn ellipse:nth-child(899) {
+  animation-delay: 449.5s;
+}
+.animateCircel.playOn ellipse:nth-child(900) {
+  animation-delay: 450s;
+}
+.animateCircel.playOn ellipse:nth-child(901) {
+  animation-delay: 450.5s;
+}
+.animateCircel.playOn ellipse:nth-child(902) {
+  animation-delay: 451s;
+}
+.animateCircel.playOn ellipse:nth-child(903) {
+  animation-delay: 451.5s;
+}
+.animateCircel.playOn ellipse:nth-child(904) {
+  animation-delay: 452s;
+}
+.animateCircel.playOn ellipse:nth-child(905) {
+  animation-delay: 452.5s;
+}
+.animateCircel.playOn ellipse:nth-child(906) {
+  animation-delay: 453s;
+}
+.animateCircel.playOn ellipse:nth-child(907) {
+  animation-delay: 453.5s;
+}
+.animateCircel.playOn ellipse:nth-child(908) {
+  animation-delay: 454s;
+}
+.animateCircel.playOn ellipse:nth-child(909) {
+  animation-delay: 454.5s;
+}
+.animateCircel.playOn ellipse:nth-child(910) {
+  animation-delay: 455s;
+}
+.animateCircel.playOn ellipse:nth-child(911) {
+  animation-delay: 455.5s;
+}
+.animateCircel.playOn ellipse:nth-child(912) {
+  animation-delay: 456s;
+}
+.animateCircel.playOn ellipse:nth-child(913) {
+  animation-delay: 456.5s;
+}
+.animateCircel.playOn ellipse:nth-child(914) {
+  animation-delay: 457s;
+}
+.animateCircel.playOn ellipse:nth-child(915) {
+  animation-delay: 457.5s;
+}
+.animateCircel.playOn ellipse:nth-child(916) {
+  animation-delay: 458s;
+}
+.animateCircel.playOn ellipse:nth-child(917) {
+  animation-delay: 458.5s;
+}
+.animateCircel.playOn ellipse:nth-child(918) {
+  animation-delay: 459s;
+}
+.animateCircel.playOn ellipse:nth-child(919) {
+  animation-delay: 459.5s;
+}
+.animateCircel.playOn ellipse:nth-child(920) {
+  animation-delay: 460s;
+}
+.animateCircel.playOn ellipse:nth-child(921) {
+  animation-delay: 460.5s;
+}
+.animateCircel.playOn ellipse:nth-child(922) {
+  animation-delay: 461s;
+}
+.animateCircel.playOn ellipse:nth-child(923) {
+  animation-delay: 461.5s;
+}
+.animateCircel.playOn ellipse:nth-child(924) {
+  animation-delay: 462s;
+}
+.animateCircel.playOn ellipse:nth-child(925) {
+  animation-delay: 462.5s;
+}
+.animateCircel.playOn ellipse:nth-child(926) {
+  animation-delay: 463s;
+}
+.animateCircel.playOn ellipse:nth-child(927) {
+  animation-delay: 463.5s;
+}
+.animateCircel.playOn ellipse:nth-child(928) {
+  animation-delay: 464s;
+}
+.animateCircel.playOn ellipse:nth-child(929) {
+  animation-delay: 464.5s;
+}
+.animateCircel.playOn ellipse:nth-child(930) {
+  animation-delay: 465s;
+}
+.animateCircel.playOn ellipse:nth-child(931) {
+  animation-delay: 465.5s;
+}
+.animateCircel.playOn ellipse:nth-child(932) {
+  animation-delay: 466s;
+}
+.animateCircel.playOn ellipse:nth-child(933) {
+  animation-delay: 466.5s;
+}
+.animateCircel.playOn ellipse:nth-child(934) {
+  animation-delay: 467s;
+}
+.animateCircel.playOn ellipse:nth-child(935) {
+  animation-delay: 467.5s;
+}
+.animateCircel.playOn ellipse:nth-child(936) {
+  animation-delay: 468s;
+}
+.animateCircel.playOn ellipse:nth-child(937) {
+  animation-delay: 468.5s;
+}
+.animateCircel.playOn ellipse:nth-child(938) {
+  animation-delay: 469s;
+}
+.animateCircel.playOn ellipse:nth-child(939) {
+  animation-delay: 469.5s;
+}
+.animateCircel.playOn ellipse:nth-child(940) {
+  animation-delay: 470s;
+}
+.animateCircel.playOn ellipse:nth-child(941) {
+  animation-delay: 470.5s;
+}
+.animateCircel.playOn ellipse:nth-child(942) {
+  animation-delay: 471s;
+}
+.animateCircel.playOn ellipse:nth-child(943) {
+  animation-delay: 471.5s;
+}
+.animateCircel.playOn ellipse:nth-child(944) {
+  animation-delay: 472s;
+}
+.animateCircel.playOn ellipse:nth-child(945) {
+  animation-delay: 472.5s;
+}
+.animateCircel.playOn ellipse:nth-child(946) {
+  animation-delay: 473s;
+}
+.animateCircel.playOn ellipse:nth-child(947) {
+  animation-delay: 473.5s;
+}
+.animateCircel.playOn ellipse:nth-child(948) {
+  animation-delay: 474s;
+}
+.animateCircel.playOn ellipse:nth-child(949) {
+  animation-delay: 474.5s;
+}
+.animateCircel.playOn ellipse:nth-child(950) {
+  animation-delay: 475s;
+}
+.animateCircel.playOn ellipse:nth-child(951) {
+  animation-delay: 475.5s;
+}
+.animateCircel.playOn ellipse:nth-child(952) {
+  animation-delay: 476s;
+}
+.animateCircel.playOn ellipse:nth-child(953) {
+  animation-delay: 476.5s;
+}
+.animateCircel.playOn ellipse:nth-child(954) {
+  animation-delay: 477s;
+}
+.animateCircel.playOn ellipse:nth-child(955) {
+  animation-delay: 477.5s;
+}
+.animateCircel.playOn ellipse:nth-child(956) {
+  animation-delay: 478s;
+}
+.animateCircel.playOn ellipse:nth-child(957) {
+  animation-delay: 478.5s;
+}
+.animateCircel.playOn ellipse:nth-child(958) {
+  animation-delay: 479s;
+}
+.animateCircel.playOn ellipse:nth-child(959) {
+  animation-delay: 479.5s;
+}
+.animateCircel.playOn ellipse:nth-child(960) {
+  animation-delay: 480s;
+}
+.animateCircel.playOn ellipse:nth-child(961) {
+  animation-delay: 480.5s;
+}
+.animateCircel.playOn ellipse:nth-child(962) {
+  animation-delay: 481s;
+}
+.animateCircel.playOn ellipse:nth-child(963) {
+  animation-delay: 481.5s;
+}
+.animateCircel.playOn ellipse:nth-child(964) {
+  animation-delay: 482s;
+}
+.animateCircel.playOn ellipse:nth-child(965) {
+  animation-delay: 482.5s;
+}
+.animateCircel.playOn ellipse:nth-child(966) {
+  animation-delay: 483s;
+}
+.animateCircel.playOn ellipse:nth-child(967) {
+  animation-delay: 483.5s;
+}
+.animateCircel.playOn ellipse:nth-child(968) {
+  animation-delay: 484s;
+}
+.animateCircel.playOn ellipse:nth-child(969) {
+  animation-delay: 484.5s;
+}
+.animateCircel.playOn ellipse:nth-child(970) {
+  animation-delay: 485s;
+}
+.animateCircel.playOn ellipse:nth-child(971) {
+  animation-delay: 485.5s;
+}
+.animateCircel.playOn ellipse:nth-child(972) {
+  animation-delay: 486s;
+}
+.animateCircel.playOn ellipse:nth-child(973) {
+  animation-delay: 486.5s;
+}
+.animateCircel.playOn ellipse:nth-child(974) {
+  animation-delay: 487s;
+}
+.animateCircel.playOn ellipse:nth-child(975) {
+  animation-delay: 487.5s;
+}
+.animateCircel.playOn ellipse:nth-child(976) {
+  animation-delay: 488s;
+}
+.animateCircel.playOn ellipse:nth-child(977) {
+  animation-delay: 488.5s;
+}
+.animateCircel.playOn ellipse:nth-child(978) {
+  animation-delay: 489s;
+}
+.animateCircel.playOn ellipse:nth-child(979) {
+  animation-delay: 489.5s;
+}
+.animateCircel.playOn ellipse:nth-child(980) {
+  animation-delay: 490s;
+}
+.animateCircel.playOn ellipse:nth-child(981) {
+  animation-delay: 490.5s;
+}
+.animateCircel.playOn ellipse:nth-child(982) {
+  animation-delay: 491s;
+}
+.animateCircel.playOn ellipse:nth-child(983) {
+  animation-delay: 491.5s;
+}
+.animateCircel.playOn ellipse:nth-child(984) {
+  animation-delay: 492s;
+}
+.animateCircel.playOn ellipse:nth-child(985) {
+  animation-delay: 492.5s;
+}
+.animateCircel.playOn ellipse:nth-child(986) {
+  animation-delay: 493s;
+}
+.animateCircel.playOn ellipse:nth-child(987) {
+  animation-delay: 493.5s;
+}
+.animateCircel.playOn ellipse:nth-child(988) {
+  animation-delay: 494s;
+}
+.animateCircel.playOn ellipse:nth-child(989) {
+  animation-delay: 494.5s;
+}
+.animateCircel.playOn ellipse:nth-child(990) {
+  animation-delay: 495s;
+}
+.animateCircel.playOn ellipse:nth-child(991) {
+  animation-delay: 495.5s;
+}
+.animateCircel.playOn ellipse:nth-child(992) {
+  animation-delay: 496s;
+}
+.animateCircel.playOn ellipse:nth-child(993) {
+  animation-delay: 496.5s;
+}
+.animateCircel.playOn ellipse:nth-child(994) {
+  animation-delay: 497s;
+}
+.animateCircel.playOn ellipse:nth-child(995) {
+  animation-delay: 497.5s;
+}
+.animateCircel.playOn ellipse:nth-child(996) {
+  animation-delay: 498s;
+}
+.animateCircel.playOn ellipse:nth-child(997) {
+  animation-delay: 498.5s;
+}
+.animateCircel.playOn ellipse:nth-child(998) {
+  animation-delay: 499s;
+}
+.animateCircel.playOn ellipse:nth-child(999) {
+  animation-delay: 499.5s;
+}
+.animateCircel.playOn ellipse:nth-child(1000) {
+  animation-delay: 500s;
+}
+.animateCircel ellipse.selectCircle {
+  transform: rotate(var(--rotate)) translate(calc(var(--translateX, 0) + 10px), calc(var(--translateY, 0) - 10px)) !important;
+  stroke: var(--secondary);
+  fill: var(--secondary);
+  stroke-width: calc(var(--strokeWidth) + 2px);
+}
+.animateCircel .selectCircle + ellipse,
+.animateCircel ellipse:has(+ .selectCircle) {
+  transform: rotate(var(--rotate)) translate(calc(var(--translateX, 0) + 5px), calc(var(--translateY, 0) - 5px)) !important;
+  stroke: #708cb6;
+  stroke-width: calc(var(--strokeWidth) + 1px);
+}
+
+#rightEye {
+  transform-origin: 210px 168px;
+  animation: blink 2s infinite;
+}
+
+@keyframes blink {
+  0% {
+    transform: scaleY(1);
+  }
+  20% {
+    transform: scaleY(0.1);
+  }
+  100% {
+    transform: scaleY(1);
+  }
+}
+.whiteMaskSheet {
+  position: relative;
+}
+.whiteMaskSheet ::before {
+  content: "";
+  position: absolute;
+  background-color: aliceblue;
+  top: 0;
+  bottom: 0;
+  z-index: 1;
+  left: 100%;
+  right: 0;
+  opacity: 0.1;
+  animation: maskSheet 1.5s ease-in-out;
+}
+
+@keyframes maskSheet {
+  0% {
+    left: 100%;
+    right: 0;
+  }
+  30% {
+    left: 0%;
+    right: 0;
+  }
+  90% {
+    left: 0%;
+    right: 50%;
+  }
+  100% {
+    left: 0%;
+    right: 100%;
+  }
+}
+@keyframes slideInRight {
+  from {
+    display: block;
+    transform: translateX(100%);
+  }
+  to {
+    display: block;
+    transform: translateX(0);
+  }
+}
+@keyframes slideOutLeft {
+  from {
+    display: block;
+    transform: translateX(0);
+  }
+  to {
+    display: block;
+    transform: translateX(-100%);
+  }
+}/*# sourceMappingURL=animation.css.map */

@@ -1,0 +1,141 @@
+// 定義向上位移的動畫
+@keyframes circleLightUp {
+  0% {
+    transform: rotate(var(--rotate))
+      translate(var(--translateX), var(--translateY));
+    stroke: var(--primary);
+    stroke-width: var(--strokeWidth);
+  }
+  50% {
+    transform: rotate(var(--rotate))
+      translate(
+        calc(var(--translateX, 0) + 10px),
+        calc(var(--translateY, 0) - 10px)
+      );
+    stroke: var(--secondary);
+    stroke-width: calc(var(--strokeWidth) + 2px);
+  }
+  100% {
+    transform: rotate(var(--rotate))
+      translate(var(--translateX), var(--translateY));
+    stroke: var(--primary);
+    stroke-width: var(--strokeWidth);
+  }
+}
+
+.animateCircel {
+  ellipse {
+    transition: 0.5s;
+    opacity: 0.8;
+  }
+  &.playOn {
+    ellipse {
+      transition: 0.5s;
+      // 添加向上位移10px的動畫
+      animation: circleLightUp 2s ease-in-out forwards;
+
+      // 使用 @for 迴圈為每個子項添加不同的延遲
+      @for $i from 1 through 1000 {
+        &:nth-child(#{$i}) {
+          animation-delay: calc($i * 0.5s);
+        }
+      }
+    }
+  }
+
+  ellipse.selectCircle {
+    transform: rotate(var(--rotate))
+      translate(
+        calc(var(--translateX, 0) + 10px),
+        calc(var(--translateY, 0) - 10px)
+      ) !important;
+    stroke: var(--secondary);
+    fill: var(--secondary);
+    stroke-width: calc(var(--strokeWidth) + 2px);
+  }
+
+  .selectCircle + ellipse,
+  ellipse:has(+ .selectCircle) {
+    transform: rotate(var(--rotate))
+      translate(
+        calc(var(--translateX, 0) + 5px),
+        calc(var(--translateY, 0) - 5px)
+      ) !important;
+    stroke: #708cb6;
+    stroke-width: calc(var(--strokeWidth) + 1px);
+  }
+}
+
+#rightEye {
+  transform-origin: 210px 168px;
+  animation: blink 2s infinite;
+}
+
+@keyframes blink {
+  0% {
+    transform: scaleY(1);
+  }
+  20% {
+    transform: scaleY(0.1);
+  }
+  100% {
+    transform: scaleY(1);
+  }
+}
+
+.whiteMaskSheet {
+  position: relative;
+  ::before {
+    content: "";
+    position: absolute;
+    background-color: aliceblue;
+    top: 0;
+    bottom: 0;
+    z-index: 1;
+    left: 100%;
+    right: 0;
+    opacity: 0.1;
+    animation: maskSheet 1.5s ease-in-out;
+  }
+}
+
+@keyframes maskSheet {
+  0% {
+    left: 100%;
+    right: 0;
+  }
+  30% {
+    left: 0%;
+    right: 0;
+  }
+  90% {
+    left: 0%;
+    right: 50%;
+  }
+  100% {
+    left: 0%;
+    right: 100%;
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    display: block;
+    transform: translateX(100%);
+  }
+  to {
+    display: block;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideOutLeft {
+  from {
+    display: block;
+    transform: translateX(0);
+  }
+  to {
+    display: block;
+    transform: translateX(-100%);
+  }
+}
