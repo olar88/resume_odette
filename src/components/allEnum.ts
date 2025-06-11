@@ -6,3 +6,11 @@ export enum colorEnum {
   primary = "var(--primary)",
   primary_dark = "var(--primary_dark)",
 }
+
+
+export enum directionEnum{
+  Right = "right",
+  Up = "up",
+  Left = "left",
+  Down = "down",
+}

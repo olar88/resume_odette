@@ -1,7 +1,7 @@
 import React, { RefObject, useEffect, useRef, useState } from "react";
-import { colorEnum } from "../../components/allEnum";
+import { colorEnum, directionEnum } from "../../components/allEnum";
 import SquareCardButton from "../../components/SquareCardButton";
-import AnimatedShowUpComponent from "../../components/AnimatedShowUpComponent";
+import { AnimatedShowUpComponent } from "../../components/AnimatedShowUpComponent";
 
 function IntroducePage() {
   const [activeNow, setActiveNow] = useState(0);
@@ -15,7 +15,9 @@ function IntroducePage() {
       <div className="bg_light w100 h100 d-flex-col jc-center ai-center">
         <div className="container row min-height-50">
           {/* 動畫區 */}
-          <AnimatedShowUpComponent className="col-7 h-100">
+          <AnimatedShowUpComponent
+            className="col-7 h-100 p-0"
+          >
             <Sliders
               activeIndex={activeNow}
               component={[
@@ -32,8 +34,10 @@ function IntroducePage() {
             />
           </AnimatedShowUpComponent>
           {/* 按鈕區 */}
-          <div className="col-5 h-100 d-flex-col">
-            <AnimatedShowUpComponent className="w100 h-100 flex-grow-1">
+          <div className="col-5 h-100 d-flex-col p-0">
+            <AnimatedShowUpComponent
+              className="w100 h-100 flex-grow-1 p-0"
+            >
               <SquareCardButton
                 mainContent={
                   <img
@@ -52,7 +56,7 @@ function IntroducePage() {
                 }}
               />
             </AnimatedShowUpComponent>
-            <AnimatedShowUpComponent className="w100 h-100 flex-grow-1">
+            <AnimatedShowUpComponent className="w100 h-100 flex-grow-1 p-0">
               <SquareCardButton
                 mainContent={
                   <img
@@ -71,7 +75,7 @@ function IntroducePage() {
                 }}
               />
             </AnimatedShowUpComponent>
-            <AnimatedShowUpComponent className="w100 h-100 flex-grow-1">
+            <AnimatedShowUpComponent className="w100 h-100 flex-grow-1 p-0">
               <SquareCardButton
                 mainContent={
                   <img

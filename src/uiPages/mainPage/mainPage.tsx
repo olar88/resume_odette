@@ -1,9 +1,11 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import SingAnimation from "../../animates/signAnimate/signAnimatePage";
 import EllipticalCircle from "../../animates/circleAnimate/circleAnimatePage";
 import { colorEnum } from "../../components/allEnum";
 import IntroducePage from "./introducePage";
 import GuidePage from "./guidePage";
+import useScrollPostions from "../../entity/useScrollPostions";
+import TextButton from "../../components/TextButton";
 
 function MainPage() {
   return (
@@ -20,9 +22,33 @@ function MainPage() {
         />
         <SingAnimation />
       </div>
-      <IntroducePage/>
-      <GuidePage/>
+      <IntroducePage />
+      <GuidePage />
+      <MainBottomBar />
     </React.Fragment>
+  );
+}
+
+function MainBottomBar() {
+  const { isAtBottom = false } = useScrollPostions();
+
+  return (
+    <div
+      className={
+        "d-flex-row ai-center" + ` mainBottomBar ${isAtBottom ? "active" : ""}`
+      }
+    >
+      <div className="" style={{ fontFamily: "Abril Fatface, sans-serif" }}>
+        Version 1.1
+      </div>
+
+      {/* TODO 頁面按鈕 */}
+      <div className="flex-grow-1 justify-content-end d-flex-row ai-center gap-3 ms-3">
+        <TextButton text="RSS" onClick={() => {}} />
+        <TextButton text="Privacy" onClick={() => {}} />
+        <TextButton text="Contact" onClick={() => {}} />
+      </div>
+    </div>
   );
 }
 
