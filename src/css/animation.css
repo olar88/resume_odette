@@ -3126,4 +3126,63 @@
   100% {
     transform: scale(1);
   }
+}
+#calander_rect_01 {
+  animation: calander_rect_01 10s infinite;
+}
+@keyframes calander_rect_01 {
+  40% {
+    width: 260px;
+  }
+  45% {
+    width: 260px;
+  }
+}
+
+.calander_rect_line1:nth-of-type(1) {
+  animation: disappear01 10s infinite;
+}
+@keyframes disappear01 {
+  0% {
+    opacity: 1;
+  }
+  38% {
+    opacity: 0;
+  }
+  48% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.calander_rect_line1:nth-of-type(2) {
+  animation: disappear02 10s infinite;
+}
+@keyframes disappear02 {
+  0% {
+    opacity: 1;
+  }
+  42% {
+    opacity: 0;
+  }
+  45% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+#calander_rect_02 {
+  transition: 0.5s;
+}
+#calander_rect_02 + rect {
+  transition: 0.3s;
+}
+#calander_rect_02:hover {
+  width: 170px;
+}
+#calander_rect_02:hover + .calander_rect_line2 {
+  opacity: 0;
 }/*# sourceMappingURL=animation.css.map */

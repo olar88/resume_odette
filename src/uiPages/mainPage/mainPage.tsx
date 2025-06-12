@@ -31,6 +31,7 @@ function MainPage() {
 
 function MainBottomBar() {
   const { isAtBottom = false } = useScrollPostions();
+  const jsonDoc = require("../../../package.json");
 
   return (
     <div
@@ -39,7 +40,7 @@ function MainBottomBar() {
       }
     >
       <div className="" style={{ fontFamily: "Abril Fatface, sans-serif" }}>
-        Version 1.1
+        Version {jsonDoc.version}
       </div>
 
       {/* TODO 頁面按鈕 */}

@@ -14,10 +14,10 @@ function IntroducePage() {
     <React.Fragment>
       <div className="bg_light w100 h100 d-flex-col jc-center ai-center">
         <div className="container row min-height-50">
+          {/* TODO slide 頁面 */}
+
           {/* 動畫區 */}
-          <AnimatedShowUpComponent
-            className="col-7 h-100 p-0"
-          >
+          <AnimatedShowUpComponent className="col-7 h-100 p-0">
             <Sliders
               activeIndex={activeNow}
               component={[
@@ -35,9 +35,7 @@ function IntroducePage() {
           </AnimatedShowUpComponent>
           {/* 按鈕區 */}
           <div className="col-5 h-100 d-flex-col p-0">
-            <AnimatedShowUpComponent
-              className="w100 h-100 flex-grow-1 p-0"
-            >
+            <AnimatedShowUpComponent className="w100 h-100 flex-grow-1 p-0">
               <SquareCardButton
                 mainContent={
                   <img

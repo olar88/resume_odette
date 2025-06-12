@@ -160,3 +160,66 @@
     transform: scale(1);
   }
 }
+
+// 動態 寬度動畫 生成器
+@mixin width_change_animate($name, $width, $startPercent, $stopPercent) {
+  @keyframes #{$name} {
+    0% {
+    }
+    #{ $startPercent + "%" } {
+      width: $width;
+    }
+    #{ $stopPercent + "%" } {
+      width: $width;
+    }
+    100% {
+    }
+  }
+}
+
+// 動態 寬度動畫 生成器
+@mixin disappear_animate($name, $opacity, $startPercent, $stopPercent) {
+  @keyframes #{$name} {
+    0% {
+      opacity: 1;
+    }
+    #{ $startPercent + "%" } {
+      opacity: $opacity;
+    }
+    #{ $stopPercent + "%" } {
+      opacity: $opacity;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+}
+
+#calander_rect_01 {
+  @include width_change_animate(calander_rect_01, 260px, 40, 45);
+  animation: calander_rect_01 10s infinite;
+}
+
+.calander_rect_line1 {
+  &:nth-of-type(1) {
+    @include disappear_animate(disappear01, 0, 38, 48);
+    animation: disappear01 10s infinite;
+  }
+  &:nth-of-type(2) {
+    @include disappear_animate(disappear02, 0, 42, 45);
+    animation: disappear02 10s infinite;
+  }
+}
+
+#calander_rect_02 {
+  transition: 0.5s;
+  & + rect {
+    transition: 0.3s;
+  }
+  &:hover {
+    width: 170px;
+    & + .calander_rect_line2 {
+      opacity: 0;
+    }
+  }
+}

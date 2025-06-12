@@ -4,19 +4,21 @@ import SquareCardButton from "../../components/SquareCardButton";
 import { AnimatedShowUpComponent } from "../../components/AnimatedShowUpComponent";
 import SvgEditorIcon from "../../svg/img_svgEditor";
 import DiffGameIcon from "../../svg/img_diffGameIcon";
+import CalanderIcon from "../../svg/img_calander";
 
 function GuidePage() {
   return (
     <React.Fragment>
       <div className="bg_light w100 h100 d-flex-col jc-center ai-center">
         <div className="container row h-50 flex-wrap">
+          {/* TODO 串作品頁面 */}
           {/* 按鈕區 */}
           <AnimatedShowUpComponent
             className="col-6 h-50 p-0"
             direction={directionEnum.Down}
           >
             <SquareCardButton
-              mainContent={<SvgEditorIcon  className="flex-grow-1 m-auto"/>}
+              mainContent={<SvgEditorIcon className="flex-grow-1 m-auto" />}
               textContent="SVG Editor"
               backgroundColor={colorEnum.warning}
               contentColor={colorEnum.primary}
@@ -29,7 +31,7 @@ function GuidePage() {
             transitionDelay=".3s"
           >
             <SquareCardButton
-              mainContent={<DiffGameIcon className="flex-grow-1 m-auto"/>}
+              mainContent={<DiffGameIcon className="flex-grow-1 m-auto" />}
               textContent="Game Design"
               backgroundColor={colorEnum.alert}
               contentColor={colorEnum.white}
@@ -42,7 +44,7 @@ function GuidePage() {
             transitionDelay=".6s"
           >
             <SquareCardButton
-              mainContent={"null"}
+              mainContent={<CalanderIcon className="flex-grow-1 m-auto" />}
               textContent="Calander"
               backgroundColor={colorEnum.primary}
               contentColor={colorEnum.white}
