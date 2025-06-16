@@ -124,8 +124,8 @@ export default function EllipticalCircle(props: EllipticalCircleProps) {
       <svg
         ref={animateSVG}
         className="animateCircel playOn"
-        width={ellipseWidth * 2}
-        height={ellipseHeight * 2}
+        width={"80%"}
+        height={"80%"}
         viewBox={`0 0 ${ellipseWidth * 2} ${ellipseHeight * 2}`}
         style={{ "--ellipseCount": ellipseCount } as any}
       >

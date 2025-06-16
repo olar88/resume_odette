@@ -10,7 +10,7 @@ function GuidePage() {
   return (
     <React.Fragment>
       <div className="bg_light w100 h100 d-flex-col jc-center ai-center">
-        <div className="container row h-50 flex-wrap">
+        <div className="container row h-75 flex-wrap">
           {/* TODO 串作品頁面 */}
           {/* 按鈕區 */}
           <AnimatedShowUpComponent

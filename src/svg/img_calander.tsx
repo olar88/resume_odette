@@ -6,8 +6,8 @@ export default function CalanderIcon(props: {
     <svg
       className={"" + (props.className ?? "")}
       onClick={props.onClick}
-      width="510"
-      height="504"
+      width="100%"
+      height="100%"
       viewBox="0 0 510 504"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
