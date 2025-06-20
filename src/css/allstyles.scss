@@ -1,15 +1,17 @@
-@import 'animation.css';
-@import 'main.css';
+@import "animation.css";
+@import "main.css";
+@import "btnstyles.css";
+@import "modalStyle.css";
 
-:root{
-    --warning:#F8E9A1;
-    --alert:#F76C6C;
-    --secondary:#A8D0E6;
-    --primary:#374785;
-    --primary_dark:#24305E;
-    --white:#ffff;
-  }
+:root {
+  --warning: #f8e9a1;
+  --alert: #f76c6c;
+  --secondary: #a8d0e6;
+  --primary: #374785;
+  --primary_dark: #24305e;
+  --white: #ffff;
+}
 
 body {
-    font-family: "Inter Tight", sans-serif;
+  font-family: "Inter Tight", sans-serif;
 }

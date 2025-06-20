@@ -5,8 +5,10 @@ import { AnimatedShowUpComponent } from "../../components/AnimatedShowUpComponen
 import SvgEditorIcon from "../../svg/img_svgEditor";
 import DiffGameIcon from "../../svg/img_diffGameIcon";
 import CalanderIcon from "../../svg/img_calander";
+import { useNavigate } from "react-router-dom";
 
 function GuidePage() {
+  const navigate = useNavigate()
   return (
     <React.Fragment>
       <div className="bg_light w100 h100 d-flex-col jc-center ai-center">
@@ -18,6 +20,7 @@ function GuidePage() {
             direction={directionEnum.Down}
           >
             <SquareCardButton
+              onClick={() => { navigate('/svgEditor') }}
               mainContent={<SvgEditorIcon className="flex-grow-1 m-auto" />}
               textContent="SVG Editor"
               backgroundColor={colorEnum.warning}

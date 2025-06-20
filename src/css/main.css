@@ -198,4 +198,17 @@ body {
 }
 .textButton:hover::after {
   right: 0;
+}
+
+.canvas_outside_container > div {
+  margin: auto;
+}
+
+.canvas-control-box {
+  border: 3px solid var(--secondary);
+  border-radius: 10px;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin: auto 5px;
+  padding: 15px;
 }/*# sourceMappingURL=main.css.map */

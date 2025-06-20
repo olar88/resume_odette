@@ -1,0 +1,86 @@
+.GameModal {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  overflow: hidden;
+  z-index: 5;
+}
+
+@keyframes modalMove {
+  0% {
+    top: 100%;
+  }
+  100% {
+    top: 30%;
+  }
+}
+.modalInnerSpace {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%);
+  background-color: var(--warning);
+  border-radius: 15px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 10px;
+  transition: 0.2s;
+  animation: modalMove 0.3s ease-in-out;
+}
+
+.GameModalTop {
+  display: flex;
+  justify-content: space-between;
+}
+
+.GameModalInnerNode {
+  flex-grow: 1;
+  min-height: 100px;
+}
+
+.title-L {
+  color: var(--dark-Gr, var(--primary_dark));
+  font-family: "Play", sans-serif;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 600;
+  text-align: center;
+  line-height: normal;
+}
+
+.tableContaniner {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  width: 100%;
+}
+
+.tableCell {
+  width: 100%;
+  color: var(--primary);
+  cursor: pointer;
+  padding: 5px;
+}
+.tableCell:hover {
+  background-color: rgba(247, 108, 108, 0.3843137255);
+}
+
+.modalInput {
+  border: 2px solid #e8e8e8;
+  padding: 15px;
+  border-radius: 10px;
+  background-color: var(--alert);
+  font-size: small;
+  font-weight: bold;
+  text-align: center;
+}
+.modalInput:focus {
+  outline-color: white;
+  background-color: var(--alert);
+  color: #e8e8e8;
+  box-shadow: 5px 5px #888888;
+}/*# sourceMappingURL=modalStyle.css.map */

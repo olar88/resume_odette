@@ -201,11 +201,25 @@ body {
     left: 0;
     right: 100%;
     border-bottom: 1px solid var(--white);
-    transition: .3s;
+    transition: 0.3s;
   }
   &:hover {
     &::after {
       right: 0;
     }
   }
+}
+
+.canvas_outside_container {
+  > div {
+    margin: auto;
+  }
+}
+
+.canvas-control-box {
+  border: 3px solid var(--secondary);
+  border-radius: 10px;
+  height: fit-content;
+  margin: auto 5px;
+  padding: 15px;
 }
