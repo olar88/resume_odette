@@ -1,4 +1,4 @@
-.GameModal {
+.GameModel {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -8,7 +8,7 @@
   z-index: 5;
 }
 
-@keyframes modalMove {
+@keyframes modelMove {
   0% {
     top: 100%;
   }
@@ -16,12 +16,12 @@
     top: 30%;
   }
 }
-.modalInnerSpace {
+.modelInnerSpace {
   position: absolute;
   top: 30%;
   left: 50%;
   transform: translate(-50%);
-  background-color: var(--warning);
+  background-color: var(--secondary);
   border-radius: 15px;
   padding: 10px;
   display: flex;
@@ -32,12 +32,12 @@
   animation: modalMove 0.3s ease-in-out;
 }
 
-.GameModalTop {
+.GameModelTop {
   display: flex;
   justify-content: space-between;
 }
 
-.GameModalInnerNode {
+.GameModelInnerNode {
   flex-grow: 1;
   min-height: 100px;
 }
@@ -64,23 +64,34 @@
   color: var(--primary);
   cursor: pointer;
   padding: 5px;
+  border-radius: 5px;
 }
-.tableCell:hover {
-  background-color: rgba(247, 108, 108, 0.3843137255);
+.tableCell:hover, .tableCell.selected {
+  background-color: rgba(36, 48, 94, 0.1490196078);
 }
 
-.modalInput {
+.modelInput {
   border: 2px solid #e8e8e8;
   padding: 15px;
   border-radius: 10px;
-  background-color: var(--alert);
+  background-color: var(--warning);
   font-size: small;
   font-weight: bold;
   text-align: center;
 }
-.modalInput:focus {
+.modelInput::-moz-placeholder {
+  color: var(--primary);
+}
+.modelInput::placeholder {
+  color: var(--primary);
+}
+.modelInput:focus {
   outline-color: white;
-  background-color: var(--alert);
-  color: #e8e8e8;
+  background-color: var(--warning);
+  color: var(--primary_dark);
   box-shadow: 5px 5px #888888;
-}/*# sourceMappingURL=modalStyle.css.map */
+}
+
+.warning_label {
+  color: var(--alert);
+}/*# sourceMappingURL=modelStyle.css.map */

@@ -77,3 +77,11 @@
     }
   }
 }
+
+.iconBtn {
+  padding: 5px;
+  &:hover {
+    border-radius: 100%;
+    background-color: #ffffff54;
+  }
+}

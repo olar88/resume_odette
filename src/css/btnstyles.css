@@ -68,4 +68,12 @@
   box-shadow: none;
   color: #fff;
   background-color: var(--primary_dark);
+}
+
+.iconBtn {
+  padding: 5px;
+}
+.iconBtn:hover {
+  border-radius: 100%;
+  background-color: rgba(255, 255, 255, 0.3294117647);
 }/*# sourceMappingURL=btnstyles.css.map */

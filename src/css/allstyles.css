@@ -1,7 +1,7 @@
 @import "animation.css";
 @import "main.css";
 @import "btnstyles.css";
-@import "modalStyle.css";
+@import "modelStyle.css";
 :root {
   --warning: #f8e9a1;
   --alert: #f76c6c;

@@ -2,7 +2,10 @@ import React, { useRef, useState, useEffect } from "react";
 import { fabric } from 'fabric';
 import { deleteIcon } from "../../X";
 import { useIndexedDB } from "../../entity/useIndexedDB";
-import { PageState, PopUpModal } from "../../components/popUpModal";
+import { PageState, PopUpModel } from "../../components/popUpModel";
+import DeleteIcon from "../../svg/img_delete";
+import { colorEnum } from "../../components/allEnum";
+import { useNavigate } from "react-router-dom";
 
 export function FabricTest() {
     const canvasHTMLRef = useRef<HTMLCanvasElement | null>(null);
@@ -13,9 +16,10 @@ export function FabricTest() {
     const { setItem, getItem, removeItem, clear } = useIndexedDB()
     const [pageState, setPageState] = useState<PageState>({
         isLoaded: false,
-        modalOpen: false,
-        modalInner: null,
+        modelOpen: false,
+        modelInner: null,
     })
+    const navigate = useNavigate()
 
     /** 旋轉角度 */
     const rotateAngles = [0, 15, 30, 45, 60, 75, 90, 105, 120, 135, 150, 165, 180, 195, 210, 225, 240, 255, 270, 285, 300, 315, 330, 345, 360];
@@ -254,7 +258,7 @@ export function FabricTest() {
             link.download = 'canvas.svg';
             link.click();
         }
-    };
+    }
 
     /** 讀取匯入 SVG */
     function handleLoadSVG(event: React.ChangeEvent<HTMLInputElement>) {
@@ -385,40 +389,49 @@ export function FabricTest() {
         }
     }
 
-    function openSaveModal() {
+    function openSaveModel() {
+        let id: string | null = null,
+            syncId = (newId: string | null) => { id = newId }
         setPageState(prev => ({
             ...prev,
-            modalOpen: true,
-            modalInner: {
-                id: "openSaveModal",
+            modelOpen: true,
+            modelInner: {
+                id: "openSaveModel",
                 title: "儲存暫存檔",
-                modalInner: <ModalLoadInner />,
-                modalAction: () => saveLocalJson(),
+                modelInner: <ModelLoadInner
+                    saveFunc={syncId} />,
+                modelAction: () => { if (id) saveLocalJson(id) },
                 size: 'medium'
             }
         }))
     }
     /** 暫存 JSON */
-    function saveLocalJson() {
+    function saveLocalJson(id: string) {
         /** 匯出 JSON */
         if (canvasRef.current) {
             const canvas = canvasRef.current;
             // 保存我要的 attribute
             const jsonString = JSON.stringify(canvas.toJSON(['id']));
-            setItem("001", jsonString)
+            setItem(id, jsonString)
         }
+        setPageState(prev => ({
+            ...prev,
+            modelOpen: false,
+            modelInner: null
+        }))
     }
 
-    function openLoadModal() {
+    /** 打開暫存 model */
+    function openLoadModel() {
         let selectKey = ""
         setPageState(prev => ({
             ...prev,
-            modalOpen: true,
-            modalInner: {
-                id: "openLoadModal",
+            modelOpen: true,
+            modelInner: {
+                id: "openLoadModel",
                 title: "選擇暫存檔",
-                modalInner: <ModalLoadInner selectFunc={(id) => { selectKey = id }} />,
-                modalAction: () => loadLocalJson(selectKey),
+                modelInner: <ModelLoadInner selectFunc={(id) => { selectKey = id }} />,
+                modelAction: () => loadLocalJson(selectKey),
                 size: 'medium'
             }
         }))
@@ -476,6 +489,11 @@ export function FabricTest() {
                 });
             }
         }
+        setPageState(prev => ({
+            ...prev,
+            modelOpen: false,
+            modelInner: null
+        }))
     }
     // #endregion 
 
@@ -860,6 +878,14 @@ export function FabricTest() {
         }
     }
 
+    function deleteAll() {
+        const canvas = canvasRef.current
+        if (canvas) {
+            canvas.clear()
+            createGrid(true)
+        }
+    }
+
     // #endregion
 
     // #region  網格功能區
@@ -930,7 +956,8 @@ export function FabricTest() {
         if (!!gridGroup) {
             // 將群組移動到最底層
             canvasRef.current!.moveTo(gridGroup, 0)
-            canvasRef.current!.add(gridGroup);
+            // canvasRef.current!.add(gridGroup);
+
         }
     }, [gridGroup])
 
@@ -956,7 +983,11 @@ export function FabricTest() {
                 <button onClick={addSquare} className="my-btn sm-btn btn-primary m-2">新增矩形</button>
                 <button onClick={addCircle} className="my-btn sm-btn btn-primary m-2">新增圓形</button>
                 <button onClick={addText} className="my-btn sm-btn btn-primary m-2">新增文字</button>
-                {/* <button onClick={addUnit} className="my-btn sm-btn btn-primary m-2">新增組合</button> */}
+
+                <div className="d-flex flex-row">
+                    <button onClick={() => createGrid()} className="my-btn sm-btn btn-dark m-2 w-50">添加網格</button>
+                    <button onClick={removeGrid} className="my-btn sm-btn btn-dark m-2 w-50">移除網格</button>
+                </div>
                 <br />
 
                 <button onClick={setGroup} className="my-btn sm-btn btn-secondary m-2">結合為群組</button>
@@ -970,10 +1001,13 @@ export function FabricTest() {
                 <hr />
 
                 {/* SVG */}
-                <button onClick={downloadSVG} className="my-btn sm-btn btn-alert m-2">下載 SVG</button>
-                <button onClick={openSaveModal} className="my-btn sm-btn btn-alert m-2">暫存 </button>
-                <button onClick={openLoadModal} className="my-btn sm-btn btn-alert m-2">讀取暫存 </button>
-                <button onClick={downloadJSON} className="my-btn sm-btn btn-dark m-2">清除全部 </button>
+                <button onClick={downloadSVG} className="my-btn sm-btn btn-alert m-2 ">下載 SVG</button>
+                <button onClick={openSaveModel} className="my-btn sm-btn btn-alert m-2">暫存 </button>
+                <button onClick={openLoadModel} className="my-btn sm-btn btn-alert m-2">讀取暫存 </button>
+                <button onClick={deleteAll} className="my-btn sm-btn btn-dark m-2">清除全部 </button>
+                <button onClick={() => {
+                    navigate("/")
+                }} className="my-btn sm-btn btn-dark m-2">返回主頁 </button>
             </div>
 
             {/* 畫布 */}
@@ -981,10 +1015,10 @@ export function FabricTest() {
                 <canvas ref={canvasHTMLRef} style={{ minHeight: '50%' }} />
             </div>
         </div>
-        <PopUpModal
-            modalOpen={pageState.modalOpen}
-            modalInner={pageState.modalInner}
-            closeFnc={() => { setPageState(prev => ({ ...prev, modalOpen: false })) }}
+        <PopUpModel
+            modelOpen={pageState.modelOpen}
+            modelInner={pageState.modelInner}
+            closeFnc={() => { setPageState(prev => ({ ...prev, modelOpen: false })) }}
         />
     </div>
 }
@@ -1023,44 +1057,86 @@ interface ISvgOptions {
     document: XMLDocument;
 }
 
-function ModalLoadInner(props: {
+function ModelLoadInner(props: {
     selectFunc?: (id: string) => void
+    saveFunc?: (id: string | null) => void
 }) {
     const { setItem, getAllItem, removeItem } = useIndexedDB()
     const [allData, setAllData] = useState<string[]>([])
     const [saveKey, setSaveKey] = useState<string>("")
+    const [selectKey, setSelectKey] = useState<string>("")
 
+    /** 初始化查詢暫存 */
     async function init() {
         await getAllItem().then((res) => {
             setAllData((res as string[]) ?? [])
         })
     }
 
+    /** 輸入暫存名稱 */
     function handleInput(value: string) {
         setSaveKey(value)
+    }
+
+    /** 選擇暫存檔 */
+    function handleSelect(value: string) {
+        setSelectKey(value)
+    }
+
+    function deleteSelect(value: string) {
+        removeItem(value)
+        init()
     }
 
     useEffect(() => {
         init()
     }, [])
 
+    useEffect(() => {
+        if (props.saveFunc) {
+            props.saveFunc(saveKey)
+        }
+    }, [saveKey])
+
+    useEffect(() => {
+        if (props.selectFunc) {
+            props.selectFunc(selectKey)
+        }
+    }, [selectKey])
+
     return <React.Fragment>
         <div className="tableContaniner">
 
             {props.selectFunc
                 ? allData.map((ele) => {
-                    return <div key={ele} className="tableCell">{ele}</div>
+                    return <div key={ele}
+                        onClick={() => { handleSelect(ele) }}
+                        className={`d-flex justify-content-between  tableCell ` + (selectKey === ele ? "selected" : "")}
+                    >
+                        <span>{ele}</span>
+                        <DeleteIcon className="iconBtn" style={{ width: "30px" }}
+                            fill={colorEnum.alert}
+                            onClick={(e) => {
+                                e.stopPropagation()
+                                deleteSelect(ele)
+                            }} />
+                    </div>
                 })
-                : <><input className="modalInput"
-                    value={saveKey}
-                    onChange={(e) => {
-                        handleInput(e.target.value.toString())
-                    }}
-                />
-                    <div className="">
+                : null}
+            {props.saveFunc
+                ? <React.Fragment>
+                    <input className="modelInput"
+                        value={saveKey}
+                        placeholder="請輸入暫存檔名"
+                        onChange={(e) => {
+                            handleInput(e.target.value.toString())
+                        }} />
+                    <div className="warning_label">
                         {allData.some((dataKey) => dataKey === saveKey)
-                            ? "已有重複檔案" : ""}
-                    </div></>}
+                            ? "檔案名勿重複，重複名稱將視為覆蓋檔案" : ""}
+                    </div>
+                </React.Fragment>
+                : null}
 
         </div>
     </React.Fragment>
