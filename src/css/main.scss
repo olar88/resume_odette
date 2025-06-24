@@ -232,6 +232,11 @@ body {
   opacity: 0.5;
   font-size: 14px;
   transition: 0.5s;
+  cursor: pointer;
+  &:hover {
+    color: var(--warning);
+    opacity: 1;
+  }
   &.active {
     color: var(--alert);
     opacity: 1;

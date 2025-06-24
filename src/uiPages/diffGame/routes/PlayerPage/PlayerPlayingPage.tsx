@@ -18,10 +18,9 @@ function PlayerPlayingPage(props: {
         show: boolean;
     }>>,
     Mobiledevice: boolean,
-
+    isLoaded?: boolean
 }) {
 
-    const navigate = useNavigate()
     const canvasHTMLRef = useRef<HTMLCanvasElement | null>(null);
 
     /** 手機是否橫向 */
@@ -92,7 +91,7 @@ function PlayerPlayingPage(props: {
     // #region canvas function
     /** 繪製 canvas */
     const drawingCanvas = () => {
-        if (canvasHTMLRef.current) {
+        if (canvasHTMLRef.current && !canvasRef.current) {
             // 初始化Canvas
             const canvas = new fabric.Canvas(canvasHTMLRef.current, {
                 // 設置Canvas寬度
@@ -157,6 +156,8 @@ function PlayerPlayingPage(props: {
         ConnectedOrNot()
     }, [])
 
+    useEffect(() => { drawingCanvas() }, [props.isLoaded])
+
     useEffect(() => {
 
         // 檢查方向
@@ -191,7 +192,7 @@ function PlayerPlayingPage(props: {
 
     useEffect(() => { if (state.isLoaded) drawingCanvas() }, [state.isLoaded])
     return <React.Fragment>
-        {state.isLoaded
+        {props.isLoaded
             // 遊戲區 
             ? state.isEndTheGame
                 // 判斷遊戲已結束 
@@ -302,6 +303,10 @@ function PlayerPlayingPage(props: {
             modalInner={state.modalInner}
             closeFnc={() => { setState(prev => ({ ...prev, modalOpen: false })) }}
         />
+
+        <div className="mobileTitle mb-4 mt-5">
+            <div className='title-Max ' style={{ fontSize: '.85rem', color: '#5DADAA' }}>{props.Mobiledevice ? <><ScreenRotation className="animate__animated animate__swing animate__slow animate__infinite" /><br />請將手機橫向以更盡情的進行遊戲</> : ""} </div>
+        </div>
     </React.Fragment>
 }
 

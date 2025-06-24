@@ -1,12 +1,9 @@
 import React, { useEffect, useState, } from 'react'
-import { useNavigate } from 'react-router-dom'
 import GameIconButton from '../../components/GameIconButton'
 import { PageState, colorType } from '../../allType'
 import GameInput from '../../components/GameInput'
 import GameTextButton from '../../components/GameTextButton'
 import { MeetingRoom, SportsEsports } from '@mui/icons-material'
-import { Host } from '../../api/api'
-import GameLoading from '../../components/GameLoading'
 
 export default function HostHomePage(props: {
     nowStep: 'home' | 'new'
@@ -37,13 +34,13 @@ export default function HostHomePage(props: {
                     <div className="text-center d-flex justify-content-center gap-5">
                         <GameTextButton
                             id='start_new_game_btn'
-                            text={<><SportsEsports fontSize='large' /> start new game</>}
+                            text={<><SportsEsports fontSize='large' /> 開啟新遊戲間</>}
                             color={colorType.yellow}
                             clickEvent={() => { }} />
 
                         <GameTextButton
                             id='join_a_game_btn'
-                            text={<><MeetingRoom fontSize='large' />join a game</>}
+                            text={<><MeetingRoom fontSize='large' /> 加入遊戲間</>}
                             color={colorType.orange}
                             clickEvent={() => { }} />
                     </div>
@@ -65,10 +62,6 @@ export default function HostHomePage(props: {
                             <GameIconButton
                                 id={'new_game_start'}
                                 color={colorType.yellow} clickEvent={() => { }} />
-                        </div>
-                        {/* 返回鍵 */}
-                        <div className='backBtn'>
-                            <GameIconButton color={colorType.greenBack} clickEvent={() => { }} />
                         </div>
                     </React.Fragment>
                     : <React.Fragment>

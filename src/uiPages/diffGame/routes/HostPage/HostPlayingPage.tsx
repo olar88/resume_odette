@@ -12,14 +12,13 @@ import GameTimer, { GameTimerInterface } from '../../components/GameTimer'
 import { demoAnswear, fakePlayerData } from '../../fakeData'
 
 export default function HostPlayingPage() {
-    const navigate = useNavigate()
     // 倒數鐘 ref
     const TimerRef = useRef<GameTimerInterface | null>(null);
 
     /** 遊戲 signalR */
 
     const [state, setState] = useState<PageState>({
-        isLoaded: false,
+        isLoaded: true,
         modalOpen: false,
         modalInner: null,
     })
@@ -146,6 +145,7 @@ export default function HostPlayingPage() {
 
     useEffect(() => {
         searchNewQuestion()
+        searchPlayer()
     }, [])
 
     if (state.isLoaded) {
@@ -154,7 +154,7 @@ export default function HostPlayingPage() {
 
                 {/* 倒數計時器 */}
                 <div className=" position-absolute start-0" style={{ top: "5%" }}>
-                    <GameTimer countMin={1} width={150} ref={TimerRef} />
+                    <GameTimer countMin={0.5} width={150} ref={TimerRef} />
                 </div>
 
                 {/* 遊戲間標題 */}
@@ -166,7 +166,7 @@ export default function HostPlayingPage() {
                 {/* 玩家卡片 */}
                 <div className="d-flex flex-wrap justify-content-center gap-2 overflow-y-auto flex-grow-1" style={{
                     // 不要固定
-                    minHeight: '460px'
+                    // minHeight: '460px'
                 }}>
                     {playerArr.map((item, index) => {
                         return (
@@ -190,7 +190,7 @@ export default function HostPlayingPage() {
 
                 {/* 操作鈕 */}
                 <div className="text-center d-flex gap-2">
-                    <GameTextButton text={isOpen ? <>Next <NavigateNext /></> : <>Check Answers <Visibility /> </>}
+                    <GameTextButton text={isOpen ? <>下一題 <NavigateNext /></> : <>查看答案 <Visibility /> </>}
                         color={colorType.orange}
                         style={{ marginTop: '.5rem' }}
                         clickEvent={() => { controllBtnClick() }} />

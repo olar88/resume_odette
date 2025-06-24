@@ -43,7 +43,7 @@ export default function Sliders(props: { component: React.ReactNode[]; activeInd
                             console.log("動畫結束後移除");
                         }}
                     >
-                        {ele}
+                        {isActive || isLeaving ? ele : null}
                     </div>
                 );
             })}

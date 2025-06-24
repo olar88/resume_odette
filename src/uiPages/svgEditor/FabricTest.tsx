@@ -6,6 +6,7 @@ import { PageState, PopUpModel } from "../../components/popUpModel";
 import DeleteIcon from "../../svg/img_delete";
 import { colorEnum } from "../../components/allEnum";
 import { useNavigate } from "react-router-dom";
+import BackIcon from "../../svg/img_back";
 
 export function FabricTest() {
     const canvasHTMLRef = useRef<HTMLCanvasElement | null>(null);
@@ -949,6 +950,7 @@ export function FabricTest() {
     useEffect(() => {
         initSetting()
         createGrid()
+        window.scrollTo({ top: 0 })
     }, []);
 
     // 網格重新設定進 canvas
@@ -1005,14 +1007,18 @@ export function FabricTest() {
                 <button onClick={openSaveModel} className="my-btn sm-btn btn-alert m-2">暫存 </button>
                 <button onClick={openLoadModel} className="my-btn sm-btn btn-alert m-2">讀取暫存 </button>
                 <button onClick={deleteAll} className="my-btn sm-btn btn-dark m-2">清除全部 </button>
-                <button onClick={() => {
-                    navigate("/")
-                }} className="my-btn sm-btn btn-dark m-2">返回主頁 </button>
+
             </div>
 
             {/* 畫布 */}
             <div className="canvas_outside_container p-1 overflow-auto col-10 d-flex flex-column justify-content-center" style={{}}>
                 <canvas ref={canvasHTMLRef} style={{ minHeight: '50%' }} />
+            </div>
+
+            <div className="iconBtn position-absolute end-0 top-0" style={{ width: "45px" }} onClick={() => {
+                navigate("/")
+            }}>
+                <BackIcon className=" w-100" />
             </div>
         </div>
         <PopUpModel

@@ -62,14 +62,14 @@ function ContactIconBtnBar() {
 
   return <React.Fragment>
     <div className="d-md-flex d-none w-100 justify-content-end gap-2 me-2">
-      <div className="" style={{ width: "30px" }}>
-        <a href="mailto:parkeunyeon18@gmail.com" target="_blank">
+      <div className="iconBtn" style={{ width: "40px" }}>
+        <a href="mailto:parkeunyeon18@gmail.com" target="_blank" rel="noreferrer">
           <EmailIcon className=" w-100" />
         </a>
       </div>
 
-      <div className="" style={{ width: "35px" }}>
-        <a href="https://github.com/olar88" target="_blank">
+      <div className="iconBtn" style={{ width: "45px" }}>
+        <a href="https://github.com/olar88" target="_blank" rel="noreferrer">
           <GitHubIcon className=" w-100" />
         </a>
       </div>

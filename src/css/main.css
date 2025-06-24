@@ -221,6 +221,11 @@ body {
   opacity: 0.5;
   font-size: 14px;
   transition: 0.5s;
+  cursor: pointer;
+}
+.gameStepBox:hover {
+  color: var(--warning);
+  opacity: 1;
 }
 .gameStepBox.active {
   color: var(--alert);

@@ -3,7 +3,6 @@ import { PageState, colorType } from '../../allType'
 import GameTextButton from '../../components/GameTextButton'
 import QRCode from 'react-qr-code'
 import GameLoading from '../../components/GameLoading'
-import { useNavigate } from 'react-router-dom'
 import GamePlayerNameCard from '../../components/GamePlayerNameCard'
 import { GameAlertResult } from '../../components/GameAlertResult'
 import { joinGameResItem, } from '../../api/SignalR'
@@ -66,7 +65,7 @@ export default function HostWaitPage() {
 
                 </div>
                 <div className="text-center mt-4 mb-4">
-                    <GameTextButton text='start' color={colorType.orange} clickEvent={() => { }} />
+                    <GameTextButton text='開始遊戲' color={colorType.orange} clickEvent={() => { }} />
                 </div>
             </React.Fragment>
             : <GameLoading />

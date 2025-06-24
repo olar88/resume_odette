@@ -80,8 +80,9 @@
 
 .iconBtn {
   padding: 5px;
+  cursor: pointer;
   &:hover {
     border-radius: 100%;
-    background-color: #ffffff54;
+    background-color: #f1f1f175;
   }
 }

@@ -17,7 +17,6 @@ export default function PlayerHomePage(props: {
     }>>,
     Mobiledevice: boolean,
 }) {
-    const navigate = useNavigate()
 
     /** 遊戲 signalR */
 
@@ -59,6 +58,11 @@ export default function PlayerHomePage(props: {
         if (!!joinGameData.game_id) {
             return <React.Fragment>
                 <div className="allPage ">
+                    {/* 返回鍵 */}
+                    <div className="backBtn">
+                        <GameIconButton color={colorType.greenBack} clickEvent={() => { setJoinGameData(prev => ({ ...prev, game_id: "" })) }}
+                        />
+                    </div>
                     <div className="mobileTitle mb-4">
                         <div className='title-Max mt-2' style={{ fontSize: '.95rem' }}>Join a </div>
                         <div className='title-Max '><span style={{ color: 'var(--dark_Or)' }}>D</span>iff <span style={{ color: 'var(--dark_Gr)' }}>G</span>ame</div>
@@ -80,6 +84,8 @@ export default function PlayerHomePage(props: {
         } else {
             return <React.Fragment>
                 <div className="allPage ">
+
+
                     <div className="mobileTitle mb-4">
                         <div className='title-Max mt-2' style={{ fontSize: '.95rem' }}>Join a </div>
                         <div className='title-Max '><span style={{ color: 'var(--dark_Or)' }}>D</span>iff <span style={{ color: 'var(--dark_Gr)' }}>G</span>ame</div>

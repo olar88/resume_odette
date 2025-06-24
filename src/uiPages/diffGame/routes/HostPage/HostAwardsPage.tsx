@@ -12,7 +12,6 @@ import { DisabledByDefault } from '@mui/icons-material'
 import { fakePlayerData } from '../../fakeData'
 
 export default function HostAwardsPage() {
-    const nevigate = useNavigate()
 
     const [state, setState] = useState<PageState>({
         isLoaded: false,
@@ -66,12 +65,12 @@ export default function HostAwardsPage() {
                 <GameStarFalls />
 
                 {/* 標題 */}
-                <div className="text-center d-flex gap-2 mt-4  justify-content-center">
+                <div className="text-center d-flex gap-2  justify-content-center">
                     <GameTitleBox className='mt-4' style={{ width: '60%', height: '80px' }} text={'頒獎時間'} color={colorType.yellow} />
                 </div>
 
                 {/* 玩家獎牌 */}
-                <div className="d-flex justify-content-center gap-4 mt-4">
+                <div className="d-flex  justify-content-center gap-4 mt-3">
                     {resRankArr[2]
                         ? <GameMedal name={resRankArr[2].playername} color={'cooper'} />
                         : null}
@@ -85,9 +84,9 @@ export default function HostAwardsPage() {
                 </div>
 
                 {/* 操作鈕 */}
-                <div className="text-center d-flex gap-3 mt-4 mb-4 justify-content-center">
-                    <GameTextButton text={<>End Game</>} color={colorType.green} style={{ marginTop: '5rem' }} clickEvent={endGameClick} />
-                    <GameTextButton text={<>Restart Game</>} color={colorType.orange} style={{ marginTop: '5rem' }} clickEvent={reStartClick} />
+                <div className="text-center d-flex gap-3 justify-content-center">
+                    <GameTextButton text={<>結束遊戲</>} color={colorType.green} style={{ marginTop: '5rem' }} clickEvent={endGameClick} />
+                    <GameTextButton text={<>繼續新局</>} color={colorType.orange} style={{ marginTop: '5rem' }} clickEvent={reStartClick} />
                 </div>
             </div>
 
