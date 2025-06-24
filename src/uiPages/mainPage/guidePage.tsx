@@ -34,6 +34,7 @@ function GuidePage() {
             transitionDelay=".3s"
           >
             <SquareCardButton
+              onClick={() => { navigate('/diffGame') }}
               mainContent={<DiffGameIcon className="flex-grow-1 m-auto" />}
               textContent="Game Design"
               backgroundColor={colorEnum.alert}

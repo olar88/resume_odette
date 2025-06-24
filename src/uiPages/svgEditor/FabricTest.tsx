@@ -961,7 +961,7 @@ export function FabricTest() {
         }
     }, [gridGroup])
 
-    return <div className="w100 h100">
+    return <React.Fragment>
         <div className="d-flex w-100 h-100">
             {/* 控制鈕 */}
             <div className="canvas-control-box d-flex flex-column overflow-auto col-2 justify-content-center" style={{}}>
@@ -1020,7 +1020,7 @@ export function FabricTest() {
             modelInner={pageState.modelInner}
             closeFnc={() => { setPageState(prev => ({ ...prev, modelOpen: false })) }}
         />
-    </div>
+    </React.Fragment>
 }
 
 /** ISvgOptions 

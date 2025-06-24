@@ -1,0 +1,23 @@
+@import "animationCSS";
+@import "playerCSS";
+@import "hostCSS";
+@import "loadingCSS";
+@import "modalStyle";
+@import "gameTimerCSS";
+
+:root {
+  --white: #f7fef9;
+  --dark_Y: #ffb401;
+  --dark_Or: #fb571f;
+  --light_Gr: #5dadaa;
+  --dark_Gr: #1f4b52;
+  --light_Or: #ff8d66;
+  --dark_Br: #804600;
+  --bright_Y: #f7e2a8;
+  --light_Y: #f5c646;
+  --color_bg: #f7e2a8;
+}
+
+body {
+  font-family: "Play", sans-serif;
+}

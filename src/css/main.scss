@@ -223,3 +223,32 @@ body {
   margin: auto 5px;
   padding: 15px;
 }
+
+.gameStepBox {
+  width: 100%;
+  text-align: center;
+  height: 25px;
+  color: var(--primary_dark);
+  opacity: 0.5;
+  font-size: 14px;
+  transition: 0.5s;
+  &.active {
+    color: var(--alert);
+    opacity: 1;
+    font-size: 20px;
+  }
+}
+
+.gameStepBox.active + div,
+div:has(+ .gameStepBox.active) {
+  opacity: 0.8;
+  font-size: 16px;
+}
+
+.stepCotainer {
+  gap: 20px;
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  transition: 0.5s;
+}

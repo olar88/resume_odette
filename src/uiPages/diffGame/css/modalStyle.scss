@@ -1,0 +1,105 @@
+.GameModal {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: #42240064;
+    overflow: hidden;
+    z-index: 3500;
+}
+
+
+@keyframes modalMove {
+    0% {
+        top: 100%;
+    }
+
+    100% {
+        top: 30%;
+    }
+}
+
+.modalInnerSpace {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%);
+    background-color: var(--bright_Y);
+    border-radius: 15px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: 10px;
+    transition: .2s;
+    animation: modalMove 0.3s ease-in-out;
+
+}
+
+
+.GameModalTop {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.GameModalInnerNode {
+    flex-grow: 1;
+    min-height: 100px;
+}
+
+.GameModalBtn_cancle {
+    position: relative;
+    color: var(--white) !important;
+    background-color: var(--dark_Gr) !important;
+}
+
+.GameModalBtn_confirm {
+    background-color: var(--light_Y) !important;
+    color: var(--dark_Gr) !important;
+}
+
+
+// QuestionBox CSS
+
+.questionBox {
+    border-radius: 15px;
+    background: var(--bright_Y);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    height: 40px;
+    font-weight: 600;
+    font-size: 14px;
+    font-family: "Play", sans-serif;
+    display: inline-flex;
+    justify-content: start;
+    padding: 6px 12px;
+    align-items: center;
+    gap: 20px;
+
+
+}
+
+.qustionBox_trashCan {
+    cursor: pointer;
+
+    .qustionBox_trashCanTop {
+        transition: .2s;
+    }
+
+    &:hover .qustionBox_trashCanTop {
+        transform: rotate(-22deg) translateX(-5px);
+    }
+}
+
+.qustionBox_edit {
+    cursor: pointer;
+
+    .qustionBox_editPen {
+        transition: .2s;
+    }
+
+    &:hover .qustionBox_editPen {
+        transform: rotate(18deg) translateX(-5px);
+    }
+}
