@@ -1,7 +1,7 @@
 import React from "react";
 
 export default function TextButton(props: {
-  text: string;
+  text: React.ReactNode;
   onClick: () => void;
 }) {
   return (

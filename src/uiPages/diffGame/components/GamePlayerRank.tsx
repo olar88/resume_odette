@@ -3,6 +3,7 @@ import GamePlayerNameCard from './GamePlayerNameCard'
 import { colorType } from '../allType'
 import GameLoading from './GameLoading'
 import { RankSearchResItem } from '../api/Host'
+import { fakePlayerData } from '../fakeData'
 
 
 export default function GamePlayerRank(props: {

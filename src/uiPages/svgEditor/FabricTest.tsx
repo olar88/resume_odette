@@ -1,12 +1,13 @@
 import React, { useRef, useState, useEffect } from "react";
 import { fabric } from 'fabric';
 import { deleteIcon } from "../../X";
-import { useIndexedDB } from "../../entity/useIndexedDB";
+import { CanvasStorage, useIndexedDB } from "../../entity/useIndexedDB";
 import { PageState, PopUpModel } from "../../components/popUpModel";
 import DeleteIcon from "../../svg/img_delete";
 import { colorEnum } from "../../components/allEnum";
 import { useNavigate } from "react-router-dom";
 import BackIcon from "../../svg/img_back";
+
 
 export function FabricTest() {
     const canvasHTMLRef = useRef<HTMLCanvasElement | null>(null);
@@ -14,7 +15,7 @@ export function FabricTest() {
     const selectItem = useRef<fabric.Object | null>(null);
     const [count, setCount] = useState<number>(1)
     const [gridGroup, setGridGroup] = useState<fabric.Group | null>(null)
-    const { setItem, getItem, removeItem, clear } = useIndexedDB()
+    const { setItem, getItem, } = useIndexedDB()
     const [pageState, setPageState] = useState<PageState>({
         isLoaded: false,
         modelOpen: false,
@@ -413,7 +414,7 @@ export function FabricTest() {
             const canvas = canvasRef.current;
             // 保存我要的 attribute
             const jsonString = JSON.stringify(canvas.toJSON(['id']));
-            setItem(id, jsonString)
+            setItem(CanvasStorage, { [id]: jsonString })
         }
         setPageState(prev => ({
             ...prev,
@@ -442,7 +443,7 @@ export function FabricTest() {
         // 取得檔案 
         const canvas = canvasRef.current;
         /** 將檔案轉為字串 */
-        const JSONString = await getItem<string>(key)
+        const JSONString = await getItem<string>(CanvasStorage, key)
         /** 解析JSON */
 
         if (JSONString) {
@@ -1067,14 +1068,14 @@ function ModelLoadInner(props: {
     selectFunc?: (id: string) => void
     saveFunc?: (id: string | null) => void
 }) {
-    const { setItem, getAllItem, removeItem } = useIndexedDB()
+    const { getAllItem, removeItem } = useIndexedDB()
     const [allData, setAllData] = useState<string[]>([])
     const [saveKey, setSaveKey] = useState<string>("")
     const [selectKey, setSelectKey] = useState<string>("")
 
     /** 初始化查詢暫存 */
     async function init() {
-        await getAllItem().then((res) => {
+        await getAllItem(CanvasStorage).then((res) => {
             setAllData((res as string[]) ?? [])
         })
     }
@@ -1090,7 +1091,7 @@ function ModelLoadInner(props: {
     }
 
     function deleteSelect(value: string) {
-        removeItem(value)
+        removeItem(CanvasStorage, value)
         init()
     }
 

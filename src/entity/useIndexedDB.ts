@@ -1,8 +1,14 @@
 import { useCallback } from "react";
+export const CanvasStorage = "CanvasStorage";
+export const CalendarStorage = "CalendarStorage";
 
 const DB_NAME = "OdetteResumeAppDB";
-const STORE_NAME = "CanvasStorage";
 const DB_VERSION = 1;
+
+const DB_List = [
+  { table_name: CanvasStorage },
+  { table_name: CalendarStorage },
+];
 
 function openDB(): Promise<IDBDatabase> {
   return new Promise((resolve, reject) => {
@@ -10,8 +16,11 @@ function openDB(): Promise<IDBDatabase> {
 
     request.onupgradeneeded = () => {
       const db = request.result;
-      if (!db.objectStoreNames.contains(STORE_NAME)) {
-        db.createObjectStore(STORE_NAME);
+      for (let index = 0; index < DB_List.length; index++) {
+        const tableItem = DB_List[index];
+        if (!db.objectStoreNames.contains(tableItem.table_name)) {
+          db.createObjectStore(tableItem.table_name);
+        }
       }
     };
 
@@ -24,11 +33,11 @@ function openDB(): Promise<IDBDatabase> {
 export function useIndexedDB() {
   /** 儲存資料 */
   const setItem = useCallback(
-    async <T>(key: string, value: T): Promise<void> => {
+    async <T>(table_name: string, value: T): Promise<void> => {
       const db = await openDB();
-      const tx = db.transaction(STORE_NAME, "readwrite");
-      const store = tx.objectStore(STORE_NAME);
-      store.put(value, key);
+      const tx = db.transaction(table_name, "readwrite");
+      const store = tx.objectStore(table_name);
+      store.put(value);
       await tx.oncomplete;
       db.close();
     },
@@ -36,58 +45,67 @@ export function useIndexedDB() {
   );
 
   /** 讀取資料 */
-  const getItem = useCallback(async <T>(key: string): Promise<T | null> => {
-    const db = await openDB();
-    const tx = db.transaction(STORE_NAME, "readonly");
-    const store = tx.objectStore(STORE_NAME);
+  const getItem = useCallback(
+    async <T>(table_name: string, keyPath: string): Promise<T | null> => {
+      const db = await openDB();
+      const tx = db.transaction(table_name, "readonly");
+      const store = tx.objectStore(table_name);
 
-    return new Promise((resolve, reject) => {
-      const request = store.get(key);
-      request.onsuccess = () => {
-        db.close();
-        resolve(request.result ?? null);
-      };
-      request.onerror = () => {
-        db.close();
-        reject(request.error);
-      };
-    });
-  }, []);
+      return new Promise((resolve, reject) => {
+        const request = store.get(keyPath);
+        request.onsuccess = () => {
+          db.close();
+          resolve(request.result ?? null);
+        };
+        request.onerror = () => {
+          db.close();
+          reject(request.error);
+        };
+      });
+    },
+    []
+  );
 
   /** 讀取全部資料 */
-  const getAllItem = useCallback(async (): Promise<IDBValidKey[] | null> => {
-    const db = await openDB();
-    const tx = db.transaction(STORE_NAME, "readonly");
-    const store = tx.objectStore(STORE_NAME);
+  const getAllItem = useCallback(
+    async (table_name: string): Promise<IDBValidKey[] | null> => {
+      const db = await openDB();
+      const tx = db.transaction(table_name, "readonly");
+      const store = tx.objectStore(table_name);
 
-    return new Promise((resolve, reject) => {
-      const request = store.getAllKeys();
-      request.onsuccess = () => {
-        db.close();
-        resolve(request.result ?? null);
-      };
-      request.onerror = () => {
-        db.close();
-        reject(request.error);
-      };
-    });
-  }, []);
+      return new Promise((resolve, reject) => {
+        const request = store.getAllKeys();
+        request.onsuccess = () => {
+          db.close();
+          resolve(request.result ?? null);
+        };
+        request.onerror = () => {
+          db.close();
+          reject(request.error);
+        };
+      });
+    },
+    []
+  );
 
   /** 刪除資料 */
-  const removeItem = useCallback(async (key: string): Promise<void> => {
-    const db = await openDB();
-    const tx = db.transaction(STORE_NAME, "readwrite");
-    const store = tx.objectStore(STORE_NAME);
-    store.delete(key);
-    await tx.oncomplete;
-    db.close();
-  }, []);
+  const removeItem = useCallback(
+    async (table_name: string, keyPath: string): Promise<void> => {
+      const db = await openDB();
+      const tx = db.transaction(table_name, "readwrite");
+      const store = tx.objectStore(table_name);
+      store.delete(keyPath);
+      await tx.oncomplete;
+      db.close();
+    },
+    []
+  );
 
   /** 清空所有資料 */
-  const clear = useCallback(async (): Promise<void> => {
+  const clear = useCallback(async (table_name: string): Promise<void> => {
     const db = await openDB();
-    const tx = db.transaction(STORE_NAME, "readwrite");
-    const store = tx.objectStore(STORE_NAME);
+    const tx = db.transaction(table_name, "readwrite");
+    const store = tx.objectStore(table_name);
     store.clear();
     await tx.oncomplete;
     db.close();

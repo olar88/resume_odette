@@ -3,6 +3,7 @@ import { Route, Routes } from "react-router-dom";
 import MainPage from "./uiPages/mainPage/mainPage";
 import { FabricTest } from "./uiPages/svgEditor/FabricTest";
 import GameDiffIndexPage from "./uiPages/diffGame";
+import CalendarPage from "./uiPages/calendar";
 
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
         <Route path="/" element={<MainPage />} />
         <Route path="/svgEditor" element={<FabricTest />} />
         <Route path="/diffGame" element={<GameDiffIndexPage />} />
+        <Route path="/Calendar" element={<CalendarPage />} />
       </Routes>
     </React.Fragment>
   );

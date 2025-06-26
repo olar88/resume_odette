@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { AnimatedShowUpComponent } from "../../components/AnimatedShowUpComponent";
 import Sliders from "../../components/sliders";
 import { useScrollDirection } from "../../entity/useScrollDirection";
-import './css/gameCSS.css';
+import './../../css/gameCSS.css';
 import HostHomePage from "./routes/HostPage/HostHomePage";
 import HostWaitPage from "./routes/HostPage/HostWaitPage";
 import HostPlayingPage from "./routes/HostPage/HostPlayingPage";

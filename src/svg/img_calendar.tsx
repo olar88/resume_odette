@@ -1,4 +1,4 @@
-export default function CalanderIcon(props: {
+export default function CalendarIcon(props: {
   className?: string;
   onClick?: () => void;
 }) {

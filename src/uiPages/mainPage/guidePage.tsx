@@ -4,7 +4,7 @@ import SquareCardButton from "../../components/SquareCardButton";
 import { AnimatedShowUpComponent } from "../../components/AnimatedShowUpComponent";
 import SvgEditorIcon from "../../svg/img_svgEditor";
 import DiffGameIcon from "../../svg/img_diffGameIcon";
-import CalanderIcon from "../../svg/img_calander";
+import CalendarIcon from "../../svg/img_calendar";
 import { useNavigate } from "react-router-dom";
 
 function GuidePage() {
@@ -48,8 +48,9 @@ function GuidePage() {
             transitionDelay=".6s"
           >
             <SquareCardButton
-              mainContent={<CalanderIcon className="flex-grow-1 m-auto" />}
-              textContent="Calander"
+              onClick={() => { navigate('/Calendar') }}
+              mainContent={<CalendarIcon className="flex-grow-1 m-auto" />}
+              textContent="Calendar"
               backgroundColor={colorEnum.primary}
               contentColor={colorEnum.white}
               className="h-100"
