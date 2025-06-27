@@ -1,6 +1,6 @@
 # Odette's Digital Resume / Portfolio
 
-![Project Preview](project_preview.jpg)
+![Project Preview](project_preview.png)
 
 ## 📌 Overview
 
