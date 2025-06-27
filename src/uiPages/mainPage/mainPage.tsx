@@ -2,12 +2,12 @@ import React, { useEffect, useState } from "react";
 import SingAnimation from "../../animates/signAnimate/signAnimatePage";
 import EllipticalCircle from "../../animates/circleAnimate/circleAnimatePage";
 import { colorEnum } from "../../components/allEnum";
-import IntroducePage from "./introducePage";
 import GuidePage from "./guidePage";
 import useScrollPostions from "../../entity/useScrollPostions";
 import TextButton from "../../components/TextButton";
 import EmailIcon from "../../svg/img_email";
 import GitHubIcon from "../../svg/img_gitHub";
+import { useNavigate } from "react-router-dom";
 
 function MainPage() {
   return (
@@ -25,7 +25,7 @@ function MainPage() {
         <SingAnimation />
         <ContactIconBtnBar />
       </div>
-      <IntroducePage />
+      {/* <IntroducePage /> */}
       <GuidePage />
       <MainBottomBar />
     </React.Fragment>
@@ -36,6 +36,7 @@ function MainPage() {
 function MainBottomBar() {
   const { isAtBottom = false } = useScrollPostions();
   const jsonDoc = require("../../../package.json");
+  const navigate = useNavigate()
 
   return (
     <div
@@ -47,11 +48,10 @@ function MainBottomBar() {
         Version {jsonDoc.version}
       </div>
 
-      {/* TODO 頁面按鈕 */}
       <div className="flex-grow-1 justify-content-end d-flex-row ai-center gap-3 ms-3">
-        <TextButton text="RSS" onClick={() => { }} />
-        <TextButton text="Privacy" onClick={() => { }} />
-        <TextButton text="Contact" onClick={() => { }} />
+        <TextButton text="RSS" onClick={() => { window.open("https://github.com/olar88/resume_odette_private") }} />
+        {/* <TextButton text="Privacy" onClick={() => { window.open("https://github.com/olar88/resume_odette_private") }} />
+        <TextButton text="Contact" onClick={() => { }} /> */}
       </div>
     </div>
   );
@@ -61,7 +61,7 @@ function MainBottomBar() {
 function ContactIconBtnBar() {
 
   return <React.Fragment>
-    <div className="d-md-flex d-none w-100 justify-content-end gap-2 me-2">
+    <div className="d-sm-none d-md-flex w-100 justify-content-end gap-2 me-2">
       <div className="iconBtn" style={{ width: "40px" }}>
         <a href="mailto:parkeunyeon18@gmail.com" target="_blank" rel="noreferrer">
           <EmailIcon className=" w-100" />

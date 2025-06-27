@@ -9,7 +9,7 @@ export type HandleEvent = {
         type: string,
         key?: string
         checked?: boolean,
-        files?: File[]
+        files: FileList | null
     }
 } & Event
 
@@ -566,15 +566,19 @@ export const DateTimeFormate = (() => {
     }
 })();
 
+/** 暫存行事曆事件 */
 export interface calendarDataType {
+    id: string,
     startTime: string,
     endTime: string,
-    label: string,
+    labelID: string,
     title: string,
     note?: string,
 }
 
-export interface calendarStatusType {
+/** 暫存月曆事件標籤 */
+export interface calendarLabelType {
+    id: string,
     name: string,
     color: string,
 }

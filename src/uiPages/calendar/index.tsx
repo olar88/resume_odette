@@ -1,14 +1,18 @@
 import { AddCircle, Delete, Edit } from "@mui/icons-material"
-import { GCCalender, GCCalenderColor, GCCalenderDataType, GCCalenderEnums, GCCalenderInterFace } from "./Calender"
-import { DateTimeFormate } from "./types"
-import React, { useRef, useState } from "react"
+import { GCCalender, GCCalenderColor, GCCalenderDataType, GCCalenderEnums, GCCalenderInterFace, getCodeListTime } from "./Calender"
+import { calendarDataType, calendarLabelType, DateTimeFormate, HandleEvent } from "./types"
+import React, { useEffect, useRef, useState } from "react"
 import { fakeCalendarData } from "./fakeData"
 import { ThemeProvider } from "@emotion/react"
 import { createTheme } from "@mui/material"
 import { useNavigate } from "react-router-dom"
 import BackIcon from "../../svg/img_back"
 import { PageState, PopUpModel } from "../../components/popUpModel"
+import { CalendarStorage, useIndexedDB } from "../../entity/useIndexedDB"
+import { colorEnum } from "../../components/allEnum"
+import { MySelector } from "../../components/Selector"
 
+const calendarLabelKey = "calendarLabelSet"
 export default function CalendarPage() {
     const navigate = useNavigate()
     const calenderRef = useRef<GCCalenderInterFace | null>(null)
@@ -19,6 +23,46 @@ export default function CalendarPage() {
         modelOpen: false,
         modelInner: null,
     })
+    const { setItem, getItem, getAllItem } = useIndexedDB()
+
+    const [calendarLabel, setCalendarLabel] = useState<calendarLabelType[]>([])
+    const [calendarData, setCalendarData] = useState<calendarDataType[]>([])
+
+    async function init() {
+        // 查詢行事曆標籤
+        setCalendarLabel(() => {
+            try {
+                const data = JSON.parse(localStorage.getItem(calendarLabelKey) || "[]")
+                if (Array.isArray(data) && data.every(item =>
+                    item && typeof item === 'object' && 'id' in item && 'name' in item && 'color' in item
+                )) {
+                    return data
+                }
+                return []
+            } catch (error) {
+                console.error("error, calendar label JSON parse faild", error);
+                return []
+            }
+        })
+
+        try {
+            // 查詢月曆行程
+            await getAllItem(CalendarStorage).then(res => {
+                try {
+                    const data = JSON.parse(localStorage.getItem(calendarLabelKey) || "[]")
+                    if (Array.isArray(data) && data.every(item =>
+                        item && typeof item === 'object' && 'startTime' in item && 'endTime' in item && 'id' in item
+                    )) {
+                        setCalendarData(data)
+                    }
+                } catch (error) {
+                    console.error("error, Calendar Data JSON parse faild", error);
+                }
+            })
+        } catch (error) {
+            console.error("error, get All Calendar Data faild", error);
+        }
+    }
 
     /** 新增 modal click */
     function addModalClick(selectDate: Date) {
@@ -27,12 +71,16 @@ export default function CalendarPage() {
             modelOpen: true,
             modelInner: {
                 title: "添加行事曆",
-                modelInner: "123",
+                modelInner: <ModalCalendarAddInner />,
                 size: "large"
             }
         }))
 
     }
+
+    useEffect(() => {
+        init()
+    }, [])
 
     return <React.Fragment>
         <ThemeProvider theme={theme}>
@@ -68,6 +116,7 @@ export default function CalendarPage() {
                             eventDataArr: fakeCalendarData.map((reservationItem, index) => {
                                 return ({
                                     ...reservationItem,
+                                    eventContent: reservationItem.title,
                                     eventType: GCCalenderEnums.eventType.CHIPCARD,
                                     contextMenuList: [
                                         {
@@ -75,28 +124,7 @@ export default function CalendarPage() {
                                             style: { fontWeight: '700', borderBottom: "1px solid #e0e0e0" },
                                         },
                                         {
-                                            content: () => `車牌號碼:`
-                                        },
-                                        {
-                                            content: () => `美容服務:`
-                                        },
-                                        {
-                                            content: () => `預約接待: `
-                                        },
-                                        {
-                                            content: () => `狀態:`
-                                        },
-                                        {
-                                            id: 'edit',
-                                            icon: <Edit color="secondary" />,
-                                            content: () => '編輯與查看',
-                                            onClick: (item: GCCalenderDataType) => { }
-                                        },
-                                        {
-                                            id: 'delete',
-                                            icon: <Delete color="error" />,
-                                            content: () => '取消預約',
-                                            onClick: (item: GCCalenderDataType) => { }
+                                            content: () => `行事曆主題: ${reservationItem.title}`
                                         },
                                     ],
                                 })
@@ -116,5 +144,102 @@ export default function CalendarPage() {
             modelInner={pageState.modelInner}
             closeFnc={() => { setPageState(prev => ({ ...prev, modelOpen: false })) }}
         />
+    </React.Fragment>
+}
+
+function ModalCalendarAddInner() {
+    const codeListTime = getCodeListTime({
+        timeStart: DateTimeFormate.dateFormate({
+            dateStr: "202509090000",
+            Mode: DateTimeFormate.DateMode.hhmm,
+            joinTime: ''
+        }),
+        timeEnd: DateTimeFormate.dateFormate({
+            dateStr: "202509092359",
+            Mode: DateTimeFormate.DateMode.hhmm,
+            joinTime: ''
+        }),
+        type: 'halfHour'
+    })
+    const [calendarLabel, setCalendarLabel] = useState<calendarLabelType[]>([])
+    const [addData, setAddData] = useState<calendarDataType>({
+        id: "",
+        labelID: "",
+        title: "",
+        startTime: "",
+        endTime: "",
+    })
+    async function init() {
+        // 查詢行事曆標籤
+        setCalendarLabel(() => {
+            try {
+                const data = JSON.parse(localStorage.getItem(calendarLabelKey) || "[]")
+                if (Array.isArray(data) && data.every(item =>
+                    item && typeof item === 'object' && 'id' in item && 'name' in item && 'color' in item
+                )) {
+                    return data
+                }
+                return []
+            } catch (error) {
+                console.error("error, calendar label JSON parse faild", error);
+                return []
+            }
+        })
+    }
+
+    /** 輸入暫存名稱 */
+    function handleInput(e: React.ChangeEvent<HTMLInputElement>) {
+        const name = e.target.name,
+            value = e.target.value,
+            type = e.target.type
+
+        setAddData(prev => ({
+            ...prev,
+            [name]: type === "time" ? DateTimeFormate.dateRegex(value) : value
+        }))
+    }
+
+    useEffect(() => { init() }, [])
+
+    return <React.Fragment>
+        <div className="w-100 d-flex flex-column gap-2">
+            <div className=" d-flex flex-row gap-2">
+                <div className="align-content-center" style={{ color: colorEnum.primary }}>
+                    請輸入行程主題</div>
+                <input className="modelInput"
+                    value={addData.title}
+                    name="title"
+                    onChange={(e) => {
+                        handleInput(e)
+                    }} />
+            </div>
+            <div className=" d-flex flex-row gap-2">
+                <div className="align-content-center" style={{ color: colorEnum.primary }}>
+                    請選擇時間起</div>
+
+                <MySelector
+                    type="time"
+                    value={addData.startTime}
+                    name="startTime"
+                    onChange={(e) => {
+                    }}
+                    optionKey={"name"}
+                    codeList={codeListTime}
+                />
+            </div>
+            <div className=" d-flex flex-row gap-2">
+                <div className="align-content-center" style={{ color: colorEnum.primary }}>
+                    請選擇時間迄</div>
+                <MySelector
+                    type="time"
+                    value={addData.endTime}
+                    name="endTime"
+                    onChange={(e) => {
+                    }}
+                    optionKey={"name"}
+                    codeList={codeListTime}
+                />
+            </div>
+        </div>
     </React.Fragment>
 }
