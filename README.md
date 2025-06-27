@@ -21,7 +21,7 @@ This is a **private** resume/portfolio website created and owned by **Odette**.
 
 <!-- Add instructions if others need to fork/clone (e.g., for reference only) -->
 
-1. **Preview:** Access the live site at: [GitHub Pages Link](#)
+1. **Preview:** Access the live site at: [GitHub Pages Link](#https://olar88.github.io/resume_odette/)
 2. **Local Setup:**
    ```bash
    git clone https://github.com/olar88/resume_odette_private.git
