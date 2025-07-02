@@ -18,19 +18,19 @@ export const MySelector: React.FC<selectorProps & SelectProps> = ({
     optionKey,
     codeList,
     onChange, ...props }) => {
-    return <FormControl sx={{ m: 1, minWidth: 120 }}>
-        <InputLabel id="demo-simple-select-helper-label">{label}</InputLabel>
+    return <div className="form_box">
+        <label className="label">{label}</label>
         <Select
             id={id}
             name={name}
             value={value}
             label={label}
             onChange={onChange}
-            className={"modelInput " + (props.className ?? "")}
+            className={"textInput " + (props.className ?? "")}
         >
             {codeList.map(item => (
                 <MenuItem value={(item as any)[optionKey]}>{item.name}</MenuItem>
             ))}
         </Select>
-    </FormControl>
+    </div>
 };

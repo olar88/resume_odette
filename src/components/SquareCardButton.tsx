@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import { colorEnum } from "./allEnum";
 
-/** 像次 */
+/** 卡片型按鍵 */
 function SquareCardButton(props: {
   mainContent: React.ReactNode;
   textContent: string;

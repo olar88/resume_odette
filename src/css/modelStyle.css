@@ -71,28 +71,6 @@
   background-color: rgba(36, 48, 94, 0.1490196078);
 }
 
-.modelInput {
-  border: 2px solid #e8e8e8;
-  padding: 15px;
-  border-radius: 10px;
-  background-color: var(--warning);
-  font-size: small;
-  font-weight: bold;
-  text-align: center;
-}
-.modelInput::-moz-placeholder {
-  color: var(--primary);
-}
-.modelInput::placeholder {
-  color: var(--primary);
-}
-.modelInput:focus {
-  outline-color: white;
-  background-color: var(--warning);
-  color: var(--primary_dark);
-  box-shadow: 5px 5px #888888;
-}
-
 .warning_label {
   color: var(--alert);
 }/*# sourceMappingURL=modelStyle.css.map */

@@ -8,6 +8,7 @@ import TextButton from "../../components/TextButton";
 import EmailIcon from "../../svg/img_email";
 import GitHubIcon from "../../svg/img_gitHub";
 import { useNavigate } from "react-router-dom";
+import IntroducePage from "./introducePage";
 
 function MainPage() {
   return (
@@ -25,7 +26,7 @@ function MainPage() {
         <SingAnimation />
         <ContactIconBtnBar />
       </div>
-      {/* <IntroducePage /> */}
+      <IntroducePage />
       <GuidePage />
       <MainBottomBar />
     </React.Fragment>

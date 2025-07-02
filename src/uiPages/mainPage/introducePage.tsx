@@ -1,8 +1,11 @@
-import React, { RefObject, useEffect, useRef, useState } from "react";
-import { colorEnum, directionEnum } from "../../components/allEnum";
+import React, { useState } from "react";
+import { colorEnum, } from "../../components/allEnum";
 import SquareCardButton from "../../components/SquareCardButton";
 import { AnimatedShowUpComponent } from "../../components/AnimatedShowUpComponent";
 import Sliders from "../../components/sliders";
+import MemberLogin from "../slides01";
+import ReactSample from "../slides02";
+import KotlinSample from "../slides03";
 
 function IntroducePage() {
   const [activeNow, setActiveNow] = useState(0);
@@ -15,21 +18,19 @@ function IntroducePage() {
     <React.Fragment>
       <div className="bg_light w100 h100 d-flex-col jc-center ai-center">
         <div className="container row">
-          {/* TODO slide 頁面 */}
-
           {/* 動畫區 */}
           <AnimatedShowUpComponent className="col-7 h-100 mh-100 p-0">
             <Sliders
               activeIndex={activeNow}
               component={[
-                <div className="w100 h-100" style={{ background: "pink" }}>
-                  第1頁
+                <div className="w100 h-100">
+                  <MemberLogin />
                 </div>,
-                <div className="w100 h-100" style={{ background: "#7FFFD4" }}>
-                  第2頁
+                <div className="w100 h-100 d-flex justify-content-center align-items-center">
+                  <ReactSample />
                 </div>,
-                <div className="w100 h-100" style={{ background: "#E9967A" }}>
-                  第3頁
+                <div className="w100 h-100 d-flex justify-content-center align-items-center">
+                  <KotlinSample />
                 </div>,
               ]}
             />
@@ -41,7 +42,7 @@ function IntroducePage() {
                 mainContent={
                   <img
                     className="flex-grow-1 m-auto"
-                    src="/svg/img_html.svg"
+                    src="./svg/img_html.svg"
                     alt="HTML Icon"
                     style={{ maxWidth: "80%" }}
                   />
@@ -60,10 +61,9 @@ function IntroducePage() {
                 mainContent={
                   <img
                     className="flex-grow-1 m-auto"
-                    src="/svg/img_react.svg"
+                    src="./svg/img_react.svg"
                     alt="img_react Icon"
-                    style={{ maxWidth: "30%" }}
-                  />
+                    style={{ maxWidth: "30%" }} />
                 }
                 textContent="REACT"
                 backgroundColor={colorEnum.primary}
@@ -79,10 +79,9 @@ function IntroducePage() {
                 mainContent={
                   <img
                     className="flex-grow-1 m-auto"
-                    src="/svg/img_kotlin.svg"
+                    src="./svg/img_kotlin.svg"
                     alt="img_kotlin Icon"
-                    style={{ maxWidth: "30%" }}
-                  />
+                    style={{ maxWidth: "30%" }} />
                 }
                 textContent="Android / Kotlin"
                 backgroundColor={colorEnum.alert}

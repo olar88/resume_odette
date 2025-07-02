@@ -257,3 +257,64 @@ div:has(+ .gameStepBox.active) {
   width: 100%;
   transition: 0.5s;
 }
+
+.form_box {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 10px;
+  gap: 5px;
+}
+
+.label {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.075em;
+  color: #4f4f4f;
+}
+
+.textInput {
+  box-sizing: border-box;
+  width: 100%;
+  height: 44px;
+  background-color: transparent;
+  border: 1px solid #e59069;
+  border-radius: 5px;
+  line-height: 44px;
+  padding-left: 5px;
+
+  // border: 2px solid #e8e8e8;
+  // padding: 15px;
+  // border-radius: 10px;
+  // background-color: var(--warning);
+  font-size: small;
+  font-weight: bold;
+  text-align: center;
+  &::placeholder {
+    color: var(--primary);
+  }
+  &:focus {
+    outline-color: white;
+    background-color: var(--warning);
+    color: var(--primary_dark);
+    box-shadow: 5px 5px #888888;
+  }
+}
+
+[class*="notchedOutline"] {
+  border-color: transparent !important;
+}
+
+.login_input_alert_info.input_alert_true {
+  display: block;
+}
+
+.login_input_alert_info {
+  color: var(--alert);
+  margin-top: -10px;
+  display: none;
+  font-size: 14px;
+}

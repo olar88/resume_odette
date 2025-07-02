@@ -11,6 +11,7 @@ import { PageState, PopUpModel } from "../../components/popUpModel"
 import { CalendarStorage, useIndexedDB } from "../../entity/useIndexedDB"
 import { colorEnum } from "../../components/allEnum"
 import { MySelector } from "../../components/Selector"
+import TextInput from "../../components/textInput"
 
 const calendarLabelKey = "calendarLabelSet"
 export default function CalendarPage() {
@@ -202,44 +203,43 @@ function ModalCalendarAddInner() {
     useEffect(() => { init() }, [])
 
     return <React.Fragment>
-        <div className="w-100 d-flex flex-column gap-2">
-            <div className=" d-flex flex-row gap-2">
-                <div className="align-content-center" style={{ color: colorEnum.primary }}>
-                    請輸入行程主題</div>
-                <input className="modelInput"
-                    value={addData.title}
-                    name="title"
-                    onChange={(e) => {
-                        handleInput(e)
-                    }} />
-            </div>
-            <div className=" d-flex flex-row gap-2">
-                <div className="align-content-center" style={{ color: colorEnum.primary }}>
-                    請選擇時間起</div>
-
-                <MySelector
-                    type="time"
-                    value={addData.startTime}
-                    name="startTime"
-                    onChange={(e) => {
-                    }}
-                    optionKey={"name"}
-                    codeList={codeListTime}
-                />
-            </div>
-            <div className=" d-flex flex-row gap-2">
-                <div className="align-content-center" style={{ color: colorEnum.primary }}>
-                    請選擇時間迄</div>
-                <MySelector
-                    type="time"
-                    value={addData.endTime}
-                    name="endTime"
-                    onChange={(e) => {
-                    }}
-                    optionKey={"name"}
-                    codeList={codeListTime}
-                />
-            </div>
+        <div className="w-100 d-flex flex-row gap-2">
+            <TextInput
+                label="請輸入行程主題"
+                value={addData.title}
+                name="title"
+                onChange={(e) => {
+                    handleInput(e)
+                }}
+            />
+            <TextInput
+                label="請輸入行程備註"
+                value={addData.note ?? ""}
+                name="title"
+                onChange={(e) => {
+                    handleInput(e)
+                }}
+            />
+            <MySelector
+                label="請選擇時間起"
+                type="time"
+                value={addData.startTime}
+                name="startTime"
+                onChange={(e) => {
+                }}
+                optionKey={"name"}
+                codeList={codeListTime}
+            />
+            <MySelector
+                label="請選擇時間迄"
+                type="time"
+                value={addData.endTime}
+                name="endTime"
+                onChange={(e) => {
+                }}
+                optionKey={"name"}
+                codeList={codeListTime}
+            />
         </div>
     </React.Fragment>
 }
