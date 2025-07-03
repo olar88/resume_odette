@@ -7,6 +7,7 @@ import DeleteIcon from "../../svg/img_delete";
 import { colorEnum } from "../../components/allEnum";
 import { useNavigate } from "react-router-dom";
 import BackIcon from "../../svg/img_back";
+import TextInput from "../../components/textInput";
 
 
 export function FabricTest() {
@@ -1132,12 +1133,14 @@ function ModelLoadInner(props: {
                 : null}
             {props.saveFunc
                 ? <React.Fragment>
-                    <input className="modelInput"
+                    <TextInput
+                        label="請輸入暫存檔名"
                         value={saveKey}
-                        placeholder="請輸入暫存檔名"
+                        name="modelInput"
                         onChange={(e) => {
                             handleInput(e.target.value.toString())
-                        }} />
+                        }}
+                    />
                     <div className="warning_label">
                         {allData.some((dataKey) => dataKey === saveKey)
                             ? "檔案名勿重複，重複名稱將視為覆蓋檔案" : ""}
