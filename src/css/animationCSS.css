@@ -92,7 +92,7 @@
   animation: FallsDown 0s ease-in-out 0s 5;
 }
 .starFalls0 path {
-  fill: rgb(236, 207, 151);
+  fill: rgb(236, 183, 160);
 }
 
 .starFalls1 {
@@ -102,7 +102,7 @@
   animation: FallsDown 0.07s ease-in-out 0.3s 5;
 }
 .starFalls1 path {
-  fill: rgb(213, 215, 193);
+  fill: rgb(197, 225, 134);
 }
 
 .starFalls2 {
@@ -112,7 +112,7 @@
   animation: FallsDown 0.14s ease-in-out 0.6s 5;
 }
 .starFalls2 path {
-  fill: rgb(177, 155, 230);
+  fill: rgb(166, 210, 226);
 }
 
 .starFalls3 {
@@ -122,7 +122,7 @@
   animation: FallsDown 0.21s ease-in-out 0.9s 5;
 }
 .starFalls3 path {
-  fill: rgb(173, 219, 243);
+  fill: rgb(206, 219, 236);
 }
 
 .starFalls4 {
@@ -132,7 +132,7 @@
   animation: FallsDown 0.28s ease-in-out 0.2s 5;
 }
 .starFalls4 path {
-  fill: rgb(222, 235, 138);
+  fill: rgb(228, 231, 210);
 }
 
 .starFalls5 {
@@ -142,7 +142,7 @@
   animation: FallsDown 0.35s ease-in-out 0.5s 5;
 }
 .starFalls5 path {
-  fill: rgb(226, 131, 199);
+  fill: rgb(159, 153, 224);
 }
 
 .starFalls6 {
@@ -152,7 +152,7 @@
   animation: FallsDown 0.42s ease-in-out 0.8s 5;
 }
 .starFalls6 path {
-  fill: rgb(166, 214, 174);
+  fill: rgb(166, 123, 242);
 }
 
 .starFalls7 {
@@ -162,7 +162,7 @@
   animation: FallsDown 0.49s ease-in-out 0.1s 5;
 }
 .starFalls7 path {
-  fill: rgb(204, 204, 225);
+  fill: rgb(158, 175, 153);
 }
 
 .starFalls8 {
@@ -172,7 +172,7 @@
   animation: FallsDown 0.56s ease-in-out 0.4s 5;
 }
 .starFalls8 path {
-  fill: rgb(161, 132, 159);
+  fill: rgb(224, 176, 244);
 }
 
 .starFalls9 {
@@ -182,7 +182,7 @@
   animation: FallsDown 0.63s ease-in-out 0.7s 5;
 }
 .starFalls9 path {
-  fill: rgb(225, 148, 237);
+  fill: rgb(231, 229, 199);
 }
 
 .starFalls10 {
@@ -192,7 +192,7 @@
   animation: FallsDown 0.7s ease-in-out 0s 5;
 }
 .starFalls10 path {
-  fill: rgb(218, 126, 135);
+  fill: rgb(191, 154, 145);
 }
 
 .starFalls11 {
@@ -202,7 +202,7 @@
   animation: FallsDown 0.77s ease-in-out 0.3s 5;
 }
 .starFalls11 path {
-  fill: rgb(154, 213, 179);
+  fill: rgb(241, 198, 195);
 }
 
 .starFalls12 {
@@ -212,7 +212,7 @@
   animation: FallsDown 0.84s ease-in-out 0.6s 5;
 }
 .starFalls12 path {
-  fill: rgb(219, 231, 239);
+  fill: rgb(163, 232, 164);
 }
 
 .starFalls13 {
@@ -222,7 +222,7 @@
   animation: FallsDown 0.91s ease-in-out 0.9s 5;
 }
 .starFalls13 path {
-  fill: rgb(222, 129, 179);
+  fill: rgb(217, 195, 170);
 }
 
 .starFalls14 {
@@ -232,7 +232,7 @@
   animation: FallsDown 0.98s ease-in-out 0.2s 5;
 }
 .starFalls14 path {
-  fill: rgb(156, 221, 245);
+  fill: rgb(188, 128, 191);
 }
 
 .starFalls15 {
@@ -242,7 +242,7 @@
   animation: FallsDown 1.05s ease-in-out 0.5s 5;
 }
 .starFalls15 path {
-  fill: rgb(232, 158, 227);
+  fill: rgb(208, 127, 239);
 }
 
 .starFalls16 {
@@ -252,7 +252,7 @@
   animation: FallsDown 1.12s ease-in-out 0.8s 5;
 }
 .starFalls16 path {
-  fill: rgb(167, 144, 166);
+  fill: rgb(153, 226, 148);
 }
 
 .starFalls17 {
@@ -262,7 +262,7 @@
   animation: FallsDown 1.19s ease-in-out 0.1s 5;
 }
 .starFalls17 path {
-  fill: rgb(219, 167, 235);
+  fill: rgb(152, 230, 224);
 }
 
 .starFalls18 {
@@ -272,7 +272,7 @@
   animation: FallsDown 1.26s ease-in-out 0.4s 5;
 }
 .starFalls18 path {
-  fill: rgb(169, 164, 195);
+  fill: rgb(208, 205, 203);
 }
 
 .starFalls19 {
@@ -282,7 +282,7 @@
   animation: FallsDown 1.33s ease-in-out 0.7s 5;
 }
 .starFalls19 path {
-  fill: rgb(158, 216, 229);
+  fill: rgb(216, 214, 233);
 }
 
 .starFalls20 {
@@ -292,7 +292,7 @@
   animation: FallsDown 1.4s ease-in-out 0s 5;
 }
 .starFalls20 path {
-  fill: rgb(149, 131, 168);
+  fill: rgb(165, 199, 146);
 }
 
 .starFalls21 {
@@ -302,7 +302,7 @@
   animation: FallsDown 1.47s ease-in-out 0.3s 5;
 }
 .starFalls21 path {
-  fill: rgb(169, 172, 191);
+  fill: rgb(225, 221, 158);
 }
 
 .starFalls22 {
@@ -312,7 +312,7 @@
   animation: FallsDown 1.54s ease-in-out 0.6s 5;
 }
 .starFalls22 path {
-  fill: rgb(174, 192, 207);
+  fill: rgb(146, 186, 179);
 }
 
 .starFalls23 {
@@ -322,7 +322,7 @@
   animation: FallsDown 1.61s ease-in-out 0.9s 5;
 }
 .starFalls23 path {
-  fill: rgb(195, 225, 199);
+  fill: rgb(238, 217, 237);
 }
 
 .starFalls24 {
@@ -332,7 +332,7 @@
   animation: FallsDown 1.68s ease-in-out 0.2s 5;
 }
 .starFalls24 path {
-  fill: rgb(171, 160, 224);
+  fill: rgb(229, 156, 183);
 }
 
 .starFalls25 {
@@ -342,7 +342,7 @@
   animation: FallsDown 1.75s ease-in-out 0.5s 5;
 }
 .starFalls25 path {
-  fill: rgb(241, 207, 165);
+  fill: rgb(219, 205, 210);
 }
 
 .starFalls26 {
@@ -352,7 +352,7 @@
   animation: FallsDown 1.82s ease-in-out 0.8s 5;
 }
 .starFalls26 path {
-  fill: rgb(171, 228, 176);
+  fill: rgb(244, 143, 216);
 }
 
 .starFalls27 {
@@ -362,7 +362,7 @@
   animation: FallsDown 1.89s ease-in-out 0.1s 5;
 }
 .starFalls27 path {
-  fill: rgb(234, 235, 205);
+  fill: rgb(179, 189, 135);
 }
 
 .starFalls28 {
@@ -372,7 +372,7 @@
   animation: FallsDown 1.96s ease-in-out 0.4s 5;
 }
 .starFalls28 path {
-  fill: rgb(173, 198, 225);
+  fill: rgb(199, 199, 159);
 }
 
 .starFalls29 {
@@ -382,7 +382,7 @@
   animation: FallsDown 2.03s ease-in-out 0.7s 5;
 }
 .starFalls29 path {
-  fill: rgb(221, 189, 132);
+  fill: rgb(172, 136, 132);
 }
 
 .starFalls30 {
@@ -392,7 +392,7 @@
   animation: FallsDown 2.1s ease-in-out 0s 5;
 }
 .starFalls30 path {
-  fill: rgb(229, 177, 189);
+  fill: rgb(227, 177, 196);
 }
 
 .starFalls31 {
@@ -402,7 +402,7 @@
   animation: FallsDown 2.17s ease-in-out 0.3s 5;
 }
 .starFalls31 path {
-  fill: rgb(234, 154, 203);
+  fill: rgb(240, 147, 239);
 }
 
 .starFalls32 {
@@ -412,7 +412,7 @@
   animation: FallsDown 2.24s ease-in-out 0.6s 5;
 }
 .starFalls32 path {
-  fill: rgb(165, 200, 137);
+  fill: rgb(241, 154, 190);
 }
 
 .starFalls33 {
@@ -422,7 +422,7 @@
   animation: FallsDown 2.31s ease-in-out 0.9s 5;
 }
 .starFalls33 path {
-  fill: rgb(171, 168, 228);
+  fill: rgb(232, 156, 184);
 }
 
 .starFalls34 {
@@ -432,7 +432,7 @@
   animation: FallsDown 2.38s ease-in-out 0.2s 5;
 }
 .starFalls34 path {
-  fill: rgb(235, 152, 185);
+  fill: rgb(229, 172, 159);
 }
 
 .starFalls35 {
@@ -442,7 +442,7 @@
   animation: FallsDown 2.45s ease-in-out 0.5s 5;
 }
 .starFalls35 path {
-  fill: rgb(235, 139, 152);
+  fill: rgb(153, 162, 134);
 }
 
 .starFalls36 {
@@ -452,7 +452,7 @@
   animation: FallsDown 2.52s ease-in-out 0.8s 5;
 }
 .starFalls36 path {
-  fill: rgb(231, 168, 218);
+  fill: rgb(223, 208, 243);
 }
 
 .starFalls37 {
@@ -462,7 +462,7 @@
   animation: FallsDown 2.59s ease-in-out 0.1s 5;
 }
 .starFalls37 path {
-  fill: rgb(186, 154, 199);
+  fill: rgb(230, 212, 202);
 }
 
 .starFalls38 {
@@ -472,7 +472,7 @@
   animation: FallsDown 2.66s ease-in-out 0.4s 5;
 }
 .starFalls38 path {
-  fill: rgb(195, 185, 207);
+  fill: rgb(219, 229, 135);
 }
 
 .starFalls39 {
@@ -482,7 +482,7 @@
   animation: FallsDown 2.73s ease-in-out 0.7s 5;
 }
 .starFalls39 path {
-  fill: rgb(238, 151, 190);
+  fill: rgb(233, 207, 171);
 }
 
 .starFalls40 {
@@ -492,7 +492,7 @@
   animation: FallsDown 2.8s ease-in-out 0s 5;
 }
 .starFalls40 path {
-  fill: rgb(213, 227, 235);
+  fill: rgb(212, 232, 157);
 }
 
 .starFalls41 {
@@ -502,7 +502,7 @@
   animation: FallsDown 2.87s ease-in-out 0.3s 5;
 }
 .starFalls41 path {
-  fill: rgb(147, 135, 169);
+  fill: rgb(156, 176, 183);
 }
 
 .starFalls42 {
@@ -512,7 +512,7 @@
   animation: FallsDown 2.94s ease-in-out 0.6s 5;
 }
 .starFalls42 path {
-  fill: rgb(188, 191, 239);
+  fill: rgb(182, 133, 175);
 }
 
 .starFalls43 {
@@ -522,7 +522,7 @@
   animation: FallsDown 3.01s ease-in-out 0.9s 5;
 }
 .starFalls43 path {
-  fill: rgb(172, 222, 186);
+  fill: rgb(200, 230, 134);
 }
 
 .starFalls44 {
@@ -532,7 +532,7 @@
   animation: FallsDown 3.08s ease-in-out 0.2s 5;
 }
 .starFalls44 path {
-  fill: rgb(161, 190, 161);
+  fill: rgb(169, 221, 174);
 }
 
 .starFalls45 {
@@ -542,7 +542,7 @@
   animation: FallsDown 3.15s ease-in-out 0.5s 5;
 }
 .starFalls45 path {
-  fill: rgb(203, 223, 204);
+  fill: rgb(197, 180, 191);
 }
 
 .starFalls46 {
@@ -552,7 +552,7 @@
   animation: FallsDown 3.22s ease-in-out 0.8s 5;
 }
 .starFalls46 path {
-  fill: rgb(159, 220, 131);
+  fill: rgb(181, 166, 236);
 }
 
 .starFalls47 {
@@ -562,7 +562,7 @@
   animation: FallsDown 3.29s ease-in-out 0.1s 5;
 }
 .starFalls47 path {
-  fill: rgb(165, 187, 199);
+  fill: rgb(181, 170, 168);
 }
 
 .starFalls48 {
@@ -572,7 +572,7 @@
   animation: FallsDown 3.36s ease-in-out 0.4s 5;
 }
 .starFalls48 path {
-  fill: rgb(234, 199, 135);
+  fill: rgb(241, 178, 193);
 }
 
 .starFalls49 {
@@ -582,7 +582,7 @@
   animation: FallsDown 3.43s ease-in-out 0.7s 5;
 }
 .starFalls49 path {
-  fill: rgb(158, 207, 244);
+  fill: rgb(187, 213, 239);
 }
 
 .starFalls50 {
@@ -592,7 +592,7 @@
   animation: FallsDown 3.5s ease-in-out 0s 5;
 }
 .starFalls50 path {
-  fill: rgb(221, 194, 236);
+  fill: rgb(157, 123, 205);
 }
 
 .starFalls51 {
@@ -602,7 +602,7 @@
   animation: FallsDown 3.57s ease-in-out 0.3s 5;
 }
 .starFalls51 path {
-  fill: rgb(214, 169, 170);
+  fill: rgb(161, 165, 142);
 }
 
 .starFalls52 {
@@ -612,7 +612,7 @@
   animation: FallsDown 3.64s ease-in-out 0.6s 5;
 }
 .starFalls52 path {
-  fill: rgb(241, 219, 143);
+  fill: rgb(155, 209, 152);
 }
 
 .starFalls53 {
@@ -622,7 +622,7 @@
   animation: FallsDown 3.71s ease-in-out 0.9s 5;
 }
 .starFalls53 path {
-  fill: rgb(218, 185, 156);
+  fill: rgb(193, 233, 234);
 }
 
 .starFalls54 {
@@ -632,7 +632,7 @@
   animation: FallsDown 3.78s ease-in-out 0.2s 5;
 }
 .starFalls54 path {
-  fill: rgb(186, 222, 178);
+  fill: rgb(146, 140, 141);
 }
 
 .starFalls55 {
@@ -642,7 +642,7 @@
   animation: FallsDown 3.85s ease-in-out 0.5s 5;
 }
 .starFalls55 path {
-  fill: rgb(177, 217, 214);
+  fill: rgb(146, 123, 184);
 }
 
 .starFalls56 {
@@ -652,7 +652,7 @@
   animation: FallsDown 3.92s ease-in-out 0.8s 5;
 }
 .starFalls56 path {
-  fill: rgb(242, 221, 234);
+  fill: rgb(155, 126, 223);
 }
 
 .starFalls57 {
@@ -662,7 +662,7 @@
   animation: FallsDown 3.99s ease-in-out 0.1s 5;
 }
 .starFalls57 path {
-  fill: rgb(221, 191, 133);
+  fill: rgb(200, 199, 219);
 }
 
 .starFalls58 {
@@ -672,7 +672,7 @@
   animation: FallsDown 4.06s ease-in-out 0.4s 5;
 }
 .starFalls58 path {
-  fill: rgb(204, 155, 152);
+  fill: rgb(181, 149, 134);
 }
 
 .starFalls59 {
@@ -682,7 +682,7 @@
   animation: FallsDown 4.13s ease-in-out 0.7s 5;
 }
 .starFalls59 path {
-  fill: rgb(160, 215, 198);
+  fill: rgb(186, 213, 135);
 }
 
 .starFalls60 {
@@ -692,7 +692,7 @@
   animation: FallsDown 4.2s ease-in-out 0s 5;
 }
 .starFalls60 path {
-  fill: rgb(215, 220, 169);
+  fill: rgb(202, 166, 148);
 }
 
 .starFalls61 {
@@ -702,7 +702,7 @@
   animation: FallsDown 4.27s ease-in-out 0.3s 5;
 }
 .starFalls61 path {
-  fill: rgb(240, 151, 234);
+  fill: rgb(147, 128, 219);
 }
 
 .starFalls62 {
@@ -712,7 +712,7 @@
   animation: FallsDown 4.34s ease-in-out 0.6s 5;
 }
 .starFalls62 path {
-  fill: rgb(169, 153, 217);
+  fill: rgb(213, 179, 162);
 }
 
 .starFalls63 {
@@ -722,7 +722,7 @@
   animation: FallsDown 4.41s ease-in-out 0.9s 5;
 }
 .starFalls63 path {
-  fill: rgb(242, 193, 241);
+  fill: rgb(240, 187, 157);
 }
 
 .starFalls64 {
@@ -732,7 +732,7 @@
   animation: FallsDown 4.48s ease-in-out 0.2s 5;
 }
 .starFalls64 path {
-  fill: rgb(152, 174, 144);
+  fill: rgb(211, 171, 192);
 }
 
 .starFalls65 {
@@ -742,7 +742,7 @@
   animation: FallsDown 4.55s ease-in-out 0.5s 5;
 }
 .starFalls65 path {
-  fill: rgb(221, 176, 242);
+  fill: rgb(222, 124, 221);
 }
 
 .starFalls66 {
@@ -752,7 +752,7 @@
   animation: FallsDown 4.62s ease-in-out 0.8s 5;
 }
 .starFalls66 path {
-  fill: rgb(240, 131, 235);
+  fill: rgb(167, 167, 175);
 }
 
 .starFalls67 {
@@ -762,7 +762,7 @@
   animation: FallsDown 4.69s ease-in-out 0.1s 5;
 }
 .starFalls67 path {
-  fill: rgb(201, 207, 183);
+  fill: rgb(153, 134, 204);
 }
 
 .starFalls68 {
@@ -772,7 +772,7 @@
   animation: FallsDown 4.76s ease-in-out 0.4s 5;
 }
 .starFalls68 path {
-  fill: rgb(156, 222, 212);
+  fill: rgb(244, 228, 238);
 }
 
 .starFalls69 {
@@ -782,7 +782,7 @@
   animation: FallsDown 4.83s ease-in-out 0.7s 5;
 }
 .starFalls69 path {
-  fill: rgb(210, 222, 226);
+  fill: rgb(241, 154, 237);
 }
 
 .starFalls70 {
@@ -792,7 +792,7 @@
   animation: FallsDown 4.9s ease-in-out 0s 5;
 }
 .starFalls70 path {
-  fill: rgb(169, 188, 236);
+  fill: rgb(154, 137, 166);
 }
 
 .starFalls71 {
@@ -802,7 +802,7 @@
   animation: FallsDown 4.97s ease-in-out 0.3s 5;
 }
 .starFalls71 path {
-  fill: rgb(173, 172, 169);
+  fill: rgb(183, 195, 242);
 }
 
 .starFalls72 {
@@ -812,7 +812,7 @@
   animation: FallsDown 5.04s ease-in-out 0.6s 5;
 }
 .starFalls72 path {
-  fill: rgb(166, 174, 209);
+  fill: rgb(162, 152, 224);
 }
 
 .starFalls73 {
@@ -822,7 +822,7 @@
   animation: FallsDown 5.11s ease-in-out 0.9s 5;
 }
 .starFalls73 path {
-  fill: rgb(169, 170, 212);
+  fill: rgb(215, 164, 211);
 }
 
 .starFalls74 {
@@ -832,7 +832,7 @@
   animation: FallsDown 5.18s ease-in-out 0.2s 5;
 }
 .starFalls74 path {
-  fill: rgb(193, 165, 223);
+  fill: rgb(148, 121, 231);
 }
 
 .starFalls75 {
@@ -842,7 +842,7 @@
   animation: FallsDown 5.25s ease-in-out 0.5s 5;
 }
 .starFalls75 path {
-  fill: rgb(156, 167, 153);
+  fill: rgb(205, 231, 160);
 }
 
 .starFalls76 {
@@ -852,7 +852,7 @@
   animation: FallsDown 5.32s ease-in-out 0.8s 5;
 }
 .starFalls76 path {
-  fill: rgb(202, 200, 236);
+  fill: rgb(239, 140, 243);
 }
 
 .starFalls77 {
@@ -862,7 +862,7 @@
   animation: FallsDown 5.39s ease-in-out 0.1s 5;
 }
 .starFalls77 path {
-  fill: rgb(165, 187, 198);
+  fill: rgb(204, 146, 230);
 }
 
 .starFalls78 {
@@ -872,7 +872,7 @@
   animation: FallsDown 5.46s ease-in-out 0.4s 5;
 }
 .starFalls78 path {
-  fill: rgb(243, 176, 165);
+  fill: rgb(162, 216, 223);
 }
 
 .starFalls79 {
@@ -882,7 +882,7 @@
   animation: FallsDown 5.53s ease-in-out 0.7s 5;
 }
 .starFalls79 path {
-  fill: rgb(173, 203, 139);
+  fill: rgb(148, 164, 156);
 }
 
 .starFalls80 {
@@ -892,7 +892,7 @@
   animation: FallsDown 5.6s ease-in-out 0s 5;
 }
 .starFalls80 path {
-  fill: rgb(194, 130, 221);
+  fill: rgb(240, 160, 156);
 }
 
 .starFalls81 {
@@ -902,7 +902,7 @@
   animation: FallsDown 5.67s ease-in-out 0.3s 5;
 }
 .starFalls81 path {
-  fill: rgb(172, 166, 188);
+  fill: rgb(227, 160, 205);
 }
 
 .starFalls82 {
@@ -912,7 +912,7 @@
   animation: FallsDown 5.74s ease-in-out 0.6s 5;
 }
 .starFalls82 path {
-  fill: rgb(234, 215, 166);
+  fill: rgb(165, 156, 243);
 }
 
 .starFalls83 {
@@ -922,7 +922,7 @@
   animation: FallsDown 5.81s ease-in-out 0.9s 5;
 }
 .starFalls83 path {
-  fill: rgb(153, 157, 217);
+  fill: rgb(231, 173, 142);
 }
 
 .starFalls84 {
@@ -932,7 +932,7 @@
   animation: FallsDown 5.88s ease-in-out 0.2s 5;
 }
 .starFalls84 path {
-  fill: rgb(179, 216, 160);
+  fill: rgb(208, 233, 190);
 }
 
 .starFalls85 {
@@ -942,7 +942,7 @@
   animation: FallsDown 5.95s ease-in-out 0.5s 5;
 }
 .starFalls85 path {
-  fill: rgb(153, 224, 207);
+  fill: rgb(222, 148, 155);
 }
 
 .starFalls86 {
@@ -952,7 +952,7 @@
   animation: FallsDown 6.02s ease-in-out 0.8s 5;
 }
 .starFalls86 path {
-  fill: rgb(173, 163, 243);
+  fill: rgb(168, 228, 179);
 }
 
 .starFalls87 {
@@ -962,7 +962,7 @@
   animation: FallsDown 6.09s ease-in-out 0.1s 5;
 }
 .starFalls87 path {
-  fill: rgb(232, 224, 243);
+  fill: rgb(173, 203, 194);
 }
 
 .starFalls88 {
@@ -972,7 +972,7 @@
   animation: FallsDown 6.16s ease-in-out 0.4s 5;
 }
 .starFalls88 path {
-  fill: rgb(188, 152, 155);
+  fill: rgb(184, 219, 218);
 }
 
 .starFalls89 {
@@ -982,7 +982,7 @@
   animation: FallsDown 6.23s ease-in-out 0.7s 5;
 }
 .starFalls89 path {
-  fill: rgb(161, 229, 145);
+  fill: rgb(199, 140, 146);
 }
 
 .starFalls90 {
@@ -992,7 +992,7 @@
   animation: FallsDown 6.3s ease-in-out 0s 5;
 }
 .starFalls90 path {
-  fill: rgb(204, 148, 137);
+  fill: rgb(197, 205, 170);
 }
 
 .starFalls91 {
@@ -1002,7 +1002,7 @@
   animation: FallsDown 6.37s ease-in-out 0.3s 5;
 }
 .starFalls91 path {
-  fill: rgb(153, 176, 158);
+  fill: rgb(160, 207, 212);
 }
 
 .starFalls92 {
@@ -1012,7 +1012,7 @@
   animation: FallsDown 6.44s ease-in-out 0.6s 5;
 }
 .starFalls92 path {
-  fill: rgb(201, 168, 184);
+  fill: rgb(224, 151, 215);
 }
 
 .starFalls93 {
@@ -1022,7 +1022,7 @@
   animation: FallsDown 6.51s ease-in-out 0.9s 5;
 }
 .starFalls93 path {
-  fill: rgb(151, 153, 147);
+  fill: rgb(155, 224, 219);
 }
 
 .starFalls94 {
@@ -1032,7 +1032,7 @@
   animation: FallsDown 6.58s ease-in-out 0.2s 5;
 }
 .starFalls94 path {
-  fill: rgb(158, 200, 193);
+  fill: rgb(213, 145, 166);
 }
 
 .starFalls95 {
@@ -1042,7 +1042,7 @@
   animation: FallsDown 6.65s ease-in-out 0.5s 5;
 }
 .starFalls95 path {
-  fill: rgb(154, 149, 136);
+  fill: rgb(223, 221, 177);
 }
 
 .starFalls96 {
@@ -1052,7 +1052,7 @@
   animation: FallsDown 6.72s ease-in-out 0.8s 5;
 }
 .starFalls96 path {
-  fill: rgb(163, 223, 159);
+  fill: rgb(156, 233, 224);
 }
 
 .starFalls97 {
@@ -1062,7 +1062,7 @@
   animation: FallsDown 6.79s ease-in-out 0.1s 5;
 }
 .starFalls97 path {
-  fill: rgb(232, 228, 172);
+  fill: rgb(198, 190, 243);
 }
 
 .starFalls98 {
@@ -1072,7 +1072,7 @@
   animation: FallsDown 6.86s ease-in-out 0.4s 5;
 }
 .starFalls98 path {
-  fill: rgb(172, 201, 225);
+  fill: rgb(186, 208, 133);
 }
 
 .starFalls99 {
@@ -1082,7 +1082,7 @@
   animation: FallsDown 6.93s ease-in-out 0.7s 5;
 }
 .starFalls99 path {
-  fill: rgb(194, 163, 142);
+  fill: rgb(154, 205, 179);
 }
 
 @keyframes FallsDown {

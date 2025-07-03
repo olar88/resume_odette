@@ -50,8 +50,8 @@ function MainBottomBar() {
 
       <div className="flex-grow-1 justify-content-end d-flex-row ai-center gap-3 ms-3">
         <TextButton text="RSS" onClick={() => { window.open("https://github.com/olar88/resume_odette_private") }} />
-        {/* <TextButton text="Privacy" onClick={() => { window.open("https://github.com/olar88/resume_odette_private") }} />
-        <TextButton text="Contact" onClick={() => { }} /> */}
+        <TextButton text="Privacy" onClick={() => { navigate("/Privacy") }} />
+        {/* <TextButton text="Contact" onClick={() => { }} /> */}
       </div>
     </div>
   );
