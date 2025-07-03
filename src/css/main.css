@@ -304,4 +304,15 @@ div:has(+ .gameStepBox.active) {
   margin-top: -10px;
   display: none;
   font-size: 14px;
+}
+
+.privacy_title {
+  font-size: 40px;
+  color: var(--primary);
+}
+
+.privacy_content {
+  font-size: 16px;
+  color: var(--primary_dark);
+  line-height: 40px;
 }/*# sourceMappingURL=main.css.map */
