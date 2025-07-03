@@ -9,6 +9,7 @@ import KotlinSample from "../slides03";
 
 function IntroducePage() {
   const [activeNow, setActiveNow] = useState(0);
+  const homePage = require("./../../../package.json").homepage ?? ""
 
   function introSlideClick(indx: number) {
     setActiveNow(indx);
@@ -42,7 +43,7 @@ function IntroducePage() {
                 mainContent={
                   <img
                     className="flex-grow-1 m-auto"
-                    src="./svg/img_html.svg"
+                    src={`${homePage}/svg/img_html.svg`}
                     alt="HTML Icon"
                     style={{ maxWidth: "80%" }}
                   />
@@ -61,7 +62,7 @@ function IntroducePage() {
                 mainContent={
                   <img
                     className="flex-grow-1 m-auto"
-                    src="./svg/img_react.svg"
+                    src={`${homePage}/svg/img_react.svg`}
                     alt="img_react Icon"
                     style={{ maxWidth: "30%" }} />
                 }
@@ -79,7 +80,7 @@ function IntroducePage() {
                 mainContent={
                   <img
                     className="flex-grow-1 m-auto"
-                    src="./svg/img_kotlin.svg"
+                    src={`${homePage}/svg/img_kotlin.svg`}
                     alt="img_kotlin Icon"
                     style={{ maxWidth: "30%" }} />
                 }
