@@ -1,0 +1,225 @@
+.check_circle {
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+    animation: stroke 6s ease-in-out forwards;
+}
+
+@keyframes stroke {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+.check {
+    stroke-dasharray: 100;
+    stroke-dashoffset: 100;
+    animation: strokeShort 3s ease-in-out .5s infinite;
+}
+
+@keyframes strokeShort {
+    0% {
+        stroke-dashoffset: 100;
+    }
+
+    50% {
+        stroke-dashoffset: 0;
+    }
+
+    100% {
+        stroke-dashoffset: 100;
+    }
+}
+
+
+
+//SCSS內容
+$stars :(1:6s,
+    2:8s,
+    3:12s,
+    4:10s,
+    5:8s,
+    6:6s);
+
+.star {
+    animation-name: starRoutate;
+    animation-iteration-count: infinite;
+    transform-origin: center;
+}
+
+@each $index, $times in $stars {
+    .star#{$index} {
+        animation-duration: $times;
+        animation-delay: $index * 0.3 % 1;
+    }
+}
+
+
+@keyframes starRoutate {
+    0% {
+        rotate: 0;
+        opacity: 1;
+    }
+
+    25% {
+        opacity: .5;
+    }
+
+    50% {
+        rotate: -90deg;
+        opacity: .9;
+    }
+
+    75% {
+        opacity: .7;
+    }
+
+    90% {
+        opacity: 1;
+    }
+
+    100% {
+        rotate: 0;
+        opacity: .8;
+    }
+}
+
+
+@mixin starFalls($percent) {
+    position: absolute;
+    top: -5%;
+    left: $percent;
+}
+
+$max: 100;
+
+@for $i from 0 to $max {
+    .starFalls#{$i} {
+        @include starFalls($i * 37 % 100 - 2 * 1%);
+        animation: FallsDown ($i * .07s) ease-in-out ($i * 0.3 % 1s) 5;
+
+        path {
+            fill: rgb(random(100)+145, random(115)+120, random(115)+130)
+        }
+    }
+}
+
+@keyframes FallsDown {
+    0% {
+        top: -5%
+    }
+
+    85% {
+        opacity: 1;
+    }
+
+    100% {
+        top: 95%;
+        opacity: 0;
+
+    }
+}
+
+
+.birdORG {
+    .wing {
+        animation: wingsMove 3s ease-in-out 0s infinite;
+
+    }
+
+    .mouth {
+        animation: mouthMove 2s ease-in-out 0s infinite;
+
+    }
+
+
+}
+
+.birdGR {
+    .wing {
+        animation: wingsMove2 2s ease-in-out 0s infinite;
+
+    }
+
+    .eyes {
+        animation: eyesMove 4s ease-in-out 0s infinite;
+
+    }
+
+
+}
+
+@keyframes wingsMove {
+    0% {
+        transform: rotate(0);
+    }
+
+    30% {
+        transform: rotate(5deg) translate(3px);
+    }
+
+    80% {
+        transform: rotate(-5deg) translate(1px);
+    }
+
+    100% {
+        transform: rotate(0deg) translate(0px);
+    }
+}
+
+@keyframes wingsMove2 {
+    0% {
+        transform: rotate(0);
+    }
+
+    35% {
+        transform: rotate(-2deg) translate(-1.5px);
+    }
+
+    65% {
+        transform: rotate(-5deg) translate(-3px);
+    }
+
+    80% {
+        transform: rotate(-1deg) translate(-2px);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes mouthMove {
+    0% {
+        transform: rotate(0);
+    }
+
+    30% {
+        transform: rotate(2deg) translateX(-.5px);
+    }
+
+    80% {
+        transform: rotate(-3deg) translateX(1px);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes eyesMove {
+    0% {
+        transform: translateX(0);
+    }
+
+    30% {
+        transform: translateX(-3px);
+    }
+
+    80% {
+        transform: translateX(1px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}

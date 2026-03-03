@@ -1,0 +1,314 @@
+.GCCalenderTdTime {
+    position: relative;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.GCCalenderTdTime.vertical {
+    flex-wrap: nowrap;
+}
+
+.GCCalenderTdTime.horizontal>div {
+    height: 50%;
+    width: 231.5px;
+    padding: 8px 10px;
+}
+
+.GCCalenderTdTime.horizontal>div:first-child {
+    border-bottom: 1px dashed #e0e0e0
+}
+
+.GCCalenderTdTime.vertical>div {
+    height: 100%;
+    width: 60px;
+    padding: 8px 10px;
+}
+
+.GCCalenderTdTime.vertical>div:first-child {
+    border-right: 1px dashed #e0e0e0
+}
+
+.GCCalenderTh {
+    border: 1px solid #0000001F;
+    padding: 8px 10px;
+    background-color: #FFFFFF;
+    position: relative;
+}
+
+.sticky_left {
+    position: sticky;
+    left: 0;
+}
+
+.sticky_top {
+    position: sticky;
+    top: 0;
+}
+
+.GCCalenderTh.sticky_left {
+    left: -1px;
+    z-index: 1;
+}
+
+.GCCalenderNowTime {
+    color: #fff !important;
+    background-color: var(--primary) !important;
+}
+
+.GCCalenderNowTime div {
+    color: #fff !important;
+}
+
+.GCCalenderHoliday {
+    background-color: #dcdcdc;
+}
+
+.GCCalenderDisabled {
+    color: #919191;
+    cursor: default !important;
+    background-color: #f0f0f0 !important;
+}
+
+.GCCalenderDisabled div {
+    cursor: default !important;
+}
+
+.TableRowOfGCCalendar {
+    width: 100%;
+    height: 60px;
+    vertical-align: middle;
+}
+
+.GCCalenderTable {
+    width: 100%;
+    border-collapse: collapse;
+    overflow: hidden auto;
+    position: relative;
+    /* 禁止選取文字 */
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.insetShadow {
+    position: relative;
+}
+
+.insetShadow::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    height: 10px;
+    left: -10px;
+    right: -10px;
+    box-shadow: inset 0px 5px 10px -5px #c9c9c9, inset 0px 0px 0px #c9c9c9;
+    z-index: 4;
+}
+
+.insetShadow::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    height: 10px;
+    left: -10px;
+    right: -10px;
+    box-shadow: inset 0px 0px 0px #c9c9c9, inset 0px -5px 10px -5px #c9c9c9;
+    z-index: 4;
+}
+
+.d-none {
+    display: none !important;
+}
+
+.h-60 {
+    height: 60px;
+}
+
+.h-100 {
+    height: 100%;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.GCCalenderTablePadding {
+    padding: 8px 10px
+}
+
+.bg-white {
+    background: #FFFFFF
+}
+
+.alignItems-center {
+    align-items: center;
+}
+
+.justifyContent-start {
+    justify-content: flex-start;
+}
+
+.justifyContent-between {
+    justify-content: space-between;
+}
+
+.justifyContent-center {
+    justify-content: center;
+}
+
+.justifyContent-start {
+    justify-content: start;
+}
+
+.GCC_L {
+    position: absolute !important;
+    width: 240px;
+    overflow: hidden;
+    text-align: center;
+    z-index: 10;
+    background-color: #fff;
+    border: 1px solid #e4e4e4;
+    border-radius: 5px;
+    box-shadow: 2px 5px 11px 0 #7f8c9182;
+    white-space: auto;
+    transition: .2s;
+}
+
+.GCC_L_li {
+    align-items: center;
+}
+
+.GCC_L_li.disabled {
+    cursor: default !important;
+}
+
+.GCC_L_li:not(.disabled):hover {
+    background: #f0f0f0;
+}
+
+.GCC_L_Icon {
+    min-width: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.GCC_L_Content {
+    text-align: left;
+    padding: 4px 16px;
+}
+
+.GCC_Chip {
+    color: #000;
+    border-radius: 4px;
+    min-width: 60px;
+    min-height: 24px;
+    padding: 0 8px;
+    transition: .2s;
+    cursor: default;
+    border: 1px solid #ffffffab;
+    height: 24px;
+}
+
+
+.GCC_Chip>div {
+    border-radius: 4px;
+    height: 100%;
+}
+
+.GCC_Chip:hover {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.GCC_Tip {
+    min-width: 64px;
+    height: 14px;
+    font-size: 10px;
+    border-radius: 0 0 4px 0;
+    border: 1px solid #D9D9D9;
+    padding: 0 5px;
+    position: absolute;
+    top: -8px;
+    left: -10px;
+    cursor: default;
+}
+
+.GCC_ScrollBar {
+    width: 35px;
+    position: absolute;
+    top: 120px;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transition: .2s;
+    opacity: 0;
+}
+
+.GCC_ScrollBar.left {
+    background: linear-gradient(90deg, rgba(183, 183, 183, 0.6) 0%, rgba(141, 141, 141, 0) 100%);
+    left: 235.5px;
+    justify-content: flex-start;
+}
+
+.GCC_ScrollBar.left.show {
+    width: 80px;
+    opacity: 1;
+}
+
+.GCC_ScrollBar.right {
+    background: linear-gradient(90deg, rgba(141, 141, 141, 0) 0%, rgba(183, 183, 183, 0.6) 100%);
+    right: 0;
+    justify-content: flex-end;
+}
+
+.GCC_ScrollBar.right.show {
+    width: 80px;
+    opacity: 1;
+}
+
+.GCCM_Titile {
+    background-color: #fff;
+}
+
+.GCCM_data_bar {
+    overflow: auto;
+    position: relative;
+    max-height: 675px;
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+    background-color: #fff;
+}
+
+.GCCM_data_bar div {
+    width: fit-content;
+    white-space: nowrap;
+    padding: 4px;
+    position: relative;
+    cursor: pointer;
+}
+
+.GCCM_date_bar {
+    overflow: auto;
+    position: relative;
+    max-height: 675px;
+}
+
+.wS_D_none::-webkit-scrollbar {
+    display: none;
+}
+
+.GCCalender::-webkit-scrollbar {
+    height: 10px;
+    width: 6px;
+    margin-left: 30px;
+}
+
+.GCCalender::-webkit-scrollbar-thumb:hover {
+    cursor: pointer;
+}

@@ -1,0 +1,98 @@
+.GameModel {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  overflow: hidden;
+  z-index: 5;
+}
+
+@keyframes modelMove {
+  0% {
+    top: 100%;
+  }
+  100% {
+    top: 30%;
+  }
+}
+.modelInnerSpace {
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 0px 9px;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%);
+  background-color: var(--secondary);
+  border-radius: 15px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 10px;
+  transition: 0.2s;
+  animation: modalMove 0.3s ease-in-out;
+}
+
+.GameModelTop {
+  display: flex;
+  justify-content: space-between;
+}
+
+.GameModelInnerNode {
+  flex-grow: 1;
+  min-height: 100px;
+}
+
+.title-L {
+  color: var(--dark-Gr, var(--primary_dark));
+  font-family: "Play", sans-serif;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 600;
+  text-align: center;
+  line-height: normal;
+}
+
+.tableContaniner {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  width: 100%;
+}
+
+.tableCell {
+  width: 100%;
+  color: var(--primary);
+  cursor: pointer;
+  padding: 5px;
+  border-radius: 5px;
+}
+.tableCell:hover, .tableCell.selected {
+  background-color: rgba(36, 48, 94, 0.1490196078);
+}
+
+.modelInput {
+  border: 2px solid #e8e8e8;
+  padding: 15px;
+  border-radius: 10px;
+  background-color: var(--warning);
+  font-size: small;
+  font-weight: bold;
+  text-align: center;
+}
+.modelInput::-moz-placeholder {
+  color: var(--primary);
+}
+.modelInput::placeholder {
+  color: var(--primary);
+}
+.modelInput:focus {
+  outline-color: white;
+  background-color: var(--warning);
+  color: var(--primary_dark);
+  box-shadow: 5px 5px #888888;
+}
+
+.warning_label {
+  color: var(--alert);
+}/*# sourceMappingURL=modelStyle.css.map */
