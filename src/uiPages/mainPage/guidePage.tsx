@@ -6,6 +6,7 @@ import SvgEditorIcon from "../../svg/img_svgEditor";
 import DiffGameIcon from "../../svg/img_diffGameIcon";
 import CalendarIcon from "../../svg/img_calendar";
 import { useNavigate } from "react-router-dom";
+import { RedBloodCellPage } from "../../svg/img_three";
 
 function GuidePage() {
   const navigate = useNavigate()
@@ -43,7 +44,7 @@ function GuidePage() {
             />
           </AnimatedShowUpComponent>
           <AnimatedShowUpComponent
-            className="col-12 h-50 p-0"
+            className="col-6 h-50 p-0"
             direction={directionEnum.Down}
             transitionDelay=".6s"
           >
@@ -53,6 +54,20 @@ function GuidePage() {
               textContent="Calendar"
               backgroundColor={colorEnum.primary}
               contentColor={colorEnum.white}
+              className="h-100"
+            />
+          </AnimatedShowUpComponent>
+           <AnimatedShowUpComponent
+            className="col-6 h-50 p-0"
+            direction={directionEnum.Down}
+            transitionDelay=".6s"
+          >
+            <SquareCardButton
+              onClick={() => { navigate('/Three') }}
+              mainContent={<RedBloodCellPage className="flex-grow-1 m-auto" />}
+              textContent="Three.js"
+              backgroundColor={colorEnum.warning}
+              contentColor={colorEnum.primary}
               className="h-100"
             />
           </AnimatedShowUpComponent>
